@@ -29,7 +29,7 @@ class BlogIndex extends React.Component {
                             >
                                 <Link
                                     style={{ boxShadow: 'none' }}
-                                    to={`${POSTS_PATH}${node.fields.slug}.html`}
+                                    to={`${node.fields.url}`}
                                 >
                                     {title}
                                 </Link>
@@ -45,6 +45,7 @@ class BlogIndex extends React.Component {
                         </div>
                     );
                 })}
+                <hr />
                 <Bio />
             </Layout>
         );
@@ -66,6 +67,7 @@ export const pageQuery = graphql`
                     excerpt
                     fields {
                         slug
+                        url
                     }
                     frontmatter {
                         date

@@ -34,6 +34,7 @@ class Layout extends React.Component {
                         <Socials />
                     </div>
                     <div className="subheading-nav-wrapper">
+                        <hr />
                         <Navigation />
                     </div>
                 </div>

@@ -19,6 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
                         node {
                             fields {
                                 slug
+                                url
                             }
                             frontmatter {
                                 title
@@ -41,7 +42,7 @@ exports.createPages = ({ graphql, actions }) => {
             const next = index === 0 ? null : posts[index - 1].node;
 
             createPage({
-                path: `${POSTS_PATH}${post.node.fields.slug}.html`,
+                path: post.node.fields.url,
                 component: blogPost,
                 context: {
                     slug: post.node.fields.slug,
@@ -66,10 +67,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     // Handles posts
     if (node.internal.type === 'MarkdownRemark') {
         const value = createFilePath({ node, getNode, trailingSlash: false });
+        // Creates slug field
         createNodeField({
             name: 'slug',
             node,
             value,
+        });
+        // Creates url field
+        createNodeField({
+            name: 'url',
+            node,
+            value: `${POSTS_PATH}${value}`,
         });
     }
 };

@@ -6,15 +6,18 @@ Theme.overrideThemeStyles = () => {
         'a.gatsby-resp-image-link': {
             boxShadow: 'none',
         },
-        h1: {
-            fontFamily: 'Roboto, Open Sans, sans-serif',
+        'h1,h2,h3': {
+            fontFamily: 'Roboto Slab, serif',
             // textTransform: 'lowercase',
             // fontSize: '2.5em',
             // textAlign: 'center',
         },
-        'h2,h3': {
-            fontFamily: ['Roboto', 'Open Sans', 'sans-serif'].join(', '),
+        'nav a': {
+            fontFamily: 'Roboto Slab, serif',
         },
+        // 'h2,h3': {
+        //     fontFamily: ['Roboto', 'Open Sans', 'sans-serif'].join(', '),
+        // },
     };
 };
 
@@ -28,7 +31,7 @@ Theme.googleFonts = [
         styles: [],
     },
     {
-        name: 'Playfair Display',
+        name: 'Roboto Slab',
         styles: [],
     },
 ];

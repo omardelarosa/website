@@ -17,6 +17,7 @@ export function HomeSplash() {
                         <div style={{ textAlign: 'center' }}>
                             <img src={Logo} alt="Logo" />
                         </div>
+                        <hr />
                         <Navigation />
                     </div>
                 );
