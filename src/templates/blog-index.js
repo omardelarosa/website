@@ -43,7 +43,7 @@ class BlogIndex extends React.Component {
                                 }}
                             />
                             <small>
-                                <TagList tags={node.frontmatter.tags} />
+                                <TagList tags={node.frontmatter.tags || []} />
                             </small>
                         </div>
                     );

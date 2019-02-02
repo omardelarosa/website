@@ -14,13 +14,15 @@ export function HomeSplash() {
                 return (
                     <div className="homepage-splash">
                         <h1 className="homepage-heading">{author}</h1>
+
+                        <hr />
                         <div style={{ textAlign: 'center' }}>
                             <Link to={'/posts'}>
                                 <img src={Logo} alt="Logo" />
                             </Link>
                         </div>
                         <hr />
-                        <Navigation />
+                        <Navigation small />
                     </div>
                 );
             }}

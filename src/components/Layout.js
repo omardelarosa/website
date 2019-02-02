@@ -31,7 +31,7 @@ class Layout extends React.Component {
                                 {title}
                             </Link>
                         </h3>
-                        <Navigation small={true} />
+                        <Navigation small />
                     </div>
                     <hr />
                 </div>
