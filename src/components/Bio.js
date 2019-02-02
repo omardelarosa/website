@@ -19,7 +19,11 @@ function Bio() {
                 return (
                     <div className="bio-wrapper">
                         <div className="bio" style={styles}>
-                            <img src={avatar} className="avatar" />
+                            <img
+                                src={avatar}
+                                className="avatar"
+                                alt="Omar Delarosa avatar"
+                            />
                             <p>
                                 Written by <strong>{author}</strong> who lives
                                 in Brooklyn and builds things using computers.{' '}

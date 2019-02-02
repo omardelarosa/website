@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Navigation } from '../components/Navigation';
-import { Socials } from '../components/Socials';
 import { rhythm } from '../utils/typography';
 import './Layout.styl';
 
