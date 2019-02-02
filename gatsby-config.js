@@ -3,7 +3,7 @@ module.exports = {
         title: 'Omar Delarosa',
         author: 'Omar Delarosa',
         description: 'A starter blog demonstrating what Gatsby can do.',
-        siteUrl: 'https://www.omardelarosa.com/',
+        siteUrl: 'https://www.omardelarosa.com',
         socials: [
             {
                 name: 'LinkedIn',
@@ -138,6 +138,7 @@ module.exports = {
         'gatsby-plugin-offline',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-stylus',
+        'gatsby-plugin-sitemap',
         {
             resolve: 'gatsby-plugin-typography',
             options: {
