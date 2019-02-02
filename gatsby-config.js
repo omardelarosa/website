@@ -2,6 +2,10 @@ module.exports = {
     siteMetadata: {
         title: 'Omar Delarosa',
         author: 'Omar Delarosa',
+        authorSocials: {
+            twitter: 'omardelarosa',
+            instagram: 'omdel',
+        },
         description: 'A starter blog demonstrating what Gatsby can do.',
         siteUrl: 'https://www.omardelarosa.com',
         socials: [
