@@ -20,7 +20,7 @@ const ProjectsPage = ({
     return (
         <Layout location={location} title={title}>
             <SEO
-                title="About Page"
+                title="Projects"
                 keywords={[
                     'blog',
                     'software engineer',

@@ -8,7 +8,7 @@ module.exports = {
             {
                 name: 'LinkedIn',
                 slug: 'linkedin',
-                url: 'https://',
+                url: 'https://www.linkedin.com/in/omardelarosa',
                 text: 'Add me on LinedIn',
             },
             {
@@ -158,7 +158,17 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-google-analytics',
             options: {
-                //trackingId: `ADD YOUR TRACKING ID HERE`,
+                trackingId: 'UA-8283504-4',
+                anonymize: true,
+                respectDNT: true,
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-facebook-analytics',
+            options: {
+                appId: '1324016057659286',
+                includeInDevelopment: false,
+                language: 'en_US',
             },
         },
         'gatsby-plugin-feed',
@@ -169,7 +179,7 @@ module.exports = {
                 short_name: 'omardelarosa.com',
                 start_url: '/',
                 background_color: '#ffffff',
-                theme_color: '#663399',
+                theme_color: '#000000',
                 display: 'minimal-ui',
                 icon: 'content/assets/pixelpic.gif',
                 include_favicon: true,

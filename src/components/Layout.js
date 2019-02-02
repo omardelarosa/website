@@ -38,10 +38,10 @@ class Layout extends React.Component {
             );
             footer = (
                 <footer className="footer">
-                    <span>
+                    <small>
                         © {new Date().getFullYear()}, Built with{'  '}
                         <a href="https://www.gatsbyjs.org"> Gatsby</a>
-                    </span>
+                    </small>
                 </footer>
             );
         }
