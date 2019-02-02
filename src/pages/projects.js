@@ -11,6 +11,7 @@ const ProjectsPage = ({
                 title,
                 author,
                 about: { text },
+                projects = [],
             },
         },
     },
@@ -30,8 +31,22 @@ const ProjectsPage = ({
                 ]}
             />
             <h1>Projects</h1>
+            {projects.map(project => {
+                return (
+                    <div key={`project-section-${project.section}`}>
+                        <h2>{project.section}</h2>
+                        <ol className="projects-list">
+                            {project.links.map(link => (
+                                <li key={`project-link-${link.name}`}>
+                                    <a href={link.url}>{link.name}</a> -{' '}
+                                    {link.description}
+                                </li>
+                            ))}
+                        </ol>
+                    </div>
+                );
+            })}
             <div style={{ textAlign: 'center' }}>
-                PROJECTS
                 <hr />
                 <Bio />
             </div>
@@ -47,6 +62,14 @@ export const pageQuery = graphql`
                 author
                 about {
                     text
+                }
+                projects {
+                    section
+                    links {
+                        url
+                        description
+                        name
+                    }
                 }
             }
         }

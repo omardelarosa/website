@@ -4,6 +4,7 @@ import { formatTimestamp } from '../utils/dates';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
+import { TagList } from '../components/TagList';
 import { rhythm, scale } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
@@ -28,7 +29,10 @@ class BlogPostTemplate extends React.Component {
                         marginTop: rhythm(-1),
                     }}
                 >
-                    {formatTimestamp(post.frontmatter.date)}
+                    <small>{formatTimestamp(post.frontmatter.date)}</small>
+                    <small>
+                        <TagList tags={post.frontmatter.tags} />
+                    </small>
                 </p>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 <hr

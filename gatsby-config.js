@@ -40,6 +40,46 @@ module.exports = {
             text:
                 'lives in Brooklyn and makes things using computers.  In his spare time he also enjoys video games, playing music and drawing.',
         },
+        projects: [
+            {
+                section: 'Code',
+                links: [
+                    {
+                        name: 'Vice Uniform',
+                        url: 'http://www.vice.com',
+                        year: 2015,
+                        description:
+                            'A multi-brand publishing experience for articles and videos across the Vice properties.  Built using TypeScript, React and Express',
+                    },
+                    {
+                        name: 'Umami',
+                        url: 'http://www.grubhub.com',
+                        year: 2018,
+                        description:
+                            'A multi-brand web application for ordering food for take out and delivery.  Built using TypeScript, Preact and Angular',
+                    },
+                ],
+            },
+            {
+                section: 'Music',
+                links: [
+                    {
+                        name: 'ioxi',
+                        url: 'http://soundcloud.com/ioximusic',
+                        year: 2018,
+                        description:
+                            'An algorithmically generated music project.',
+                    },
+                    {
+                        name: 'Little Insects',
+                        url: 'http://littleinsects.bandcamp.com',
+                        year: 2008,
+                        description:
+                            'My lofi, bedroom indie pop projects from 2008 to 2013.',
+                    },
+                ],
+            },
+        ],
     },
     plugins: [
         {
