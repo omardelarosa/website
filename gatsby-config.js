@@ -1,12 +1,18 @@
 module.exports = {
     siteMetadata: {
-        title: 'Forking Process',
+        title: 'Post Process',
         author: 'Omar Delarosa',
         description: 'A starter blog demonstrating what Gatsby can do.',
         siteUrl: 'https://www.omardelarosa.com/',
         social: {
             twitter: 'omardelarosa',
         },
+        sections: [
+            { name: 'blog', path: '/posts' },
+            { name: 'bio', path: '/bio' },
+            { name: 'code', path: '/code' },
+            { name: 'contact', path: '/contact' },
+        ],
     },
     plugins: [
         {
@@ -92,17 +98,19 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                name: 'Gatsby Starter Blog',
-                short_name: 'GatsbyJS',
+                name: 'Omar Delarosa\'s Website',
+                short_name: 'omardelarosa.com',
                 start_url: '/',
                 background_color: '#ffffff',
                 theme_color: '#663399',
                 display: 'minimal-ui',
-                icon: 'content/assets/gatsby-icon.png',
+                icon: 'content/assets/pixelpic.gif',
+                include_favicon: true,
             },
         },
         'gatsby-plugin-offline',
         'gatsby-plugin-react-helmet',
+        'gatsby-plugin-stylus',
         {
             resolve: 'gatsby-plugin-typography',
             options: {
