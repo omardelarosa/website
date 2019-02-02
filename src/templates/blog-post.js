@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-
+import { formatTimestamp } from '../utils/dates';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
@@ -27,7 +27,7 @@ class BlogPostTemplate extends React.Component {
                         marginTop: rhythm(-1),
                     }}
                 >
-                    {post.frontmatter.date}
+                    {formatTimestamp(post.frontmatter.date)}
                 </p>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 <hr

@@ -1,12 +1,9 @@
 {
-    "name": "gatsby-starter-blog",
+    "name": "omardelarosa-website",
     "private": true,
-    "description": "A starter for a blog powered by Gatsby and Markdown",
+    "description": "A personal website powered by Gatsby",
     "version": "0.1.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-    "bugs": {
-        "url": "https://github.com/gatsbyjs/gatsby/issues"
-    },
+    "author": "Omar Delarosa <thedelarosa@gmail.com>",
     "dependencies": {
         "gatsby": "^2.0.107",
         "gatsby-image": "^2.0.29",
@@ -25,6 +22,7 @@
         "gatsby-source-filesystem": "^2.0.19",
         "gatsby-transformer-remark": "^2.2.2",
         "gatsby-transformer-sharp": "^2.1.13",
+        "moment": "^2.24.0",
         "prismjs": "^1.15.0",
         "react": "^16.7.0",
         "react-dom": "^16.7.0",
@@ -35,15 +33,17 @@
         "typography": "^0.16.18",
         "typography-theme-wordpress-2016": "^0.16.18"
     },
-    "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+    "homepage": "https://github.com/omardelarosa/website",
     "keywords": [
-        "gatsby"
+        "gatsby",
+        "omardelarosa",
+        "blog"
     ],
     "license": "MIT",
     "main": "n/a",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+        "url": "git+https://github.com/omardelarosa/website.git"
     },
     "scripts": {
         "build": "gatsby build",

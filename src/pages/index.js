@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-
+import { formatTimestamp } from '../utils/dates';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
@@ -35,7 +35,9 @@ class BlogIndex extends React.Component {
                                     {title}
                                 </Link>
                             </h3>
-                            <small>{node.frontmatter.date}</small>
+                            <small>
+                                {formatTimestamp(node.frontmatter.date)}
+                            </small>
                             <p
                                 dangerouslySetInnerHTML={{
                                     __html: node.excerpt,
