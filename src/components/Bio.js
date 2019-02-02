@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import avatar from '../../content/assets/pixelpic-static.png';
 
 import { rhythm } from '../utils/typography';
 const styles = {
@@ -15,7 +16,8 @@ function Bio() {
             render={data => {
                 const { author, socials } = data.site.siteMetadata;
                 return (
-                    <div className="bio" style={styles}>
+                    <div className="bio s-border-top" style={styles}>
+                        <img src={avatar} className="avatar" />
                         {/* <Image
                             fixed={'data.avatar.childImageSharp.fixed'}
                             alt={author}

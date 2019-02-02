@@ -8,7 +8,7 @@ export function Navigation() {
             render={data => {
                 const { sections } = data.site.siteMetadata;
                 return (
-                    <nav className="homepage-links">
+                    <nav className="navigation s-border-top s-border-bottom">
                         <ol className="flex-container">
                             {sections.map(({ name, path }) => (
                                 <li>

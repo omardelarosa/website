@@ -39,9 +39,11 @@ class Layout extends React.Component {
                 </div>
             );
             footer = (
-                <footer>
-                    © {new Date().getFullYear()}, Built with{' '}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
+                <footer className="footer">
+                    <span>
+                        © {new Date().getFullYear()}, Built with{'  '}
+                        <a href="https://www.gatsbyjs.org"> Gatsby</a>
+                    </span>
                 </footer>
             );
         }
@@ -56,6 +58,7 @@ class Layout extends React.Component {
             >
                 <header>{header}</header>
                 <main>{children}</main>
+                {footer}
             </div>
         );
     }

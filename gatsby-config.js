@@ -31,10 +31,10 @@ module.exports = {
             },
         ],
         sections: [
-            { name: 'blog', path: '/posts' },
-            { name: 'bio', path: '/bio' },
-            { name: 'code', path: '/code' },
-            { name: 'contact', path: '/contact' },
+            { name: 'posts', path: '/posts' },
+            { name: 'topics', path: '/topics' },
+            { name: 'projects', path: '/projects' },
+            { name: 'about', path: '/about' },
         ],
     },
     plugins: [

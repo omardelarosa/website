@@ -1,13 +1,16 @@
 // utility
 .flex-container
     display flex
+.s-border-top
+    border-top solid #393939 1px
+.s-border-bottom
+    border-bottom solid #393939 1px
 
 .header
     .subheading-wrapper
         display flex
         flex-wrap wrap
         height 60px
-        border-bottom solid #393939 1px
         .subheading
             text-align left
             margin-top 0
@@ -16,15 +19,15 @@
             margin-top 0
             flex 2 2
     .subheading-nav-wrapper
-        border-bottom solid #393939 1px
         margin-bottom 12px
 
 .homepage-heading
     font-family 'Press Start 2P'
     text-align center
     text-transform lowercase
-.homepage-links
+.navigation
     font-family: 'Roboto'
+    margin-bottom: 24px
     ol
         padding 0
         margin 0
@@ -37,5 +40,17 @@
     font-family 'Press Start 2P'
     text-transform lowercase
 
+.footer
+    display flex
+    justify-content: center
+
 .bio
+    padding-top 6px;
+    margin-top 20px;
     font-size: 1.0em;
+    .avatar
+        height: 64px;
+
+.socials
+    display flex
+    justify-content space-between
