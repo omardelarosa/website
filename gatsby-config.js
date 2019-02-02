@@ -6,7 +6,7 @@ module.exports = {
             twitter: 'omardelarosa',
             instagram: 'omdel',
         },
-        description: 'A starter blog demonstrating what Gatsby can do.',
+        description: 'The website of Omar Delarosa',
         siteUrl: 'https://www.omardelarosa.com',
         socials: [
             {

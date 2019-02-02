@@ -13,8 +13,19 @@ class Home extends React.Component {
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO
-                    title="Homepage"
-                    keywords={['blog', 'gatsby', 'javascript', 'react']}
+                    title="Homepage | omardelarosa.com"
+                    keywords={[
+                        'blog',
+                        'gatsby',
+                        'javascript',
+                        'react',
+                        'software engineer',
+                        'developer',
+                        'musician',
+                        'technologist',
+                        'technology',
+                        'typescript',
+                    ]}
                 />
                 <HomeSplash />
             </Layout>
