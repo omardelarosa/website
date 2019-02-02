@@ -3,9 +3,9 @@ import { Link, graphql } from 'gatsby';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import Logo from '../../content/assets/pixelpic.gif';
-import { node } from 'prop-types';
-import styles from './index.styl';
+
+import './index.styl';
+import { HomeSplash } from '../components/HomeSplash';
 
 class Home extends React.Component {
     render() {
@@ -18,23 +18,7 @@ class Home extends React.Component {
                     title="Homepage"
                     keywords={['blog', 'gatsby', 'javascript', 'react']}
                 />
-                <h1 className="homepage-heading">{author}</h1>
-                <div style={{ textAlign: 'center' }}>
-                    <img src={Logo} alt="Logo" />
-                </div>
-                <ul className="homepage-links">
-                    {sections.map(({ name, path }) => (
-                        <li>
-                            <Link
-                                className="homepage-link"
-                                style={{ boxShadow: 'none' }}
-                                to={path}
-                            >
-                                {name}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                <HomeSplash />
             </Layout>
         );
     }

@@ -1,22 +1,22 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-// import Image from 'gatsby-image';
+import { Socials } from '../components/Socials';
 
 import { rhythm } from '../utils/typography';
+const styles = {
+    display: 'flex',
+    marginBottom: rhythm(2.5),
+    fontSize: '1.0em',
+};
 
 function Bio() {
     return (
         <StaticQuery
             query={bioQuery}
             render={data => {
-                const { author, social } = data.site.siteMetadata;
+                const { author, socials } = data.site.siteMetadata;
                 return (
-                    <div
-                        style={{
-                            display: 'flex',
-                            marginBottom: rhythm(2.5),
-                        }}
-                    >
+                    <div className="bio" style={styles}>
                         {/* <Image
                             fixed={'data.avatar.childImageSharp.fixed'}
                             alt={author}
@@ -33,10 +33,8 @@ function Bio() {
                         <p>
                             Written by <strong>{author}</strong> who lives in
                             Brooklyn and builds things using computers.{' '}
-                            <a href={`https://twitter.com/${social.twitter}`}>
-                                You should follow him on Twitter
-                            </a>
                         </p>
+                        <Socials />
                     </div>
                 );
             }}

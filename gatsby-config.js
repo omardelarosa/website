@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Post Process',
+        title: 'Omar Delarosa',
         author: 'Omar Delarosa',
         description: 'A starter blog demonstrating what Gatsby can do.',
         siteUrl: 'https://www.omardelarosa.com/',

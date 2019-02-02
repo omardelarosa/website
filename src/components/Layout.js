@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import { Navigation } from '../components/Navigation';
 import { rhythm, scale } from '../utils/typography';
 
 class Layout extends React.Component {
@@ -13,29 +13,8 @@ class Layout extends React.Component {
         if (location.pathname === rootPath) {
             header = null; // No header on root
             footer = null; // No footer on root
-            // header = (
-            //     <h1
-            //         className="root-heading"
-            //         style={{
-            //             ...scale(1.5),
-            //             marginBottom: rhythm(1.5),
-            //             marginTop: 0,
-            //         }}
-            //     >
-            //         <Link
-            //             style={{
-            //                 boxShadow: 'none',
-            //                 textDecoration: 'none',
-            //                 color: 'inherit',
-            //             }}
-            //             to={'/'}
-            //         >
-            //             {title}
-            //         </Link>
-            //     </h1>
-            // );
         } else {
-            header = (
+            header = [
                 <h3
                     className="subheading"
                     style={{
@@ -52,8 +31,9 @@ class Layout extends React.Component {
                     >
                         {title}
                     </Link>
-                </h3>
-            );
+                </h3>,
+                <Navigation />,
+            ];
             footer = (
                 <footer>
                     © {new Date().getFullYear()}, Built with{' '}
