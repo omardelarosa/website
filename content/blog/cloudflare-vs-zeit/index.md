@@ -5,6 +5,7 @@ date: 1511884978404
 createdAt: 1511884978404
 publishedAt: 1511884978404
 slug: cloudflare-vs-zeit
+tags: ["webdev", "tutorial", "development", "technology", "news"]
 ogDescription: an article about life, technology and/or music by omar delarosa
 ---
 

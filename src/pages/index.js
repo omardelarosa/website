@@ -8,7 +8,7 @@ import { HomeSplash } from '../components/HomeSplash';
 class Home extends React.Component {
     render() {
         const { data } = this.props;
-        const { title: siteTitle, author, sections } = data.site.siteMetadata;
+        const { title: siteTitle } = data.site.siteMetadata;
 
         return (
             <Layout location={this.props.location} title={siteTitle}>

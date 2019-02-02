@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Navigation } from '../components/Navigation';
 import { Socials } from '../components/Socials';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
 import './Layout.styl';
 
 class Layout extends React.Component {
@@ -31,12 +31,9 @@ class Layout extends React.Component {
                                 {title}
                             </Link>
                         </h3>
-                        <Socials />
+                        <Navigation small={true} />
                     </div>
-                    <div className="subheading-nav-wrapper">
-                        <hr />
-                        <Navigation />
-                    </div>
+                    <hr />
                 </div>
             );
             footer = (

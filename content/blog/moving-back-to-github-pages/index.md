@@ -5,6 +5,7 @@ date: 1528943411779
 createdAt: 1528943411779
 publishedAt: 1528943411779
 slug: moving-back-to-github-pages
+tags: ["webdev", "css", "js", "md", "news"]
 ogDescription: an article about life, technology and/or music by omar delarosa
 ---
 

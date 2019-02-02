@@ -1,17 +1,23 @@
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
+import classnames from 'classnames';
 
-export function Navigation() {
+export function Navigation({ small = false }) {
     return (
         <StaticQuery
             query={navQuery}
             render={data => {
                 const { sections } = data.site.siteMetadata;
                 return (
-                    <nav className="navigation">
+                    <nav
+                        className={classnames({
+                            navigation: true,
+                            'navigation-small': !!small,
+                        })}
+                    >
                         <ol className="flex-container">
                             {sections.map(({ name, path }) => (
-                                <li>
+                                <li key={`navlink-${name}`}>
                                     <Link
                                         className="homepage-link"
                                         style={{ boxShadow: 'none' }}

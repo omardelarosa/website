@@ -32,10 +32,14 @@ module.exports = {
         ],
         sections: [
             { name: 'posts', path: '/posts' },
-            { name: 'topics', path: '/topics' },
             { name: 'projects', path: '/projects' },
+            { name: 'tags', path: '/tags' },
             { name: 'about', path: '/about' },
         ],
+        about: {
+            text:
+                'lives in Brooklyn and makes things using computers.  In his spare time he also enjoys video games, playing music and drawing.',
+        },
     },
     plugins: [
         {

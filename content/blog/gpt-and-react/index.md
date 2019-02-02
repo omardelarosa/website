@@ -5,6 +5,16 @@ date: 1487820831393
 createdAt: 1487820831393
 publishedAt: 1487820831393
 slug: gpt-and-react
+tags:
+    [
+        "webdev",
+        "tutorial",
+        "development",
+        "technology",
+        "react",
+        "gpt",
+        "adtech",
+    ]
 ogDescription: an article about using react and google publisher tag together in harmony
 ---
 

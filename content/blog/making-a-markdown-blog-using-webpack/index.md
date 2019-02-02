@@ -5,6 +5,7 @@ date: 1483498714035
 createdAt: 1483498714035
 publishedAt: 1483504269673
 slug: making-a-markdown-blog-using-webpack
+tags: ["webpack", "webdev", "js", "md"]
 ogDescription: an article about making a static-file blog using webpack and html-webpack-plugin by omar delarosa
 ---
 

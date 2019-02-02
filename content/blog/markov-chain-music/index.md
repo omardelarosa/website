@@ -5,6 +5,7 @@ date: 1528251387589
 createdAt: 1528251387589
 publishedAt: 1528251387589
 slug: markov-chain-music
+tags: ["music", "composition", "livecode", "compsci", "ai", "sonicpi"]
 ogDescription: an article about using markov chains and sonicpi to make music by omar delarosa
 ---
 

@@ -5,6 +5,7 @@ date: 1529248388892
 createdAt: 1529248388892
 publishedAt: 1529248388892
 slug: markov-chain-rhythms
+tags: ["music", "composition", "livecode", "compsci", "ai", "sonicpi"]
 ogDescription: an article about building rhythms, chords and melodic patterns using markov chaining and then applying drake's voice on top by omar delarosa
 ---
 

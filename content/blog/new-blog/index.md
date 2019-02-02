@@ -5,6 +5,7 @@ date: 1483396849251
 createdAt: 1483396849251
 publishedAt: 1483398779432
 slug: new-blog
+tags: ["webdev", "news", "md"]
 ogDescription: an introduction to the new bloging system.
 ---
 

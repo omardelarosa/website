@@ -12,11 +12,11 @@ const IMAGES = {
     tumblr,
 };
 
-export function Sprite({ name }) {
+export function Sprite({ name, text }) {
     const image = IMAGES[name];
     if (!image) {
         console.warn('Unknown sprite: ', name);
         return null;
     }
-    return <img className={`sprite s-${name}`} src={image} />;
+    return <img className={`sprite s-${name}`} src={image} alt={text} />;
 }

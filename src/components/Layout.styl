@@ -1,3 +1,6 @@
+// variables
+$navheight = 32px
+
 // utility
 .flex-container
     display flex
@@ -6,11 +9,14 @@
 .s-border-bottom
     border-bottom solid #393939 1px
 
+small
+    font-size 0.7em
+
 .header
     .subheading-wrapper
         display flex
         flex-wrap wrap
-        height 60px
+        height $navheight
         .subheading
             text-align left
             margin-top 0
@@ -18,8 +24,9 @@
         .socials
             margin-top 0
             flex 2 2
-    .subheading-nav-wrapper
-        margin-bottom 12px
+    .subheading-wrapper
+        display flex
+        justify-content space-between
 
 .homepage-heading
     font-family 'Press Start 2P'
@@ -36,9 +43,16 @@
         li
             padding 4px
             margin 0
+
+.navigation-small
+    margin-bottom 0
+    font-size 0.8em
+    ol
+        justify-content: space-between
 .subheading
     font-family 'Press Start 2P'
     text-transform lowercase
+    margin-bottom 0
 
 .footer
     display flex
@@ -51,6 +65,22 @@
     .avatar
         height: 64px;
 
+.bio-wrapper
+    .socials
+        margin-left auto
+        margin-right auto
+        width 50%;
+        margin-bottom 2em;
+
 .socials
     display flex
     justify-content space-between
+
+.tag-list
+    list-style-type none
+    display flex
+    justify-content flex-start
+    padding 0
+    margin 0
+    li
+        padding 4px

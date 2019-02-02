@@ -1,11 +1,12 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import avatar from '../../content/assets/pixelpic-static.png';
-
+import { Socials } from '../components/Socials';
 import { rhythm } from '../utils/typography';
+
 const styles = {
     display: 'flex',
-    marginBottom: rhythm(2.5),
+    marginBottom: rhythm(1),
     fontSize: '1.0em',
 };
 
@@ -14,27 +15,17 @@ function Bio() {
         <StaticQuery
             query={bioQuery}
             render={data => {
-                const { author, socials } = data.site.siteMetadata;
+                const { author } = data.site.siteMetadata;
                 return (
-                    <div className="bio" style={styles}>
-                        <img src={avatar} className="avatar" />
-                        {/* <Image
-                            fixed={'data.avatar.childImageSharp.fixed'}
-                            alt={author}
-                            style={{
-                                marginRight: rhythm(1 / 2),
-                                marginBottom: 0,
-                                minWidth: 50,
-                                borderRadius: '100%',
-                            }}
-                            imgStyle={{
-                                borderRadius: '50%',
-                            }}
-                        /> */}
-                        <p>
-                            Written by <strong>{author}</strong> who lives in
-                            Brooklyn and builds things using computers.{' '}
-                        </p>
+                    <div className="bio-wrapper">
+                        <div className="bio" style={styles}>
+                            <img src={avatar} className="avatar" />
+                            <p>
+                                Written by <strong>{author}</strong> who lives
+                                in Brooklyn and builds things using computers.{' '}
+                            </p>
+                        </div>
+                        <Socials />
                     </div>
                 );
             }}

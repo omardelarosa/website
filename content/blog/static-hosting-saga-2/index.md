@@ -5,6 +5,7 @@ date: 1511974081367
 createdAt: 1511974081367
 publishedAt: 1511974081367
 slug: static-hosting-saga-2
+tags: ["webdev", "news", "md"]
 ogDescription: an article about getting static hosting to work via Amazon S3 and kinda sorta blogging like a hacker
 ---
 

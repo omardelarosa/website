@@ -12,7 +12,13 @@ export function Socials() {
                 return (
                     <div className="socials">
                         {socials.map(({ name, slug, url, text }) => (
-                            <a href={url} alt={name} target="_blank">
+                            <a
+                                key={`social-${slug}`}
+                                href={url}
+                                alt={name}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <Sprite name={slug} text={text} />
                             </a>
                         ))}

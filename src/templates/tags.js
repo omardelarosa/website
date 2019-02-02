@@ -1,25 +1,31 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import { formatTimestamp } from '../utils/dates';
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import { rhythm } from '../utils/typography';
 import { TagList } from '../components/TagList';
+import Bio from '../components/Bio';
+import { rhythm } from '../utils/typography';
+// Components
+import { Link, graphql } from 'gatsby';
 
-class BlogIndex extends React.Component {
-    render() {
-        const { data } = this.props;
-        const siteTitle = data.site.siteMetadata.title;
-        const posts = data.allMarkdownRemark.edges;
-        return (
-            <Layout location={this.props.location} title={siteTitle}>
+const Tags = ({ pageContext, data, location }) => {
+    const { tag } = pageContext;
+    const { edges, totalCount } = data.allMarkdownRemark;
+    const siteTitle = data.site.siteMetadata.title;
+    const tagHeader = `${totalCount} post${
+        totalCount === 1 ? '' : 's'
+    } tagged with "${tag}"`;
+
+    return (
+        <div>
+            <Layout location={location} title={siteTitle}>
                 <SEO
-                    title="All posts"
+                    title="All tags"
                     keywords={['blog', 'gatsby', 'javascript', 'react']}
                 />
-                <h1>Blog</h1>
-                {posts.map(({ node }) => {
+                <h1>{tagHeader}</h1>
+                {edges.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug;
                     return (
                         <div key={node.fields.slug}>
@@ -49,32 +55,61 @@ class BlogIndex extends React.Component {
                         </div>
                     );
                 })}
+                {/*
+              This links to a page that does not yet exist.
+              We'll come back to it!
+            */}
                 <hr />
                 <Bio />
             </Layout>
-        );
-    }
-}
+        </div>
+    );
+};
 
-export default BlogIndex;
+Tags.propTypes = {
+    pageContext: PropTypes.shape({
+        tag: PropTypes.string.isRequired,
+    }),
+    data: PropTypes.shape({
+        allMarkdownRemark: PropTypes.shape({
+            totalCount: PropTypes.number.isRequired,
+            edges: PropTypes.arrayOf(
+                PropTypes.shape({
+                    node: PropTypes.shape({
+                        frontmatter: PropTypes.shape({
+                            path: PropTypes.string.isRequired,
+                            title: PropTypes.string.isRequired,
+                        }),
+                    }),
+                }).isRequired
+            ),
+        }),
+    }),
+};
+
+export default Tags;
 
 export const pageQuery = graphql`
-    query {
+    query($tag: String) {
         site {
             siteMetadata {
                 title
+                author
             }
         }
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(
+            limit: 2000
+            sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { tags: { in: [$tag] } } }
+        ) {
+            totalCount
             edges {
                 node {
                     excerpt
                     fields {
-                        slug
                         url
                     }
                     frontmatter {
-                        date
                         title
                         tags
                     }

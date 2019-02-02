@@ -15,7 +15,9 @@ export function HomeSplash() {
                     <div className="homepage-splash">
                         <h1 className="homepage-heading">{author}</h1>
                         <div style={{ textAlign: 'center' }}>
-                            <img src={Logo} alt="Logo" />
+                            <Link to={'/posts'}>
+                                <img src={Logo} alt="Logo" />
+                            </Link>
                         </div>
                         <hr />
                         <Navigation />
