@@ -4,9 +4,32 @@ module.exports = {
         author: 'Omar Delarosa',
         description: 'A starter blog demonstrating what Gatsby can do.',
         siteUrl: 'https://www.omardelarosa.com/',
-        social: {
-            twitter: 'omardelarosa',
-        },
+        socials: [
+            {
+                name: 'LinkedIn',
+                slug: 'linkedin',
+                url: 'https://',
+                text: 'Add me on LinedIn',
+            },
+            {
+                name: 'Github',
+                slug: 'github',
+                url: 'https://github.com/omardelarosa',
+                text: 'Follow me on Github',
+            },
+            {
+                name: 'Tumblr',
+                slug: 'tumblr',
+                url: 'https://omardelarosa.tumblr.com',
+                text: 'Follow me on Tumblr',
+            },
+            {
+                name: 'Twitter',
+                slug: 'twitter',
+                url: 'https://twitter.com/omardelarosa',
+                text: 'Follow me on Twitter',
+            },
+        ],
         sections: [
             { name: 'blog', path: '/posts' },
             { name: 'bio', path: '/bio' },

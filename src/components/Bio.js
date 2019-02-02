@@ -1,6 +1,5 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Socials } from '../components/Socials';
 
 import { rhythm } from '../utils/typography';
 const styles = {
@@ -34,7 +33,6 @@ function Bio() {
                             Written by <strong>{author}</strong> who lives in
                             Brooklyn and builds things using computers.{' '}
                         </p>
-                        <Socials />
                     </div>
                 );
             }}
@@ -54,9 +52,6 @@ const bioQuery = graphql`
         site {
             siteMetadata {
                 author
-                social {
-                    twitter
-                }
             }
         }
     }

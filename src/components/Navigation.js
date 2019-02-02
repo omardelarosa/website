@@ -8,19 +8,21 @@ export function Navigation() {
             render={data => {
                 const { sections } = data.site.siteMetadata;
                 return (
-                    <ul className="homepage-links">
-                        {sections.map(({ name, path }) => (
-                            <li>
-                                <Link
-                                    className="homepage-link"
-                                    style={{ boxShadow: 'none' }}
-                                    to={path}
-                                >
-                                    {name}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                    <nav className="homepage-links">
+                        <ol className="flex-container">
+                            {sections.map(({ name, path }) => (
+                                <li>
+                                    <Link
+                                        className="homepage-link"
+                                        style={{ boxShadow: 'none' }}
+                                        to={path}
+                                    >
+                                        {name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ol>
+                    </nav>
                 );
             }}
         />
@@ -39,9 +41,6 @@ const navQuery = graphql`
         site {
             siteMetadata {
                 author
-                social {
-                    twitter
-                }
                 sections {
                     name
                     path

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Navigation } from '../components/Navigation';
+import { Socials } from '../components/Socials';
 import { rhythm, scale } from '../utils/typography';
+import './Layout.styl';
 
 class Layout extends React.Component {
     render() {
@@ -14,26 +16,28 @@ class Layout extends React.Component {
             header = null; // No header on root
             footer = null; // No footer on root
         } else {
-            header = [
-                <h3
-                    className="subheading"
-                    style={{
-                        marginTop: 0,
-                    }}
-                >
-                    <Link
-                        style={{
-                            boxShadow: 'none',
-                            textDecoration: 'none',
-                            color: 'inherit',
-                        }}
-                        to={'/'}
-                    >
-                        {title}
-                    </Link>
-                </h3>,
-                <Navigation />,
-            ];
+            header = (
+                <div className="header">
+                    <div className="subheading-wrapper">
+                        <h3 className="subheading" style={{}}>
+                            <Link
+                                style={{
+                                    boxShadow: 'none',
+                                    textDecoration: 'none',
+                                    color: 'inherit',
+                                }}
+                                to={'/'}
+                            >
+                                {title}
+                            </Link>
+                        </h3>
+                        <Socials />
+                    </div>
+                    <div className="subheading-nav-wrapper">
+                        <Navigation />
+                    </div>
+                </div>
+            );
             footer = (
                 <footer>
                     © {new Date().getFullYear()}, Built with{' '}

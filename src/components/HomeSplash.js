@@ -30,9 +30,6 @@ const homeSplashQuery = graphql`
         site {
             siteMetadata {
                 author
-                social {
-                    twitter
-                }
             }
         }
     }

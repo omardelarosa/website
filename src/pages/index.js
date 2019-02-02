@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Bio from '../components/Bio';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 
-import './index.styl';
 import { HomeSplash } from '../components/HomeSplash';
 
 class Home extends React.Component {
