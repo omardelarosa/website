@@ -2,7 +2,6 @@ import React from 'react';
 import Logo from '../../content/assets/pixelpic.gif';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import Bio from '../components/bio';
 import { Link, graphql } from 'gatsby';
 
 const AboutPage = ({

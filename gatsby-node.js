@@ -72,7 +72,6 @@ exports.createPages = ({ graphql, actions }) => {
         });
         // Eliminate duplicate tags
         tags = _.uniq(tags);
-        console.log('TAGS', tags);
         // Make tag pages
         tags.forEach(tag => {
             createPage({

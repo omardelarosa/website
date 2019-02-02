@@ -1,9 +1,8 @@
 import React from 'react';
-import Logo from '../../content/assets/pixelpic.gif';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import Bio from '../components/Bio';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 const ProjectsPage = ({
     data: {
