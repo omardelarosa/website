@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql, StaticQuery } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { formatTimestamp } from '../utils/dates';
 import { rhythm } from '../utils/typography';
 import { TagList, PRIVATE_TAG } from '../components/TagList';
@@ -9,7 +9,7 @@ class PostsList extends React.Component {
     render() {
         const posts = this.props.posts || [];
         return (
-            <div class="posts-list">
+            <div className="posts-list">
                 {posts.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug;
                     const tags = node.frontmatter.tags || [];
