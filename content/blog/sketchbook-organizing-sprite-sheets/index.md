@@ -4,7 +4,7 @@ date: 1549480469965
 createdAt: 1549480469965
 publishedAt: 1549480469965
 slug: sketchbook-organizing-sprite-sheets
-tags: ["process", "sketchbook", "private"]
+tags: ["process", "sketchbook"]
 ---
 
-Insert words here.
+<img src="./sketch-01.jpg" width="400px" height="300px"/>
