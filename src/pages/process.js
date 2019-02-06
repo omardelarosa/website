@@ -8,7 +8,7 @@ import _ from 'lodash';
 
 export const PROCESS_TAG = 'process';
 const DESCRIPTION_TEXT =
-    'A place for my work in Ideation and Prototyping class at NYU.  I will be posting artifacts from learning to make 2D, pixelart-based game development here.';
+    'A place for my work in Ideation and Prototyping class at NYU.  I will be posting weekly artifacts from learning to make 2D, pixelart-based game development here.';
 
 class ProcessPage extends React.Component {
     render() {

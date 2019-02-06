@@ -1,5 +1,5 @@
 ---
-title: Reading Response - Design For The Real World
+title: Reading Response | Design For The Real World
 date: 1549478856315
 createdAt: 1549478856315
 publishedAt: 1549478856315

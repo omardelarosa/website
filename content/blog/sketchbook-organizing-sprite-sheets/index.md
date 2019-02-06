@@ -1,5 +1,5 @@
 ---
-title: Sketchbook Organizing Sprite Sheets
+title: Sketchbook | Organizing Sprite Sheets
 date: 1549480469965
 createdAt: 1549480469965
 publishedAt: 1549480469965
