@@ -55,10 +55,6 @@ const Tags = ({ pageContext, data, location }) => {
                         </div>
                     );
                 })}
-                {/*
-              This links to a page that does not yet exist.
-              We'll come back to it!
-            */}
                 <hr />
                 <Bio />
             </Layout>

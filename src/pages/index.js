@@ -2,14 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-
-import { HomeSplash } from '../components/HomeSplash';
+import PostsList from '../components/PostsList';
+import Bio from '../components/Bio';
 
 class Home extends React.Component {
     render() {
         const { data } = this.props;
         const { title: siteTitle } = data.site.siteMetadata;
-
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO
@@ -27,7 +26,9 @@ class Home extends React.Component {
                         'typescript',
                     ]}
                 />
-                <HomeSplash />
+                <PostsList />
+                <hr />
+                <Bio />
             </Layout>
         );
     }
@@ -44,20 +45,6 @@ export const pageQuery = graphql`
                 sections {
                     name
                     path
-                }
-            }
-        }
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-            edges {
-                node {
-                    excerpt
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        date
-                        title
-                    }
                 }
             }
         }

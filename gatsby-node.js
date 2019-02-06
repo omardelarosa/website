@@ -7,7 +7,6 @@ exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
 
     const blogPost = path.resolve('./src/templates/blog-post.js');
-    const blogPostIndex = path.resolve('./src/templates/blog-index.js');
     const tagTemplate = path.resolve('./src/templates/tags.js');
 
     return graphql(
@@ -53,13 +52,6 @@ exports.createPages = ({ graphql, actions }) => {
                     next,
                 },
             });
-        });
-
-        // Create blog index page
-        createPage({
-            path: `${POSTS_PATH}`,
-            component: blogPostIndex,
-            context: {},
         });
 
         // Tag pages:

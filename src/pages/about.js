@@ -3,6 +3,7 @@ import Logo from '../../content/assets/pixelpic.gif';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import { Link, graphql } from 'gatsby';
+import { Socials } from '../components/Socials';
 
 const AboutPage = ({
     data: {
@@ -10,7 +11,7 @@ const AboutPage = ({
             siteMetadata: {
                 title,
                 author,
-                about: { text },
+                about: { text = [] },
             },
         },
     },
@@ -29,12 +30,16 @@ const AboutPage = ({
                     'technology',
                 ]}
             />
-            {/* <h1>About</h1> */}
-            <div style={{ textAlign: 'center' }}>
+            <h1>About</h1>
+            <div className="about" style={{ textAlign: 'center' }}>
                 <Link to={'/posts'}>
                     <img src={Logo} alt="Logo" />
                 </Link>
-                <p>{`${author} ${text}`}</p>
+                {text.map(t => (
+                    <p>{t.replace('{author}', author)}</p>
+                ))}
+                <Socials />
+                <br />
                 <hr />
             </div>
         </Layout>

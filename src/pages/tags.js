@@ -8,6 +8,7 @@ import _ from 'lodash';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import { Link, graphql } from 'gatsby';
+import Bio from '../components/Bio';
 
 const TagsPage = ({
     data: {
@@ -37,6 +38,8 @@ const TagsPage = ({
                     ))}
                 </ul>
             </div>
+            <hr />
+            <Bio />
         </Layout>
     );
 };

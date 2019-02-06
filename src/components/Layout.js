@@ -10,40 +10,34 @@ class Layout extends React.Component {
         const rootPath = `${__PATH_PREFIX__}/`;
         let header;
         let footer;
-
-        if (location.pathname === rootPath) {
-            header = null; // No header on root
-            footer = null; // No footer on root
-        } else {
-            header = (
-                <div className="header">
-                    <div className="subheading-wrapper">
-                        <h3 className="subheading" style={{}}>
-                            <Link
-                                style={{
-                                    boxShadow: 'none',
-                                    textDecoration: 'none',
-                                    color: 'inherit',
-                                }}
-                                to={'/'}
-                            >
-                                {title}
-                            </Link>
-                        </h3>
-                        <Navigation small />
-                    </div>
-                    <hr />
+        header = (
+            <div className="header">
+                <div className="subheading-wrapper">
+                    <h3 className="subheading" style={{}}>
+                        <Link
+                            style={{
+                                boxShadow: 'none',
+                                textDecoration: 'none',
+                                color: 'inherit',
+                            }}
+                            to={'/'}
+                        >
+                            {title}
+                        </Link>
+                    </h3>
+                    <Navigation small />
                 </div>
-            );
-            footer = (
-                <footer className="footer">
-                    <small>
-                        © {new Date().getFullYear()}, Built with{'  '}
-                        <a href="https://www.gatsbyjs.org"> Gatsby</a>
-                    </small>
-                </footer>
-            );
-        }
+                <hr />
+            </div>
+        );
+        footer = (
+            <footer className="footer">
+                <small>
+                    © {new Date().getFullYear()}, Built with{'  '}
+                    <a href="https://www.gatsbyjs.org"> Gatsby</a>
+                </small>
+            </footer>
+        );
         return (
             <div
                 style={{
