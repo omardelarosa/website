@@ -6,7 +6,7 @@ import PostsList from '../components/PostsList';
 import Bio from '../components/Bio';
 import _ from 'lodash';
 
-const PROCESS_TAG = 'process';
+export const PROCESS_TAG = 'process';
 const DESCRIPTION_TEXT =
     'A place for my work in Ideation and Prototyping class at NYU.  I will be posting artifacts from learning to make 2D, pixelart-based game development here.';
 

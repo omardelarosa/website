@@ -4,12 +4,20 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import PostsList from '../components/PostsList';
 import Bio from '../components/Bio';
+import { PROCESS_TAG } from '../pages/process';
+import _ from 'lodash';
 
 class Home extends React.Component {
     render() {
         const { data } = this.props;
         const { title: siteTitle } = data.site.siteMetadata;
-        const posts = data.allMarkdownRemark.edges;
+        const posts = data.allMarkdownRemark.edges.filter(p => {
+            // Exclude process posts
+            if (_.includes(p.node.frontmatter.tags, PROCESS_TAG)) {
+                return false;
+            }
+            return true;
+        });
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO

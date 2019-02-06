@@ -35,9 +35,9 @@ module.exports = {
             },
         ],
         sections: [
-            { name: 'home', path: '/' },
             { name: 'projects', path: '/projects' },
             { name: 'tags', path: '/tags' },
+            { name: 'process', path: '/process' },
             { name: 'about', path: '/about' },
         ],
         about: {
