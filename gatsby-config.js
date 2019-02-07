@@ -42,7 +42,7 @@ module.exports = {
         ],
         about: {
             text: [
-                '{author} lives in Brooklyn and makes things using computers.  He works full time as a software engineer specializing in front-end web development using TypeScript and React.',
+                '{author} lives in Brooklyn and makes things using computers.  He works full time as a software engineer specializing in front-end web development.  His favorite tools are TypeScript and React.',
                 'He\'s also quite close to finishing his M.S. in Computer Science, which he chips away in the evenings as a part-time student.  In his (limited) spare time he enjoys video games, lofi music and drawing.',
                 'email: thedelarosa (a) gmail (dot) com',
             ],
