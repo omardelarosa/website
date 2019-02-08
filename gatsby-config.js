@@ -37,7 +37,7 @@ module.exports = {
         sections: [
             { name: 'projects', path: '/projects' },
             { name: 'tags', path: '/tags' },
-            { name: 'process', path: '/process' },
+            { name: 'media', path: '/media' },
             { name: 'about', path: '/about' },
         ],
         about: {
@@ -49,21 +49,52 @@ module.exports = {
         },
         projects: [
             {
-                section: 'Code',
+                section: 'Academic',
+                links: [
+                    {
+                        name: 'Ideation & Prototyping',
+                        year: 2019,
+                        url: '/process',
+                        description:
+                            'A class I participated in in Spring of 2019 at NYU Tandon while earning my Masters in Computer Science.  This challenged me make a prototype of a 2D game and log my process.',
+                    },
+                ],
+            },
+            {
+                section: 'Web Development',
                 links: [
                     {
                         name: 'Vice Uniform',
-                        url: 'http://www.vice.com',
+                        url: 'https://www.vice.com',
                         year: 2015,
                         description:
                             'A multi-brand publishing experience for articles and videos across the Vice properties.  Built using TypeScript, React and Express',
                     },
                     {
                         name: 'Umami',
-                        url: 'http://www.grubhub.com',
+                        url: 'https://www.grubhub.com',
                         year: 2018,
                         description:
                             'A multi-brand web application for ordering food for take out and delivery.  Built using TypeScript, Preact and Angular',
+                    },
+                ],
+            },
+            {
+                section: 'Tech Talks',
+                links: [
+                    {
+                        name: 'Making Self-Generating Hip Hop in JS',
+                        url: 'https://markov-music.now.sh/#1',
+                        year: 2018,
+                        description:
+                            'A talk about how to make self-generating hip hop beats using markov chaining using WebAudio API and JavaScript',
+                    },
+                    {
+                        name: 'TypeScript as a Build Tool',
+                        url: 'https://typescript-as-build-tool.now.sh',
+                        year: 2018,
+                        description:
+                            'A talk I gave about using TypeScript as your primary build tool for an entire project after the changes from TypeScript 3.0 came out.',
                     },
                 ],
             },

@@ -1,5 +1,5 @@
 ---
-title: Process | Organizing Sprite Sheets
+title: Constant I/O | Organizing Sprite Sheets (Week 1)
 date: 1549480489967
 createdAt: 1549480489967
 publishedAt: 1549480489967

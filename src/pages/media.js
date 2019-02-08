@@ -4,48 +4,52 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import PostsList from '../components/PostsList';
 import Bio from '../components/Bio';
+import { PROCESS_TAG } from '../pages/process';
 import _ from 'lodash';
 
-export const PROCESS_TAG = 'process';
-const DESCRIPTION_TEXT =
-    'A place for my work in Ideation and Prototyping class at NYU.  I will be posting weekly artifacts from learning to make 2D, pixelart-based game development here.';
-
-class ProcessPage extends React.Component {
+class MediaPage extends React.Component {
     render() {
         const { data } = this.props;
         const { title: siteTitle } = data.site.siteMetadata;
         const posts = data.allMarkdownRemark.edges.filter(p => {
-            const node = p.node;
-            if (!node) return false;
-            const tags = _.get(node, 'frontmatter.tags', []);
-            return _.includes(tags, PROCESS_TAG);
+            // Exclude process posts
+            if (_.includes(p.node.frontmatter.tags, PROCESS_TAG)) {
+                return false;
+            }
+            return true;
         });
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO
-                    title="Process: Ideation and Prototyping | omardelarosa.com"
+                    title="Media | omardelarosa.com"
                     keywords={[
                         'blog',
-                        'pixelart',
-                        'unity',
-                        'gamedev',
+                        'gatsby',
+                        'javascript',
+                        'react',
+                        'software engineer',
                         'developer',
                         'musician',
                         'technologist',
                         'technology',
+                        'media',
+                        'videos',
+                        'livecode',
+                        'generative music',
+                        'generative art',
+                        'algorithmic art',
+                        'algorithmic music',
+                        'computer graphics',
                     ]}
                 />
-                <h1>Process: Ideation and Prototyping</h1>
-                <p>{DESCRIPTION_TEXT}</p>
-                <PostsList posts={posts} />
-                <hr />
+                MEDIA
                 <Bio />
             </Layout>
         );
     }
 }
 
-export default ProcessPage;
+export default MediaPage;
 
 export const pageQuery = graphql`
     query {
