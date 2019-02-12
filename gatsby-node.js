@@ -120,7 +120,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         });
 
         const nodeType = deriveTypeForNode(node, getNode);
-        console.log('NODE: ', node, nodeType);
+        // console.log('NODE: ', node, nodeType);
         // Creates a type field
         createNodeField({
             name: 'type',
