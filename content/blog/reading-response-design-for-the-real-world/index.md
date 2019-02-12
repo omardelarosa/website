@@ -1,10 +1,10 @@
 ---
-title: Reading Response | Design For The Real World
+title: Readings | Design For The Real World | Week 1
 date: 1549478856315
 createdAt: 1549478856315
 publishedAt: 1549478856315
 slug: reading-response:-design-for-the-real-world
-tags: ["process"]
+tags: ["process", "w01", "reading_response"]
 ---
 
 While reading Chapter 4 of "Design For The Real World" by Victor Papanek, a few observations came to my mind about design's role in the world.

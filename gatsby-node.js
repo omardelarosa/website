@@ -3,6 +3,29 @@ const _ = require('lodash');
 const POSTS_PATH = require('./config/paths').POSTS_PATH;
 const { createFilePath } = require('gatsby-source-filesystem');
 
+const POST = 'POST';
+const MEDIA = 'MEDIA';
+const ASSET = 'ASSET';
+const NONE = 'NONE';
+
+const TYPES_MAPPING = {
+    blog: POST,
+    media: MEDIA,
+    assets: ASSET,
+    default: NONE,
+};
+
+function deriveTypeForNode(node, getNode) {
+    if (node.parent) {
+        const parentNode = getNode(node.parent);
+        // Keep going until there is no parent
+        return deriveTypeForNode(parentNode, getNode);
+    } else {
+        const sourceInstanceName = node.sourceInstanceName;
+        return TYPES_MAPPING[sourceInstanceName] || TYPES_MAPPING.default;
+    }
+}
+
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
 
@@ -94,6 +117,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
             name: 'url',
             node,
             value: `${POSTS_PATH}${value}`,
+        });
+
+        const nodeType = deriveTypeForNode(node, getNode);
+        console.log('NODE: ', node, nodeType);
+        // Creates a type field
+        createNodeField({
+            name: 'type',
+            node,
+            value: nodeType,
         });
     }
 };

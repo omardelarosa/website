@@ -42,7 +42,8 @@ class MediaPage extends React.Component {
                         'computer graphics',
                     ]}
                 />
-                MEDIA
+                <h1>Media</h1>
+                <p>Coming Soon...</p>
                 <Bio />
             </Layout>
         );

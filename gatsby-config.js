@@ -37,7 +37,7 @@ module.exports = {
         sections: [
             { name: 'projects', path: '/projects' },
             { name: 'tags', path: '/tags' },
-            { name: 'media', path: '/media' },
+            { name: 'process', path: '/process' },
             { name: 'about', path: '/about' },
         ],
         about: {
@@ -132,6 +132,13 @@ module.exports = {
             options: {
                 path: `${__dirname}/content/assets`,
                 name: 'assets',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/content/media`,
+                name: 'media',
             },
         },
         {

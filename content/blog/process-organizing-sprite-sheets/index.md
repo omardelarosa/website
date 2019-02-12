@@ -1,11 +1,13 @@
 ---
-title: Constant I/O | Organizing Sprite Sheets (Week 1)
+title: Constant I/O | Organizing Sprite Sheets | Week 1
 date: 1549480489967
 createdAt: 1549480489967
 publishedAt: 1549480489967
 slug: process-organizing-sprite-sheets
-tags: ["process", "update"]
+tags: ["process", "update", "w01"]
 ---
+
+As part of my Ideation and Prototyping class at NYU I will be creating a game prototype and [writing about the process each week](/process).
 
 For the first entry, I decide to create a few pixelart sprites to use in Unity game prototypes. They are based on an organizational system that uses rows to distinguish angles and column groups of 2 to 4 to distinguish individual frames in an animation. This makes the code for sprite generation simpler to reason about using meaningful indices.
 
