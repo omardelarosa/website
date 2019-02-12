@@ -134,13 +134,14 @@ module.exports = {
                 name: 'assets',
             },
         },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                path: `${__dirname}/content/media`,
-                name: 'media',
-            },
-        },
+        // // TODO:
+        // {
+        //     resolve: 'gatsby-source-filesystem',
+        //     options: {
+        //         path: `${__dirname}/content/media`,
+        //         name: 'media',
+        //     },
+        // },
         {
             resolve: 'gatsby-transformer-remark',
             options: {
