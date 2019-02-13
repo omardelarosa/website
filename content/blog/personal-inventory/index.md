@@ -4,7 +4,7 @@ date: 1550015662653
 createdAt: 1550015662653
 publishedAt: 1550015662653
 slug: personal-inventory
-tags: ["process", "w02"]
+tags: ["process", "w02", "assignment"]
 ---
 
 ## Personal Inventory
