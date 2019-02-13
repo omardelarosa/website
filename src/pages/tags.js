@@ -25,7 +25,10 @@ const TagsPage = ({
     const tagKeywords = sortedGroups.map(t => t.fieldValue);
     return (
         <Layout location={location} title={title}>
-            <SEO title="All tags" keywords={['blog', ...tagKeywords]} />{' '}
+            <SEO
+                title="All tags | omardelarosa.com"
+                keywords={['blog', ...tagKeywords]}
+            />{' '}
             <div>
                 <h1>Tags</h1>
                 <ul>

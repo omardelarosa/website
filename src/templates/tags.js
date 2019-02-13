@@ -21,7 +21,7 @@ const Tags = ({ pageContext, data, location }) => {
         <div>
             <Layout location={location} title={siteTitle}>
                 <SEO
-                    title="All tags"
+                    title={`${tag} | Tag Page | omardelarosa.com`}
                     keywords={['blog', 'gatsby', 'javascript', 'react']}
                 />
                 <h1>{tagHeader}</h1>

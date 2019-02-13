@@ -20,7 +20,7 @@ const AboutPage = ({
     return (
         <Layout location={location} title={title}>
             <SEO
-                title="About Page"
+                title="About Page | omardelarosa.com"
                 keywords={[
                     'blog',
                     'software engineer',
