@@ -25,6 +25,6 @@ The SNES (Super Nintendo Entertainment System) was not the first video game cons
 
 ### 3. Roland Juno 106
 
-![](http://secretlifeofsynthesizers.com/wp-content/uploads/2016/09/Roland-JU-06-Juno-106-1080x675.jpg)
+![](https://static.gearslutz.com/board/attachment.php?attachmentid=500195)
 
 This seemingly hunk-of-junk keyboard was my first real synthesizer. I bought this on eBay as a freshman in college and it opened up a world of D.I.Y. music production and experimenting with sound synthesis. I subsequently bought other keyboards and instruments, but perhaps this was the one I remember the most fondly as a "gateway synth".
