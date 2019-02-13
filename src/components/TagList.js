@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import _ from 'lodash';
 
 export const PRIVATE_TAG = 'private';
 
@@ -11,7 +12,7 @@ export function TagList({ tags }) {
                 .map(tag =>
                     tag === PRIVATE_TAG ? null : (
                         <li key={tag}>
-                            <Link to={`/tags/${tag}`}>{tag}</Link>
+                            <Link to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link>
                         </li>
                     )
                 )}
