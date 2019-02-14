@@ -231,7 +231,7 @@ module.exports = {
                 include_favicon: true,
             },
         },
-        'gatsby-plugin-offline',
+        'gatsby-plugin-remove-serviceworker',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-stylus',
         'gatsby-plugin-sitemap',

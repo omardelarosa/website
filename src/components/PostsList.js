@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import { formatTimestamp } from '../utils/dates';
 import { rhythm } from '../utils/typography';
 import { TagList, PRIVATE_TAG } from '../components/TagList';
@@ -51,24 +51,3 @@ class PostsList extends React.Component {
 }
 
 export default PostsList;
-
-export const pageQuery = graphql`
-    query {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-            edges {
-                node {
-                    excerpt
-                    fields {
-                        slug
-                        url
-                    }
-                    frontmatter {
-                        date
-                        title
-                        tags
-                    }
-                }
-            }
-        }
-    }
-`;
