@@ -1,5 +1,5 @@
 ---
-title: Readings | Doodles
+title: Readings | Doodles | Week 3
 date: 1550622322193
 createdAt: 1550622322193
 publishedAt: 1550622322193

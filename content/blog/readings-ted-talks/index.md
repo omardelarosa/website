@@ -1,5 +1,5 @@
 ---
-title: Readings | Whats Wrong With TED Talks
+title: Readings | Whats Wrong With TED Talks | Week 3
 date: 1550504711663
 createdAt: 1550504711663
 publishedAt: 1550504711663
