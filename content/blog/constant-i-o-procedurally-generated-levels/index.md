@@ -1,16 +1,16 @@
 ---
-title: Constant I/O (or Project 2) | Procedurally Generated Levels in the Style of Spelunky | Week 5
+title: Constant I/O | Procedurally Generated Levels in the Style of Spelunky | Week 5
 date: 1551894841303
 createdAt: 1551894841303
 publishedAt: 1551894841303
-slug: project-2-procedurally-generated-levels
+slug: constant-i-o-procedurally-generated-levels
 tags:
     [
         "process",
         "w05",
         "gamedev",
         "unity",
-        "updates",
+        "update",
         "spelunky",
         "csharp",
         ".net",
@@ -115,8 +115,46 @@ The map is also configurable for `NxM` dimensions and is generic enough to plug 
 
 Here is a demo of the CLI in action:
 
- <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/5fb27mhTriY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/5fb27mhTriY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Unity Integration
 
-After this was mostly working, I had to bring this into Unity. Unfortunately, due to my lack of familiarity with C# in general perhaps, I didn't know of a simple way to share code between .NET and
+After this was mostly working, I had to bring this into Unity. Unfortunately, due to my lack of familiarity with C# in general perhaps, I didn't know of a simple way to share code between .NET so I just dragged and dropped these files into my Unity project.
+
+Once these files were in my unity project, I started fixing a few bugs that arose from namespace collisions, etc and started work on some tiles. I settled on a simple forest tileset:
+
+![Forest Tilemap](./ForestTilemap.png)
+
+Here's a little demo map I made by hand using the tileset:
+
+![Demo Forest Map](./DemoForestMap.png)
+
+From this, I plugged in my code from the `tilemapgen` CLI and started generating some levels in Unity.
+
+![PGC Map Unity](./PGCMapUnity.png)
+
+Each map also spawns players and enemies in a few random locations (though there is a bug where it seems to always start with the upper left and randomization needs to be added. Woops.)
+
+![Enemy Spawns](./EnemySpawns.png)
+
+![Player Spawns](./PlayerSpawns.png)
+
+Using the `PGCMap` class's properties, I also maintain simple subsets of "valid entity spawn points" (highlighted in yellow below):
+
+![Valid spawn points](./ValidSpawnLocations.png)
+
+These are places on the map that an enemy can be placed. In future iterations, it will be randomized and select only "accessible" points (i.e. that are on the same graph component as both doors). This logic is not complete yet, however.
+
+### Results
+
+So after getting all the tilemap logic to work, I put together a basic title screen that lets you select between "story mode" (i.e. the handmade maps mode from my previous demo) and "infinity mode" (i.e. the procedurally generated maps mode). I also added a few music tracks (not specifically made for this game, but just instrumental demos I had of unreleased music from the past couple years sitting on my hard drive.)
+
+Here's a video of the end result in action working title "Shadow City" (not final):
+
+<iframe width="560" height="315"  src="https://www.youtube.com/embed/tZjV9mImui0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+If you are interested in checking out for yourself, here is a dropbox link to a MacOS WIP build:
+
+https://www.dropbox.com/sh/44c01zfi39k0jtx/AACoNwXmGrefrIgPxolLcozRa?dl=0
+
+_NOTE: this link expires 5/31/2019. If you would like to download at a later date, please contact me directly via email and I can hook you up with hopefully a better version by then._
