@@ -13,7 +13,7 @@ Last week, I spent a lot of time [writing code for making procedurally generated
 
 I started the week with buying [a new book on Pixel Art, _Pixel Art For Game Developers_ by Daniel Silber](https://www.amazon.com/Pixel-Game-Developers-Daniel-Silber/dp/1482252309). At first, I found the price tag to be a little bit hefty for a Kindle editions, but I went ahead and took the plunge. Inside, I found it to be a pretty well illustrated and informative and worth the price tag given the sheer volume of colorful illustrations and diagrams (probably more true in the print editions, than kindle tho.) . Throughout the week I read the first 75% of the book on my commute to work and realized I had been making a ton of rookie mistakes with my pixel art.
 
-The first of my pixel art rookie mistakes was my color palette issues. Up until now, I had been using a color palette from [a made up console system called the Famicube](http://androidarts.com/palette/Famicube.htm#) that I got from [LOSPEC](https://lospec.com/palette-list). This made some sense given a kind of meta-retro aesthetic I had been trying to go for, but this might have caused a dearth of color variation in my designs up to that point given my n00b status at pixelart. So using Silber's approach to using gradients and color ramps to design entire palettes, I worked on designing my own color palette based on incremental color ramps and gradients. That is, I manually tuned the Hue, Saturation and Luminosity/Lightness values on certain base colors until I generated a few incremental color "steps" in a gradient.
+The first of my pixel art rookie mistakes was my color palette issues. Up until now, I had been using a color palette from [a made up console system called the Famicube](https://androidarts.com/palette/Famicube.htm#) that I got from [LOSPEC](https://lospec.com/palette-list). This made some sense given a kind of meta-retro aesthetic I had been trying to go for, but this might have caused a dearth of color variation in my designs up to that point given my n00b status at pixelart. So using Silber's approach to using gradients and color ramps to design entire palettes, I worked on designing my own color palette based on incremental color ramps and gradients. That is, I manually tuned the Hue, Saturation and Luminosity/Lightness values on certain base colors until I generated a few incremental color "steps" in a gradient.
 
 ![](./ForestConcept_palette.png)
 
@@ -23,11 +23,11 @@ There is some x/y sorting happening there, but for the most part rows (x) are ch
 
 Using this palette I tried to create some concept art based on that. Although I'd say there are a bunch of influences I'd been drawing from for this game, I knew that some sort of forest biome should be a part of it. So I started by compiling a few reference images of "haunted forests" such as this one:
 
-![haunted forest](http://www.theoccultmuseum.com/wp-content/uploads/2016/09/Hoia-Bacui-The-Worlds-Most-Haunted-Forest-3.jpg)
+![haunted forest](https://www.theoccultmuseum.com/wp-content/uploads/2016/09/Hoia-Bacui-The-Worlds-Most-Haunted-Forest-3.jpg)
 
 And this one:
 
-![hoia baciu](http://mybestplace.com/aroundtheworld/wp-content/uploads/2017/10/Hoia-Baciu-Forest-Romania-2.jpg)
+![hoia baciu](https://mybestplace.com/aroundtheworld/wp-content/uploads/2017/10/Hoia-Baciu-Forest-Romania-2.jpg)
 
 (Both of which seem to be of Hoia Baciu, a "haunted" forest in Transylvania, Romania)
 
