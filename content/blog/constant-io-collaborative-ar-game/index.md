@@ -17,4 +17,9 @@ tags:
     ]
 ---
 
-Placeholder text for post.
+Written by Omar and Grant 
+
+#Our Conecept
+We started out talking about out interests in video games . Omar is a big fan of old school super nintendo games. 
+
+
