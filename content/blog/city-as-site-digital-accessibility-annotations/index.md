@@ -1,5 +1,5 @@
 ---
-title: City As Site | Environmental Annotations | Week 7
+title: Readings | Environmental Annotations | Week 7
 date: 1553718435124
 createdAt: 1553718435124
 publishedAt: 1553718435124
