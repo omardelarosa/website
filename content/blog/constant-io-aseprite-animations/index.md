@@ -1,10 +1,10 @@
 ---
-title: Constant I/O | Aseprite Animations and New Sprites | Week 8
+title: Constant I/O | Aseprite Animations and New Sprites | Week 9
 date: 1554251792497
 createdAt: 1554251792497
 publishedAt: 1554251792497
 slug: constant-io-aseprite-animations
-tags: ["update", "process", "pixelart", "gamedev", "unity", "w08", "aseprite"]
+tags: ["update", "process", "pixelart", "gamedev", "unity", "w09", "aseprite"]
 ---
 
 ## Aseprite
