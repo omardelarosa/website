@@ -13,8 +13,7 @@ const renderPost = (locals = {}) => {
     if (fileBody) {
         body = fileBody;
     }
-    return `
----
+    return `---
 title: ${title}
 date: ${timestamp}
 createdAt: ${timestamp}
