@@ -16,18 +16,18 @@ For the past few weeks, I've been reading a variety of articles and books on the
 In its present state, the subway actually has a large amount of "low tech" annotations. These take the form of posters or announcements played through loud speakers. The MTA does a great job of translating posters into multiple languages, however, that doesn't entirely mean non-literate speakers of other languages will have access to their message. Thankfully, the MTA's designers have done a great job of illustrating most of their ideas:
 
 ![subway safety](./subway_platform_safety.png)
-_Fig. 1a_
+_Fig. 1a (via [MTA](http://mta.info))_
 
 ![subway safety](./subway_platform_safety2.png)
-_Fig. 1b_
+_Fig. 1b (via [MTA](http://mta.info))_
 
 ![subway safety](./subway_platform_safety3.png)
-_Fig. 1c_
+_Fig. 1c (via [MTA](http://mta.info))_
 
 The posters in Fig 1 use vivid colors and carefully written copy in order to draw the attention of subway straphangers. In some cases, these are even translated to other languages to make them even more accessible, for example Fig. 2.
 
 ![subway translated](https://mondrian.mashable.com/wp-content%252Fuploads%252F2016%252F02%252Fhovepst2.jpg%252Ffit-in__1200x9600.jpg?signature=qI5TxL0z-SjOt75sItP9dNIg29c=&source=http%3A%2F%2Fmashable.com)
-_Fig 2._
+_Fig 2 (via [MTA](http://mta.info))_
 
 However, there are limits to how accessible these posters are.
 
@@ -46,7 +46,7 @@ The concepts from these signs can be translated into digital annotations that ca
 _Fig 3a_
 
 ![subway seats](./subway-nyc-seats.png)
-_Fig 3b_
+_Fig 3b (photo via [Conde Nast's Traveler](https://www.cntraveler.com/stories/2016-02-26/new-yorks-subway-is-900x-dirtier-than))_
 
 The goal here is to show some of the same informational messages provided by posters and announcements in a more accessible way that's provided directly by the screens or devices of straphangers. These overlays in Fig 3 can easily be "localized" for their own language trivially or adjusted colorwise for the visually impaired. These types of **Overlay Images** can be updated easily, animated and can be adapted to be more animated and playful for general audiences and be made easily more accessible to audiences with specific accessibility needs.
 
@@ -61,7 +61,7 @@ These AR Stickers in Fig 4 can interat with Augmented Reality APIs as places whe
 
 ![ar education](https://lh3.googleusercontent.com/4i5_tvZp8EJEHh4BBbh-z_7iFs0UUwGZTc13qoTt5c3O5oBp8Axps6t4Em0lAxI7vHrq7s0Juj5XaUcc_rRQDzqW6YAYTyvhd5M2Hg=w1375)
 
-_Taken from [here](https://edu.google.com/products/vr-ar/expeditions/?modal_active=none) so as not to post media directly from the academic article._
+_(via [Google Education](https://edu.google.com/products/vr-ar/expeditions/?modal_active=none))_
 
 This is how many current education applications work right now, but the process could be adapted for a more broad definition of education. Education as a concept is broadly though of in terms of schools and academic topics such as math, language or the sciences. However, when taken on a micro scale each of these AR experiences in public spaces can be thought of as micro-education opportunities that are in fact more modern and accessible than strictly print-based solutions.
 
