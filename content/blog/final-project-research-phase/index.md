@@ -61,7 +61,7 @@ These AR Stickers in Fig 4 can interat with Augmented Reality APIs as places whe
 
 ![ar education](https://lh3.googleusercontent.com/4i5_tvZp8EJEHh4BBbh-z_7iFs0UUwGZTc13qoTt5c3O5oBp8Axps6t4Em0lAxI7vHrq7s0Juj5XaUcc_rRQDzqW6YAYTyvhd5M2Hg=w1375)
 
-_(via [Google Education](https://edu.google.com/products/vr-ar/expeditions/?modal_active=none))_
+_(via [Google Education](https://edu.google.com/products/vr-ar/expeditions))_
 
 This is how many current education applications work right now, but the process could be adapted for a more broad definition of education. Education as a concept is broadly though of in terms of schools and academic topics such as math, language or the sciences. However, when taken on a micro scale each of these AR experiences in public spaces can be thought of as micro-education opportunities that are in fact more modern and accessible than strictly print-based solutions.
 
