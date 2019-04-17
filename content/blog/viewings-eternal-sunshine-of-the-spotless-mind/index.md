@@ -8,6 +8,7 @@ tags: ["process", "viewings", "w11", "readings", "films"]
 ---
 
 ![eternal sunshine cover art](https://cdn-images-1.medium.com/max/2600/1*-liR3H_fmJemOp4qOUfpyA.jpeg)
+_(via [MovieTime Guru](https://movietime.guru/why-you-should-watch-eternal-sunshine-of-the-spotless-mind-7028ce56b894))_
 
 This week I (re)watched _Eternal Sunshine of The Spotless Mind_. I hadn't seen it since its release in theaters (and maybe once after when it came out on DVD). Since then, I've changed a lot and so has my reaction to it. Though I thought it to be an interesting movie when it came out, what struck me about this viewing was how full of things I hadn't noticed back then it was.
 
