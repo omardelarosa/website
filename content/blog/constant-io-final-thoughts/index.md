@@ -7,7 +7,6 @@ slug: constant-io-final-thoughts
 tags:
     [
         "process",
-        "w12",
         "gamedev",
         "update",
         "pixelart",
