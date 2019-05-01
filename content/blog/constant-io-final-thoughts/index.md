@@ -20,12 +20,12 @@ tags:
 
 ## Making Video Games
 
-When I was a kid of about 12, I vaguely wanted to "make video games". This lead me to ask my mom to buy me books on the subject of how to "make video games" and that lead her to buying me [_Tricks Of The Mac Game Programming Gurus_](https://vintageapple.org/macprogramming/pdf/Tricks_Of_The_Mac_Game_Programming__Gurus_1995.pdf) ((Amazon Link)[https://www.amazon.com/Tricks-Mac-Game-Programming-Gurus/dp/1568301839]) (or _TOTMGPG_ )
+When I was a kid of about 12, I vaguely wanted to "make video games". This lead me to ask my mom to buy me books on the subject of how to "make video games" and that lead her to buying me [_Tricks Of The Mac Game Programming Gurus_](https://vintageapple.org/macprogramming/pdf/Tricks_Of_The_Mac_Game_Programming__Gurus_1995.pdf) (or _TOTMGPG_ )
 in either 1996 or 1997 at a Borders in Orlando, FL.
 
 ![](https://images-na.ssl-images-amazon.com/images/I/61769MX4NXL._SX386_BO1,204,203,200_.jpg)
 
-_Cover Here Courtesy of VintageApple.org_
+_Cover Here Courtesy of VintageApple.org or [Amazon](https://www.amazon.com/Tricks-Mac-Game-Programming-Gurus/dp/1568301839)_
 
 This book went over a lot of stuff I really didn't understand as a 12-year-old, like C programming and sprite sheets and defining functions. It was like a foreign language that went totally over my head. However, it did come with a really really cool CD-ROM disc (remember those?) full of indie-game demos along with their source code. This showed me what games really were like "under the hood", so to speak. More importantly (in the long run at least), its first chapter about making a little Hello World game about a talking clam really stuck with me and I remember it vaguely to this day.
 
