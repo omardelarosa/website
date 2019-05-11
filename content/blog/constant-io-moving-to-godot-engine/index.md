@@ -4,7 +4,17 @@ date: 1555455567531
 createdAt: 1555455567531
 publishedAt: 1555455567531
 slug: constant-io-moving-to-godot-engine
-tags: ["process", "unity", "godot", "update", "news", "gamedev", "w11"]
+tags:
+    [
+        "process",
+        "unity",
+        "godot",
+        "update",
+        "news",
+        "gamedev",
+        "w11",
+        "castleblood",
+    ]
 ---
 
 After watching [several](https://www.youtube.com/watch?v=O0KZVBPaxSk) [videos](https://www.youtube.com/watch?v=uSDVA5CQBu8) on the matter the past couple weeks and managing the general overhead of Unity, I finally made the switch to Godot engine. It's not that there's anything particularly bad about Unity (it's a great tool), but my own "outsider" status to indie game development and background as a non-game-oriented programmer made several things about Unity feel very rigid and incompatible with my own workflows. Here are a few issues:

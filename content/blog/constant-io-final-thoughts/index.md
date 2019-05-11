@@ -15,6 +15,7 @@ tags:
         "indie_games",
         "2d_games",
         "w13",
+        "castleblood",
     ]
 ---
 

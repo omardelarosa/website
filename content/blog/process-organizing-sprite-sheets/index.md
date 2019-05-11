@@ -4,7 +4,7 @@ date: 1549480489967
 createdAt: 1549480489967
 publishedAt: 1549480489967
 slug: process-organizing-sprite-sheets
-tags: ["process", "update", "w01"]
+tags: ["process", "update", "w01", "castleblood"]
 ---
 
 As part of my Ideation and Prototyping class at NYU I will be creating a game prototype and [writing about the process each week](/process).

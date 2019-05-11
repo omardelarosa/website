@@ -4,7 +4,7 @@ date: 1551220924804
 createdAt: 1551220924804
 publishedAt: 1551220924804
 slug: constant-io-the-core-game-loop
-tags: ["process", "unity", "gamedev", "w04", "2d", "update"]
+tags: ["process", "unity", "gamedev", "w04", "2d", "update", "castleblood"]
 ---
 
 This week I focused on tighetning up the code in a few key ways to support a functioning game loop. This basically means I focused more on coding things this week than in prior weeks to make the code more maintanable and extensible moving forward. This means adding better code organization and a few actual programming design patterns I've been reading about in a few game dev books, tutorials.

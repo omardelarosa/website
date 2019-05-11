@@ -15,6 +15,7 @@ tags:
         "animation",
         "2d games",
         "sprites",
+        "castleblood",
     ]
 ---
 

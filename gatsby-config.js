@@ -58,6 +58,20 @@ module.exports = {
                         description:
                             'A class I participated in in Spring of 2019 at NYU Tandon while earning my Masters in Computer Science.  This challenged me make a prototype of a 2D game and log my process.',
                     },
+                    {
+                        name: 'CastleBlood',
+                        year: 2019,
+                        url: '/tags/castleblood',
+                        description:
+                            'A 2D ActionRPG game project started in Unity Engine, continued in Godot engine.',
+                    },
+                    {
+                        name: 'CityLens',
+                        year: 2019,
+                        url: '/tags/citylens',
+                        description:
+                            'An prototype for an Augmented Reality system for MTA subway announcements that runs entirely in the browser.  Uses Three.js and JSARToolkit.',
+                    },
                 ],
             },
             {

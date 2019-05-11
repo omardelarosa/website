@@ -4,7 +4,7 @@ date: 1556073439706
 createdAt: 1556073439706
 publishedAt: 1556073439706
 slug: constant-io-imp-sprite
-tags: ["process", "w12", "gamedev", "update", "pixelart"]
+tags: ["process", "w12", "gamedev", "update", "pixelart", "castleblood"]
 ---
 
 This week, I started to animate a few of the ideas from my [sketches of monsters](/posts/sketchbook-more-monsters) from last week.

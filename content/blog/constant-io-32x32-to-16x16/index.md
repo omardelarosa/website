@@ -4,7 +4,8 @@ date: 1554774459592
 createdAt: 1554774459592
 publishedAt: 1554774459592
 slug: constant-io-32x32-to-16x16
-tags: ["process", "w10", "gamedev", "pixelart", "update", "unity"]
+tags:
+    ["process", "w10", "gamedev", "pixelart", "update", "unity", "castleblood"]
 ---
 
 So up until now, I've been working with 32x32 pixel sprites. This follows a little closer to the tradition of many SNES JRPGs I love such as Chrono Trigger and Secret of Mana (a.k.a Seiken Densetsu).
