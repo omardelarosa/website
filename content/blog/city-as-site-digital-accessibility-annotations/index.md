@@ -4,7 +4,7 @@ date: 1553718435124
 createdAt: 1553718435124
 publishedAt: 1553718435124
 slug: city-as-site-digital-accessibility-annotations
-tags: ["process", "project", "w07"]
+tags: ["process", "project", "w07", "citylens"]
 ---
 
 For the first phase of my City As Site project, I started by looking into an area of interest: using digital or other annotations in the real world for the purposes of accessibility or just as a form of amusement. In terms of amusement, this could be scavanger hunts that utilize QR codes or augmented reality apps that are triggered by "beacons" in the real world. For accessibility, this could be using the same elements (QR Codes, AR, etc) for the purposes of helped those with disabilities or even new to a city better navigate their surroundings. My search lead me to a very interesting journal on the subject: _[Computers Helping People with Special Needs](https://link-springer-com.proxy.library.nyu.edu/book/10.1007/978-3-540-70540-6)_

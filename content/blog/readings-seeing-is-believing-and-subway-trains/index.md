@@ -4,7 +4,7 @@ date: 1554843872793
 createdAt: 1554843872793
 publishedAt: 1554843872793
 slug: readings-seeing-is-believing-and-subway-trains
-tags: ["process", "w10", "reading_response"]
+tags: ["process", "w10", "reading_response", "citylens"]
 ---
 
 This week I focused on two different articles, one academic and one "pop cultural"--the same drill as [last week's Readings post.](/posts/readings-augmented-reality-art-and-applications). Though coming at it from different directions, each article got me closer to some prototyping concepts for my final class project.
