@@ -43,7 +43,7 @@ Using weapons found or purchased from not-yet-feral humans using **Moonspore™*
 
 You can see a brief playthrough of my first test-level here:
 
-<iframe width="320" src="https://www.youtube.com/embed/FoeoJDRplH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FoeoJDRplH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### The Future
 
