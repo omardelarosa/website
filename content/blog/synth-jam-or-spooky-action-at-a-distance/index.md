@@ -9,7 +9,7 @@ tags: ["music", "video", "synth", "jam", "livelooping", "dawless"]
 
 Now that I'm finally done with grad school (post about that coming soon.) I've had more time to work on music. Here is a new video of [a synth jam called _spooky action a distance_](https://www.youtube.com/watch?v=xciZ0blHFZ0).
 
- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=xciZ0blHFZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xciZ0blHFZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I made this using a few new pieces of gear, notably the Elektron Digitakt. This handled the "livelooping" aspects, which are basically just using the live-recording mode on the MIDI sequencer of the Digitakt. I then switch MIDI channels to control the different Roland Boutique synth modules.
 
