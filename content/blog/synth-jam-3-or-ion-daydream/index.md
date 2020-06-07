@@ -1,21 +1,27 @@
 ---
-title: Synth Jam 2 | Spooky Action at a Distance
-date: 1590935312246
-createdAt: 1590935312246
-publishedAt: 1590935312246
-slug: synth-jam-or-spooky-action-at-a-distance
-tags: ["music", "video", "synth", "jam", "livelooping", "dawless"]
+title: Synth Jam 3 | Ion Daydream
+date: 1591537632484
+createdAt: 1591537632484
+publishedAt: 1591537632484
+slug: synth-jam-3-or-ion-daydream
+tags: ["music", "video", "synth", "jam", "livelooping"]
 ---
 
-Now that I'm finally done with grad school (post about that coming soon.) I've had more time to work on music. Here is a new video of [a synth jam called _spooky action a distance_](https://www.youtube.com/watch?v=xciZ0blHFZ0).
+I added a [new synth jam video called _ion daydream_](https://www.youtube.com/watch?v=rMTRHv3oM9k&feature=youtu.be).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xciZ0blHFZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rMTRHv3oM9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I made this using a few new pieces of gear, notably the Elektron Digitakt. This handled the "livelooping" aspects, which are basically just using the live-recording mode on the MIDI sequencer of the Digitakt. I then switch MIDI channels to control the different Roland Boutique synth modules.
+This is my second attempt at a DAW-less setup. ([Here's my first attempt from last week.](/posts/synth-jam-or-spooky-action-at-a-distance)) Once again, I recorded this using the USB line out from the mixer into a QuickTime audio file.
 
-This is also my first take at a truly DAW-less setup. I recorded this using the USB line out from the mixer into a QuickTime audio file. There is no editing besides combining the video footage from my cell phone with the audio file from quicktime.
+This time, I experimented with some new chord extensions to get a slightly more colorful sound from the chords. I also used a warm, brassy pad preset on the D05 to create a nice spacy haromony that I stacked some slightly rougher sounds from the JU06a and the Microbrute on top of.
+
+You can check out all of the synth jam videos using the [synth](/tags/synth) tag page.
 
 Here's the full list of gear I used, in case you wanna try this yourself.
+
+### [arturia microbrute](https://amzn.to/2Y5rbNY)
+
+<a target="_blank"  href="https://www.amazon.com/gp/product/B00G31YMVS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00G31YMVS&linkCode=as2&tag=omdel-20&linkId=fdd197175a4cf72e4448028a824d667e"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00G31YMVS&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=omdel-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=omdel-20&l=am2&o=1&a=B00G31YMVS" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 ### [arturia keystep](https://amzn.to/3eBf8OY)
 
