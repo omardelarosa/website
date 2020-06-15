@@ -138,6 +138,7 @@ module.exports = {
                         year: 2018,
                         description:
                             "A talk about how to make self-generating hip hop beats using markov chaining using WebAudio API and JavaScript",
+                        imageKey: "MARKOV_MUSIC",
                     },
                     {
                         name: "TypeScript as a Build Tool",
@@ -145,6 +146,8 @@ module.exports = {
                         year: 2018,
                         description:
                             "A talk I gave about using TypeScript as your primary build tool for an entire project after the changes from TypeScript 3.0 came out.",
+                        imageUrl:
+                            "https://sdtimes.com/wp-content/uploads/2019/08/typescriptfeature-490x305.png",
                     },
                 ],
             },
@@ -157,6 +160,7 @@ module.exports = {
                         year: 2018,
                         description:
                             "An algorithmically generated music project.",
+                        imageKey: "IOXI",
                     },
                     {
                         name: "Little Insects",
@@ -164,6 +168,8 @@ module.exports = {
                         year: 2008,
                         description:
                             "My lofi, bedroom indie pop projects from 2008 to 2013.",
+                        imageUrl:
+                            "https://f4.bcbits.com/img/a2563479546_16.jpg",
                     },
                 ],
             },
