@@ -52,14 +52,23 @@ const ProjectsPage = ({
                             {project.links.map((link) => (
                                 <li key={`project-link-${link.name}`}>
                                     <h3 className="project-title">
-                                        <a href={link.url} target="_blank">
+                                        <a
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
                                             {link.name}
                                         </a>{" "}
                                     </h3>
                                     {link.imageUrl ? (
                                         <div className="project-image-container">
-                                            <a href={link.url} target="_blank">
+                                            <a
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 <img
+                                                    alt={link.name}
                                                     className="project-image"
                                                     src={link.imageUrl}
                                                 />
@@ -68,8 +77,13 @@ const ProjectsPage = ({
                                     ) : null}
                                     {link.imageKey ? (
                                         <div className="project-image-container">
-                                            <a href={link.url} target="_blank">
+                                            <a
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 <img
+                                                    alt={link.name}
                                                     className="project-image"
                                                     src={
                                                         PROJECT_IMAGES[
@@ -82,6 +96,7 @@ const ProjectsPage = ({
                                     ) : null}
                                     {link.youTubeEmbed ? (
                                         <iframe
+                                            title={link.name}
                                             width="320"
                                             src={link.youTubeEmbed}
                                             frameborder="0"
