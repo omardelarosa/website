@@ -1,133 +1,169 @@
+const DEFAULT_PROJECT_FIELDS = {
+    youTubeEmbed: null,
+    imageKey: null,
+    imageUrl: null,
+};
+
 module.exports = {
     siteMetadata: {
-        title: 'Omar Delarosa',
-        author: 'Omar Delarosa',
+        title: "Omar Delarosa",
+        author: "Omar Delarosa",
         authorSocials: {
-            twitter: 'omardelarosa',
-            instagram: 'omdel',
+            twitter: "omardelarosa",
+            instagram: "omdel",
         },
-        description: 'The website of Omar Delarosa',
-        siteUrl: 'https://www.omardelarosa.com',
+        description: "The website of Omar Delarosa",
+        siteUrl: "https://www.omardelarosa.com",
         socials: [
             {
-                name: 'LinkedIn',
-                slug: 'linkedin',
-                url: 'https://www.linkedin.com/in/omardelarosa',
-                text: 'Add me on LinedIn',
+                name: "LinkedIn",
+                slug: "linkedin",
+                url: "https://www.linkedin.com/in/omardelarosa",
+                text: "Add me on LinedIn",
             },
             {
-                name: 'Github',
-                slug: 'github',
-                url: 'https://github.com/omardelarosa',
-                text: 'Follow me on Github',
+                name: "Github",
+                slug: "github",
+                url: "https://github.com/omardelarosa",
+                text: "Follow me on Github",
             },
             {
-                name: 'Tumblr',
-                slug: 'tumblr',
-                url: 'https://omardelarosa.tumblr.com',
-                text: 'Follow me on Tumblr',
+                name: "Tumblr",
+                slug: "tumblr",
+                url: "https://omardelarosa.tumblr.com",
+                text: "Follow me on Tumblr",
             },
             {
-                name: 'Twitter',
-                slug: 'twitter',
-                url: 'https://twitter.com/omardelarosa',
-                text: 'Follow me on Twitter',
+                name: "Twitter",
+                slug: "twitter",
+                url: "https://twitter.com/omardelarosa",
+                text: "Follow me on Twitter",
             },
         ],
         sections: [
-            { name: 'projects', path: '/projects' },
-            { name: 'tags', path: '/tags' },
-            { name: 'process', path: '/process' },
-            { name: 'about', path: '/about' },
+            { name: "projects", path: "/projects" },
+            { name: "tags", path: "/tags" },
+            { name: "music", path: "/tags/music" },
+            { name: "about", path: "/about" },
         ],
         about: {
             text: [
-                '{author} lives in Brooklyn and makes things using computers.  He works full time as a software engineer specializing in front-end web development.  His favorite tools are TypeScript and React.',
-                'He\'s also quite close to finishing his M.S. in Computer Science, which he chips away in the evenings as a part-time student.  In his (limited) spare time he enjoys video games, lofi music and drawing.',
-                'email: thedelarosa (a) gmail (dot) com',
+                "{author} lives in Brooklyn and makes things using computers.  He works a software engineer on e-commerce search and recommendations systems.",
+                "In his (limited) spare time he enjoys video games, lofi music and making pixelart.",
+                "email: thedelarosa (a) gmail (dot) com",
             ],
         },
         projects: [
             {
-                section: 'Academic',
+                section: "Professional",
                 links: [
                     {
-                        name: 'Ideation & Prototyping',
-                        year: 2019,
-                        url: '/process',
+                        name: "Umami",
+                        url: "https://www.grubhub.com",
+                        year: 2018,
                         description:
-                            'A class I participated in in Spring of 2019 at NYU Tandon while earning my Masters in Computer Science.  This challenged me make a prototype of a 2D game and log my process.',
+                            "A multi-brand web application for ordering food for take out and delivery.  Built using TypeScript, Preact and Angular",
+                        imageKey: "SEAMLESS",
                     },
                     {
-                        name: 'CastleBlood',
-                        year: 2019,
-                        url: '/tags/castleblood',
-                        description:
-                            'A 2D ActionRPG game project started in Unity Engine, continued in Godot engine.',
-                    },
-                    {
-                        name: 'CityLens',
-                        year: 2019,
-                        url: '/tags/citylens',
-                        description:
-                            'An prototype for an Augmented Reality system for MTA subway announcements that runs entirely in the browser.  Uses Three.js and JSARToolkit.',
-                    },
-                ],
-            },
-            {
-                section: 'Web Development',
-                links: [
-                    {
-                        name: 'Vice Uniform',
-                        url: 'https://www.vice.com',
+                        name: "Vice Uniform",
+                        url: "https://www.vice.com",
                         year: 2015,
                         description:
-                            'A multi-brand publishing experience for articles and videos across the Vice properties.  Built using TypeScript, React and Express',
-                    },
-                    {
-                        name: 'Umami',
-                        url: 'https://www.grubhub.com',
-                        year: 2018,
-                        description:
-                            'A multi-brand web application for ordering food for take out and delivery.  Built using TypeScript, Preact and Angular',
+                            "A multi-brand publishing experience for articles and videos across the Vice properties.  Built using TypeScript, React and Express",
+                        imageKey: "VICE",
                     },
                 ],
             },
             {
-                section: 'Tech Talks',
+                section: "Academic",
                 links: [
                     {
-                        name: 'Making Self-Generating Hip Hop in JS',
-                        url: 'https://markov-music.now.sh/#1',
-                        year: 2018,
+                        ...DEFAULT_PROJECT_FIELDS,
+                        name: "RLBrush",
+                        year: 2020,
+                        url: "https://rlbrush.app",
                         description:
-                            'A talk about how to make self-generating hip hop beats using markov chaining using WebAudio API and JavaScript',
+                            "The final project for grad-level AI for games class, RLBrush level-editing tool for human-AI co-creation powered by RL models and TensorFlow.",
+                        imageUrl:
+                            "https://github.com/omardelarosa/pcgrl-brush/raw/master/docs/full_ui_example3_rl_brush.png",
                     },
                     {
-                        name: 'TypeScript as a Build Tool',
-                        url: 'https://typescript-as-build-tool.now.sh',
+                        ...DEFAULT_PROJECT_FIELDS,
+                        name: "Infinity Terrain",
+                        year: 2019,
+                        url:
+                            "/posts/infinity-terrain-in-c++-using-perlin-noise-and-opengl",
+                        description:
+                            "The final project for grad-level Computer Graphics class, this is a proposed system for real-time rendering of infinite terrain using OpenGL and C++",
+                        imageKey: "INFINITY_TERRAIN",
+                    },
+                    {
+                        ...DEFAULT_PROJECT_FIELDS,
+                        name: "Moonspore Hollow",
+                        year: 2019,
+                        url: "/posts/devlog-1-moonspore-hollow",
+                        description:
+                            "A 2D ActionRPG game project started in Unity Engine, continued in Godot engine.",
+                        imageKey: "MOONSPORE_HOLLOW",
+                    },
+                    {
+                        name: "Ideation & Prototyping",
+                        year: 2019,
+                        url: "/process",
+                        description:
+                            "A class I participated in in Spring of 2019 at NYU Tandon while earning my Masters in Computer Science.  This challenged me make a prototype of a 2D game and log my process.",
+                        imageKey: null,
+                        youTubeEmbed: null,
+                    },
+                    {
+                        ...DEFAULT_PROJECT_FIELDS,
+                        name: "CityLens",
+                        year: 2019,
+                        url: "/tags/citylens",
+                        description:
+                            "An prototype for an Augmented Reality system for MTA subway announcements that runs entirely in the browser.  Uses Three.js and JSARToolkit.",
+                        youTubeEmbed:
+                            "https://www.youtube.com/embed/QVppPxScGUE",
+                    },
+                ],
+            },
+
+            {
+                section: "Tech Talks",
+                links: [
+                    {
+                        name: "Making Self-Generating Hip Hop in JS",
+                        url: "https://markov-music.now.sh/#1",
                         year: 2018,
                         description:
-                            'A talk I gave about using TypeScript as your primary build tool for an entire project after the changes from TypeScript 3.0 came out.',
+                            "A talk about how to make self-generating hip hop beats using markov chaining using WebAudio API and JavaScript",
+                    },
+                    {
+                        name: "TypeScript as a Build Tool",
+                        url: "https://typescript-as-build-tool.now.sh",
+                        year: 2018,
+                        description:
+                            "A talk I gave about using TypeScript as your primary build tool for an entire project after the changes from TypeScript 3.0 came out.",
                     },
                 ],
             },
             {
-                section: 'Music',
+                section: "Music",
                 links: [
                     {
-                        name: 'ioxi',
-                        url: 'http://soundcloud.com/ioximusic',
+                        name: "ioxi",
+                        url: "http://soundcloud.com/ioximusic",
                         year: 2018,
                         description:
-                            'An algorithmically generated music project.',
+                            "An algorithmically generated music project.",
                     },
                     {
-                        name: 'Little Insects',
-                        url: 'http://littleinsects.bandcamp.com',
+                        name: "Little Insects",
+                        url: "http://littleinsects.bandcamp.com",
                         year: 2008,
                         description:
-                            'My lofi, bedroom indie pop projects from 2008 to 2013.',
+                            "My lofi, bedroom indie pop projects from 2008 to 2013.",
                     },
                 ],
             },
@@ -135,17 +171,17 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: "gatsby-source-filesystem",
             options: {
                 path: `${__dirname}/content/blog`,
-                name: 'blog',
+                name: "blog",
             },
         },
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: "gatsby-source-filesystem",
             options: {
                 path: `${__dirname}/content/assets`,
-                name: 'assets',
+                name: "assets",
             },
         },
         // // TODO:
@@ -157,23 +193,23 @@ module.exports = {
         //     },
         // },
         {
-            resolve: 'gatsby-transformer-remark',
+            resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
                     {
-                        resolve: 'gatsby-remark-images',
+                        resolve: "gatsby-remark-images",
                         options: {
                             maxWidth: 590,
                         },
                     },
                     {
-                        resolve: 'gatsby-remark-responsive-iframe',
+                        resolve: "gatsby-remark-responsive-iframe",
                         options: {
-                            wrapperStyle: 'margin-bottom: 1.0725rem',
+                            wrapperStyle: "margin-bottom: 1.0725rem",
                         },
                     },
                     {
-                        resolve: 'gatsby-remark-prismjs',
+                        resolve: "gatsby-remark-prismjs",
                         options: {
                             // Class prefix for <pre> tags containing syntax highlighting;
                             // defaults to 'language-' (eg <pre class="language-js">).
@@ -182,7 +218,7 @@ module.exports = {
                             // you may use this to prevent Prism from re-processing syntax.
                             // This is an uncommon use-case though;
                             // If you're unsure, it's best to use the default value.
-                            classPrefix: 'language-',
+                            classPrefix: "language-",
                             // This is used to allow setting a language for inline code
                             // (i.e. single backticks) by creating a separator.
                             // This separator is a string and will do no white-space
@@ -208,51 +244,51 @@ module.exports = {
                             noInlineHighlight: false,
                         },
                     },
-                    'gatsby-remark-copy-linked-files',
-                    'gatsby-remark-smartypants',
+                    "gatsby-remark-copy-linked-files",
+                    "gatsby-remark-smartypants",
                 ],
             },
         },
-        'gatsby-transformer-sharp',
-        'gatsby-plugin-sharp',
+        "gatsby-transformer-sharp",
+        "gatsby-plugin-sharp",
         {
-            resolve: 'gatsby-plugin-google-analytics',
+            resolve: "gatsby-plugin-google-analytics",
             options: {
-                trackingId: 'UA-8283504-4',
+                trackingId: "UA-8283504-4",
                 anonymize: true,
                 respectDNT: true,
             },
         },
         {
-            resolve: 'gatsby-plugin-facebook-analytics',
+            resolve: "gatsby-plugin-facebook-analytics",
             options: {
-                appId: '1324016057659286',
+                appId: "1324016057659286",
                 includeInDevelopment: false,
-                language: 'en_US',
+                language: "en_US",
             },
         },
-        'gatsby-plugin-feed',
+        "gatsby-plugin-feed",
         {
-            resolve: 'gatsby-plugin-manifest',
+            resolve: "gatsby-plugin-manifest",
             options: {
-                name: 'Omar Delarosa\'s Website',
-                short_name: 'omardelarosa.com',
-                start_url: '/',
-                background_color: '#ffffff',
-                theme_color: '#000000',
-                display: 'minimal-ui',
-                icon: 'content/assets/pixelpic.gif',
+                name: "Omar Delarosa's Website",
+                short_name: "omardelarosa.com",
+                start_url: "/",
+                background_color: "#ffffff",
+                theme_color: "#000000",
+                display: "minimal-ui",
+                icon: "content/assets/pixelpic.gif",
                 include_favicon: true,
             },
         },
-        'gatsby-plugin-remove-serviceworker',
-        'gatsby-plugin-react-helmet',
-        'gatsby-plugin-stylus',
-        'gatsby-plugin-sitemap',
+        "gatsby-plugin-remove-serviceworker",
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-stylus",
+        "gatsby-plugin-sitemap",
         {
-            resolve: 'gatsby-plugin-typography',
+            resolve: "gatsby-plugin-typography",
             options: {
-                pathToConfigModule: 'src/utils/typography',
+                pathToConfigModule: "src/utils/typography",
             },
         },
     ],
