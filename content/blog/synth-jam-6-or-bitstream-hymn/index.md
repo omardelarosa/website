@@ -44,7 +44,7 @@ DTAKT = {
 
 The `USE_MIDI` boolean can be set to `false` to debug using the SonicPi instruments. On first run, I recommend setting `USE_MIDI=false` in order to ensure the script runs as expected.
 
-### <a>Code</a>
+### Code
 
 ```ruby
 # sonicpi_autodrummer_for_digitakt.rb
