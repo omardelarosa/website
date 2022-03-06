@@ -48,7 +48,7 @@ module.exports = {
         ],
         about: {
             text: [
-                "{author} lives in Brooklyn and makes things using computers.  He works as a software engineer on e-commerce search and recommendations systems.",
+                "{author} lives in Brooklyn and makes things using computers and works as a software engineer.",
                 "In his (limited) spare time he enjoys video games, lofi music and making pixelart.",
                 "email: thedelarosa (a) gmail (dot) com",
             ],
