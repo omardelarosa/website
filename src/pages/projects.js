@@ -8,6 +8,8 @@ import { graphql } from "gatsby";
 import MOONSPORE_HOLLOW from "../../content/blog/devlog-1-moonspore-hollow/images/MoonsporeHollow-Clip-15s.mov.gif";
 import INFINITY_TERRAIN from "../../content/blog/infinity-terrain-in-c++-using-perlin-noise-and-opengl/images/GIFs/gundam-flyover5.1-title.gif";
 import SEAMLESS from "../../content/media/seamless-screenshot.png";
+import SPOTIFY from "../../content/media/spotify-ml-home.png";
+import EVOSTAR from "../../content/media/evostar.png";
 import VICE from "../../content/media/vice-screenshot.png";
 import IOXI from "../../content/media/ioxi.png";
 import MARKOV_MUSIC from "../../content/media/markov-music.png";
@@ -16,6 +18,8 @@ const PROJECT_IMAGES = {
     MOONSPORE_HOLLOW,
     INFINITY_TERRAIN,
     SEAMLESS,
+    SPOTIFY,
+    EVOSTAR,
     VICE,
     MARKOV_MUSIC,
     IOXI,

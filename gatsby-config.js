@@ -58,6 +58,13 @@ module.exports = {
                 section: "Professional",
                 links: [
                     {
+                        name: "ML Home at Spotify",
+                        url: "https://engineering.atspotify.com/2022/01/product-lessons-from-ml-home-spotifys-one-stop-shop-for-machine-learning/",
+                        year: 2021,
+                        description: "A developer portal for machine learning practicioners and data scientists at Spotify",
+                        imageKey: "SPOTIFY"  
+                    },
+                    {
                         name: "Umami",
                         url: "https://www.grubhub.com",
                         year: 2018,
@@ -132,6 +139,14 @@ module.exports = {
             {
                 section: "Tech Talks",
                 links: [
+                    {
+                        name: "Mixed-Initiative Level Design with RL Brush",
+                        url: "https://www.youtube.com/watch?v=PYND8m_36dE&t=1s",
+                        year: 2021,
+                        description:
+                            "Presenting a paper I wrote for EvoStar 2021 about using RL in PCG based on a paper with the same title.",
+                        imageKey: "EVOSTAR",
+                    },
                     {
                         name: "Making Self-Generating Hip Hop in JS",
                         url: "https://markov-music.now.sh/#1",
