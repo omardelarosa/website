@@ -14,12 +14,6 @@ const TagsPage = ({
     location,
 }) => {
     const data = useStaticQuery(pageQuery);
-    // data: {
-    //     allMarkdownRemark: { group },
-    //     site: {
-    //         siteMetadata: { title },
-    //     },
-    // }
     const sortedGroups = _.sortBy(data.allMarkdownRemark.group, [
         tag => Number(tag.totalCount),
     ]).reverse();
