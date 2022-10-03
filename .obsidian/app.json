@@ -1,0 +1,9 @@
+{
+  "newFileLocation": "current",
+  "attachmentFolderPath": "content/media",
+  "userIgnoreFilters": [
+    "node_modules/",
+    "content/assets/"
+  ],
+  "alwaysUpdateLinks": true
+}

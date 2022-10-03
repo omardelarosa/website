@@ -7,24 +7,19 @@ import _ from 'lodash';
 // Components
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import { Link, graphql } from 'gatsby';
+import { useStaticQuery, Link, graphql } from 'gatsby';
 import Bio from '../components/Bio';
 
 const TagsPage = ({
-    data: {
-        allMarkdownRemark: { group },
-        site: {
-            siteMetadata: { title },
-        },
-    },
     location,
 }) => {
-    const sortedGroups = _.sortBy(group, [
+    const data = useStaticQuery(pageQuery);
+    const sortedGroups = _.sortBy(data.allMarkdownRemark.group, [
         tag => Number(tag.totalCount),
     ]).reverse();
     const tagKeywords = sortedGroups.map(t => t.fieldValue);
     return (
-        <Layout location={location} title={title}>
+        <Layout location={location} title={data.site.siteMetadata.title}>
             <SEO
                 title="All tags | omardelarosa.com"
                 keywords={['blog', ...tagKeywords]}
