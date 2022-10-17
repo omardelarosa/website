@@ -13,13 +13,13 @@ This morning I watched [a YouTube video by Phil Edwards](https://www.youtube.com
 
 One of the nuggets is the notion of how to "limbo the asymptote".  What this means is roughly the same as "perfect is the enemy of good".  
 
-![limbo the asymptote](content/blog/limbo-the-asymptote-tactics-games/limbo.png)
+![limbo the asymptote](./limbo.png)
 
 It got me really thinking actually about my own habits in creative projects and what holds me back from finishing them being this overwhelming dissatisfaction with the "good enough" and getting tired trying to perfect every little thing about the code.  Sometimes I spent too much time refactoring and optimizing code and ultimately never finishing projects.
 
 This weekend I went back to an old Godot project I started months (maybe a year?) ago where I make some generic framework for tactics games.  It kinda builds on [a game concept demo I made a while back called Rock Paper Scissors Fruit](https://www.youtube.com/watch?v=s8nSpHmZtfs) :
 
-[![Rock Paper Scissors Fruit](content/blog/limbo-the-asymptote-tactics-games/rotation_gif.gif)](https://www.youtube.com/watch?v=s8nSpHmZtfs)
+[![Rock Paper Scissors Fruit](./rotation_gif.gif)](https://www.youtube.com/watch?v=s8nSpHmZtfs)
 
 I think I liked many things about that little demo but I think its code was too rigid and focused too much on making Python work inside of Godot engine.  I have some of [the starter code for this Python-based Godot approach on Github](https://github.com/omardelarosa/godot-python-demo-game), but it's mostly abandoned now.  This time I tried to make the framework less rigid and work for both 2-D and 3-D grid levels and made a whole note codebase written 100% in GDScript.  However, after getting some grid utilities made in Godot I stopped working on it and left it there.
 
@@ -27,7 +27,7 @@ This weekend, though, I felt like returning to the project.  For the past few mo
 
 However, I was inspired to let go of any notions of perfectionism and accept using some placeholder pixelart graphics for now in a simple prototype that I time-boxed for 1 weekend.  I didn't quite get a finished product but I think I have enough usable code now to move forward and got the game turns and movement logic mostly working:
 
-![Card Tactics Game Demo](content/blog/limbo-the-asymptote-tactics-games/card_tactics.gif)
+![Card Tactics Game Demo](./card_tactics.gif)
 
 It's still pretty rough and I need to add working cards, but this pure GDScript project I think can go a lot further than that hybrid Python one.
 
