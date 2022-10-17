@@ -1,5 +1,5 @@
 ---
-title: The Tactic of Limbo The Asymptote
+title: Limbo The Asymptote
 author: omardelarosa
 date: 1666008503489
 createdAt: 1666008503489
