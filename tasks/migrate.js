@@ -14,6 +14,9 @@ const ignoreFiles = [
     '__untitled__'
 ];
 
+let filesSeen = 0;
+let filesCopied = 0;
+
 function createPostDir(filename, filepath) {
     if (!filename) {
         console.log(`invalid post: filename '${filename}, filepath: '${filepath}'`);
@@ -21,9 +24,12 @@ function createPostDir(filename, filepath) {
     }
     const filesInPostDir = glob.sync(`${filepath}/**/*`);
     let datePrefix = null;
+    
+    filesSeen += filesInPostDir.length;
 
     // Find the published timestamp of post
     for (let f of filesInPostDir) {
+        console.log('file: ', f);
         const { ext } = path.parse(f);
         if (ext === '.md') {
             const data = fs.readFileSync(f, {encoding:'utf8', flag:'r'});
@@ -39,45 +45,27 @@ function createPostDir(filename, filepath) {
     if (!datePrefix) {
         console.log('unable to find date prefix for: ', filename);
     } else {
-
-
-        // Find the published timestamp of post
-        for (let f of filesInPostDir) {
-            const { ext } = path.parse(f);
-            // quasi-root path
-            const fileParts = filepath.split('/');
-            const slugDir = fileParts[fileParts.length - 1];
-            const targetPostPath = path.join(NEW_POSTS_PATH, datePrefix, slugDir);
-
-            fs.mkdirSync(targetPostPath, { recursive: true });
-
-            const f2 = f.replace(OLD_POSTS_PATH, `${NEW_POSTS_DIR_NAME}/`);
-
-            const newPath = f2.replace(slugDir, `${datePrefix}/${slugDir}`)
-
-            // Do the copying
-            fs.cpSync(f, newPath, { recursive: true });
-
-            // Register in mapping
-            if (ext === '.md') {
-                return {
-                    type: "post",
-                    oldFilepath: f,
-                    date: datePrefix,
-                    slug: slugDir,
-                    newFilePath: newPath
-                };    
-            } else {
-                // Separate posts from assets
-                return {
-                    type: "asset",
-                    oldFilepath: f,
-                    date: datePrefix,
-                    slug: slugDir,
-                    newFilePath: newPath
-                };
-            }
+        const filesToCopy = glob.sync(`${filepath}/**/*`);
+        if (filesToCopy.length !== filesInPostDir.length) {
+            throw new Error('Imbalanced file location: ' + filepath);
         }
+
+        const fileParts = filepath.split('/');
+        const slugDir = fileParts[fileParts.length - 1];
+        const targetPostPath = path.join(NEW_POSTS_PATH, datePrefix, slugDir);
+        
+        // Do the copying
+        fs.cpSync(filepath, targetPostPath, { recursive: true });
+        filesCopied += filesToCopy.length;
+
+        // Register in mapping
+        return {
+            type: "post",
+            sourceFile: filename,
+            date: datePrefix,
+            slug: slugDir,
+            outputFile: targetPostPath
+        };
     }
 }
 
@@ -93,6 +81,8 @@ async function main() {
         }
     });
 
+    console.log(`files copied: ${filesCopied}/${filesSeen} (copied/seen)`);
+
     // Remove nulls
     const jsonStr = JSON.stringify(remaps.filter(f => !!f), undefined, 4);
 
@@ -100,6 +90,13 @@ async function main() {
 
     fs.writeFileSync(redirectsMappingPath, jsonStr);
 
+    const oldFiles = glob.sync(`${OLD_POSTS_PATH}/**/*`);
+    const newFiles = glob.sync(`${NEW_POSTS_DIR_NAME}/**/*`);
+
+    const oldFilesCount = oldFiles.length;
+    const newFilesCount = newFiles.length;
+
+    console.log(`old files vs new: ${newFilesCount}/${oldFilesCount} (new/old)`);
     console.log('redirects mapping written to: ', redirectsMappingPath);
 }
 
