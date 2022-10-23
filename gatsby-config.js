@@ -307,6 +307,7 @@ module.exports = {
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-stylus",
         "gatsby-plugin-sitemap",
+        "gatsby-plugin-meta-redirect",
         {
             resolve: "gatsby-plugin-typography",
             options: {
