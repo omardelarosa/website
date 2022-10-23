@@ -14,28 +14,17 @@ const ignoreFiles = [
     '__untitled__'
 ];
 
-const redirectsMapping = [];
-
 function createPostDir(filename, filepath) {
     if (!filename) {
         console.log(`invalid post: filename '${filename}, filepath: '${filepath}'`);
         return;
     }
-    console.log(filename, filepath);
-    let [timestampStr, slug = ''] = filename.split('_');
-    slug = slug.split('.').shift();
-    console.log(timestampStr, slug);
-    
-    // fs.mkdirSync(postPath);
-    console.log("filepath: ", filepath);
     const filesInPostDir = glob.sync(`${filepath}/**/*`);
-    // const root = 
-    // const targetDir = "";
     let datePrefix = null;
 
     // Find the published timestamp of post
     for (let f of filesInPostDir) {
-        const { dir, base, ext } = path.parse(f);
+        const { ext } = path.parse(f);
         if (ext === '.md') {
             const data = fs.readFileSync(f, {encoding:'utf8', flag:'r'});
             const content = fm(data.toString());
@@ -54,28 +43,41 @@ function createPostDir(filename, filepath) {
 
         // Find the published timestamp of post
         for (let f of filesInPostDir) {
-            const { dir, base, ext } = path.parse(f);
+            const { ext } = path.parse(f);
             // quasi-root path
             const fileParts = filepath.split('/');
             const slugDir = fileParts[fileParts.length - 1];
             const targetPostPath = path.join(NEW_POSTS_PATH, datePrefix, slugDir);
-            fs.mkdirSync(targetPostPath);
-            const newPath = f.replace(slugDir, `${datePrefix}/${slugDir}`);
-            
+
+            fs.mkdirSync(targetPostPath, { recursive: true });
+
+            const f2 = f.replace(OLD_POSTS_PATH, `${NEW_POSTS_DIR_NAME}/`);
+
+            const newPath = f2.replace(slugDir, `${datePrefix}/${slugDir}`)
+
             // Do the copying
-            fs.copyFileSync(f, newPath);
+            fs.cpSync(f, newPath, { recursive: true });
 
             // Register in mapping
-            redirectsMapping.append({
-                oldFilepath: f,
-                slugDir,
-                newFilePath: newPath
-            });
+            if (ext === '.md') {
+                return {
+                    type: "post",
+                    oldFilepath: f,
+                    date: datePrefix,
+                    slug: slugDir,
+                    newFilePath: newPath
+                };    
+            } else {
+                // Separate posts from assets
+                return {
+                    type: "asset",
+                    oldFilepath: f,
+                    date: datePrefix,
+                    slug: slugDir,
+                    newFilePath: newPath
+                };
+            }
         }
-        // const data = fs.readFileSync(filepath);
-        // const newFileName = path.join(postPath, 'index.md');
-        // fs.writeFileSync(newFileName, data);
-        // console.log('Created file: \t', newFileName, '\tfrom', filepath);
     }
 }
 
@@ -83,16 +85,22 @@ async function main() {
     const oldPostsDir = path.join(cwd, OLD_POSTS_PATH);
     const oldPosts = fs.readdirSync(oldPostsDir);
     console.log('Migrating old posts:', oldPosts);
-    oldPosts.map(postName => {
+    const remaps = oldPosts.map(postName => {
         if (!ignoreFiles.includes(postName)) {
             return createPostDir(postName, path.join(oldPostsDir, postName));
         } else {
             return null;
         }
-    
     });
 
-    console.log(redirectsMapping);
+    // Remove nulls
+    const jsonStr = JSON.stringify(remaps.filter(f => !!f), undefined, 4);
+
+    const redirectsMappingPath = `config/redirects.json`;
+
+    fs.writeFileSync(redirectsMappingPath, jsonStr);
+
+    console.log('redirects mapping written to: ', redirectsMappingPath);
 }
 
 main();

@@ -1,6 +1,8 @@
 const path = require('path');
 const _ = require('lodash');
 const POSTS_PATH = require('./config/paths').POSTS_PATH;
+const REDIRECTS = require('./config/redirects.json');
+
 const { createFilePath } = require('gatsby-source-filesystem');
 
 const POST = 'POST';
@@ -28,9 +30,23 @@ function deriveTypeForNode(node, getNode) {
 
 exports.createPages = ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions;
-    
+
     const blogPost = path.resolve('./src/templates/blog-post.js');
     const tagTemplate = path.resolve('./src/templates/tags.js');
+
+    console.log("REDIRECTS:", REDIRECTS);
+
+    // Create redirects
+    REDIRECTS.forEach(redirect => {
+        console.log("REDIRECT", redirect);
+        if (redirect.type === "post") {
+            createRedirect({
+                fromPath: `/posts/${redirect.slug}`, 
+                toPath: `/posts/${redirect.date}/${redirect.slug}`, 
+                isPermanent: true
+            });
+        }
+    });
 
     return graphql(
         `
