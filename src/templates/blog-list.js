@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import PostsList from '../components/PostsList';
 import Bio from '../components/Bio';
 import SEO from '../components/seo';
+import { rhythm } from '../utils/typography';
 import _ from 'lodash';
 
 export default class BlogList extends React.Component {
@@ -48,15 +49,19 @@ export default class BlogList extends React.Component {
             />
             <PostsList posts={posts} />
             <hr />
-            <div class="pagination">
+            <div className="pagination"
+              style={{
+                  marginBottom: rhythm(1),
+              }}
+              >
               {!isFirst ? (
                 <Link to={prevPagePath} rel="prev">
-                  ← Previous Page
+                {`← Previous Page`}
                 </Link>
               ) : <span>{""}</span>}
               {!isLast && (
                 <Link to={nextPagePath} rel="next">
-                  Next Page →
+                  {`Next Page →`}
                 </Link>
               )}
             </div>
