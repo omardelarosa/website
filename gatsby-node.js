@@ -10,6 +10,9 @@ const MEDIA = 'MEDIA';
 const ASSET = 'ASSET';
 const NONE = 'NONE';
 
+const UPDATE_TAG = 'update';
+const PROCESS_TAG = 'process';
+
 const TYPES_MAPPING = {
     blog: POST,
     media: MEDIA,
@@ -28,17 +31,29 @@ function deriveTypeForNode(node, getNode) {
     }
 }
 
+function isNotBlogPage(p) {
+    {
+        // Exclude process posts
+        const tags = p.node.frontmatter.tags;
+        if (
+            _.includes(tags, PROCESS_TAG) &&
+            !_.includes(tags, UPDATE_TAG)
+        ) {
+            return true;
+        }
+        return false;
+    }
+}
+
 exports.createPages = ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions;
 
     const blogPost = path.resolve('./src/templates/blog-post.js');
     const tagTemplate = path.resolve('./src/templates/tags.js');
-
-    console.log("REDIRECTS:", REDIRECTS);
+    const blogList = path.resolve("./src/templates/blog-list.js");
 
     // Create redirects
     REDIRECTS.forEach(redirect => {
-        console.log("REDIRECT", redirect);
         if (redirect.type === "post") {
             createRedirect({
                 fromPath: `/posts/${redirect.slug}`, 
@@ -93,6 +108,38 @@ exports.createPages = ({ graphql, actions }) => {
             });
         });
 
+        // Add pagination
+        const skippedSlugs = posts
+            .filter(isNotBlogPage)
+            .map(post => post?.node?.fields?.slug);
+        const postsPerPage = 5
+
+        console.log("skipped_slugs:", skippedSlugs);
+
+        // pages with removed ones
+        const numPages = Math.ceil((posts.length - skippedSlugs.length) / postsPerPage);
+
+        console.log('total_pagination_pages: ', numPages);
+
+        Array.from({ length: numPages }).forEach((_, i) => {
+            const url = `/page/${i + 1}`;
+            // Technically, page 0 doesn't need to be created.
+            // however, it's useful in case I ever change the index.js
+            // page to something else.
+            
+            createPage({
+                path: url,
+                component: blogList,
+                context: {
+                    limit: postsPerPage,
+                    skip: i * postsPerPage,
+                    numPages,
+                    currentPage: i + 1,
+                    skippedSlugs
+                },
+            })
+        })
+
         // Tag pages:
         let tags = [];
         // Iterate through each post, putting all found tags into `tags`
@@ -136,7 +183,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         });
 
         const nodeType = deriveTypeForNode(node, getNode);
-        // console.log('NODE: ', node, nodeType);
         // Creates a type field
         createNodeField({
             name: 'type',
