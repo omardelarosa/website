@@ -40,32 +40,24 @@ class BlogPostTemplate extends React.Component {
                         marginBottom: rhythm(1),
                     }}
                 />
-                <Bio />
-
-                <ul
+                <div
+                    className="pagination"
                     style={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        justifyContent: 'space-between',
-                        listStyle: 'none',
-                        padding: 0,
+                        marginBottom: rhythm(1),
                     }}
-                >
-                    <li>
-                        {previous && (
-                            <Link to={previous.fields.url} rel="prev">
-                                ← {previous.frontmatter.title}
-                            </Link>
-                        )}
-                    </li>
-                    <li>
-                        {next && (
-                            <Link to={next.fields.url} rel="next">
-                                {next.frontmatter.title} →
-                            </Link>
-                        )}
-                    </li>
-                </ul>
+                >{previous && (
+                        <Link to={previous.fields.url} rel="prev">
+                            ← {previous.frontmatter.title}
+                        </Link>
+                    )}
+                  {next && (
+                        <Link to={next.fields.url} rel="next">
+                            {next.frontmatter.title} →
+                        </Link>
+                    )}
+                </div>
+                <hr />
+                <Bio />
             </Layout>
         );
     }

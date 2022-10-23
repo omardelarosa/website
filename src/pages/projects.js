@@ -5,8 +5,8 @@ import Bio from "../components/Bio";
 import { graphql } from "gatsby";
 
 // Import project images
-import MOONSPORE_HOLLOW from "../../content/blog/devlog-1-moonspore-hollow/images/MoonsporeHollow-Clip-15s.mov.gif";
-import INFINITY_TERRAIN from "../../content/blog/infinity-terrain-in-c++-using-perlin-noise-and-opengl/images/GIFs/gundam-flyover5.1-title.gif";
+import MOONSPORE_HOLLOW from "../../content/blog/2019/07/30/devlog-1-moonspore-hollow/images/MoonsporeHollow-Clip-15s.mov.gif";
+import INFINITY_TERRAIN from "../../content/blog/2020/01/06/infinity-terrain-in-c++-using-perlin-noise-and-opengl/images/GIFs/gundam-flyover5.1-title.gif";
 import SEAMLESS from "../../content/media/seamless-screenshot.png";
 import SPOTIFY from "../../content/media/spotify-ml-home.png";
 import EVOSTAR from "../../content/media/evostar.png";

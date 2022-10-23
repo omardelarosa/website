@@ -1,4 +1,5 @@
 {
-  "folder": "content/blog/__untitled__",
-  "template": "templates/Post template"
+  "folder": "content/blog/",
+  "template": "templates/Post template",
+  "format": "YYYY/MM/DD/YYYY-MM-DD"
 }

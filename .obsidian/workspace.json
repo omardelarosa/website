@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/blog/limbo-the-asymptote-tactics-games/index.md",
+                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/blog/limbo-the-asymptote-tactics-games/index.md",
+                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/blog/limbo-the-asymptote-tactics-games/index.md",
+                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/blog/limbo-the-asymptote-tactics-games/index.md"
+                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md"
               }
             }
           }
@@ -141,15 +141,15 @@
   },
   "active": "8b77012406166d4b",
   "lastOpenFiles": [
+    "templates/Post template.md",
+    "content/blog/2022/10/23/pagination-and-dates/index.md",
+    "content/blog/limbo-the-asymptote-tactics-games/index.md",
     "content/blog/limbo-the-asymptote-tactics-games/limbo.png",
     "content/blog/assignment-inputs-map/index.md",
-    "content/blog/limbo-the-asymptote-tactics-games/index.md",
     "content/blog/limbo-the-asymptote-tactics-games/card_tactics.gif",
     "content/blog/limbo-the-asymptote-tactics-games/rotation_gif.gif",
     "content/blog/__untitled__/2022-10-17.md",
     "content/blog/making-obsidian-plugin-mtg/index.md",
-    "content/media/evostar.png",
-    "content/blog/what-ive-been-doing-this-past-year/index.md",
-    "content/blog/making-obsidian-plugin-mtg/().md"
+    "content/media/evostar.png"
   ]
 }
