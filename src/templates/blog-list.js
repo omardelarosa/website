@@ -103,6 +103,11 @@ export const pageQuery = graphql`
                 date
                 title
                 tags
+                thumbnail {
+                  childImageSharp {
+                    gatsbyImageData
+                  }
+                }
             }
         }
       }

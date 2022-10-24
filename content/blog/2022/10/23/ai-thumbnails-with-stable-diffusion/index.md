@@ -5,8 +5,9 @@ date: 1666562513166
 createdAt: 1666562513166
 publishedAt: 1666562513166
 slug: ai-thumbnails-with-stable-diffusion
-tags: ["productivity", "code", "aiart", "update"]
-ogDescription: an article about making AI Thumbnails with Stable Diffusion 
+tags: ["productivity", "code", "aiart", "update", "stable diffusion", "dall-e", "openai", "invokeai", "ai", "ml"]
+ogDescription: an article about making AI Thumbnails with Stable Diffusion
+thumbnail: ./pixelated-alien-landscape.png
 ---
 
 So earlier today, I added pagination to these posts:
@@ -160,8 +161,35 @@ Afterwards, you can then save your resulting `prompts.json` file and keep it aro
 
 ## Stable Diffusion Model Pipeline
 
-For the sake of simplicity, I went with a Google Colab Notebook I found as a base and then updated it with some additional code to process my `prompts.json` file and generate images for me that I could download as simple files later.
+For the sake of simplicity, I went with using a Google Colab Notebook as a base and then updated it with some additional code to process my `prompts.json` file and generate images for me that I could download as simple files later.  
 
 The first set of results didn't look great to me, but at least they worked as a proof of concept:
 
 ![Making Pixel Art Thumbnails](./notebook-results.gif)
+
+## Conclusion
+
+I don't think I like the results enough to actually use these images, but you can see [my full notebook on Github](https://github.com/omardelarosa/website/blob/master/python/AI_Thumbnails_using_stable_diffusion.ipynb) and try it for yourself.  The results are okay, but I think I need to spend a bit more time refining the prompts for better results.  For now, I think using these DALL-E generated pixel art as a small, finite library works well for me. 
+
+In the future I'd like to spend some time getting set up and familiar with [InvokeAI](https://github.com/invoke-ai/InvokeAI) locally to make this all run on my laptop on each build so I can generate one for each post.
+
+Just with the demo installation and a simple prompt of:
+
+```
+a fantastic alien landscape -W576 -H512 -s60 -n4
+```
+
+I generated the following cool alien landscape images:
+
+![Invoke AI generated alien landscape](./invokeai_alient_landscape_01.png)
+
+![Invoke AI generated alien landscape](./invokeai_alient_landscape_02.png)
+
+
+![Invoke AI generated alien landscape](./invokeai_alient_landscape_03.png)
+
+![Invoke AI generated alien landscape](./invokeai_alient_landscape_04.png)
+
+Now all I need to do is find a good way to give these a nice pixel-art postprocessing effect:
+
+![Pixel Art Alien Landscape](./pixelated-alien-landscape.png)

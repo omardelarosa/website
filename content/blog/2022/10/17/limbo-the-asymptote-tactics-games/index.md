@@ -7,6 +7,7 @@ publishedAt: 1666008503489
 slug: limbo-the-asymptote-tactics-games
 tags: ["productivity", "code", "gamedev", "aiart", "tactics", "project", "update"]
 ogDescription: an article about perfect being the enemy of good and asymptotes
+thumbnail: ./thumbnails/1.png
 ---
 
 This morning I watched [a YouTube video by Phil Edwards](https://www.youtube.com/watch?v=EUmgvsGnw0w) where he reacts to reactions about his reaction to DALL-E and AI-generated art in general.  It was interesting because he described systems he uses to protect his job against AI.  Anyway, as an engineer on an ML Platform I'm probably more a part of the problem than the solution, but his video had a few nuggets of wisdom for me nonetheless.

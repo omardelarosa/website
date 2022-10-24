@@ -5,6 +5,7 @@ createdAt: 1646609399762
 publishedAt: 1646609399762
 slug: its-been-too-long
 tags: ['code', 'update', 'machine_learning', 'reinforcement_learning']
+thumbnail: ./thumbnails/1.png
 ---
 
 It's been a really long time since I posted here.  *Too* long if you ask me.  Anyway, in addition to correcting some typos and adding a link to my RL Brush tech talk last year based [on my paper on it](https://arxiv.org/abs/2008.02778), I added some updates to my projects section.  Most notably, I added a link to [a great blog post my co-worker wrote about ML Home](https://engineering.atspotify.com/2022/01/product-lessons-from-ml-home-spotifys-one-stop-shop-for-machine-learning/), which what I've been working on this past year (or rather from 2021 to the present) at Spotify.
