@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md",
+                "file": "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 429.5
   },
   "right": {
     "id": "75fba64036ff0beb",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md",
+                "file": "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md",
+                "file": "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md"
+                "file": "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/index.md"
               }
             }
           }
@@ -141,15 +141,15 @@
   },
   "active": "8b77012406166d4b",
   "lastOpenFiles": [
-    "templates/Post template.md",
-    "content/blog/2022/10/23/pagination-and-dates/index.md",
-    "content/blog/limbo-the-asymptote-tactics-games/index.md",
-    "content/blog/limbo-the-asymptote-tactics-games/limbo.png",
-    "content/blog/assignment-inputs-map/index.md",
-    "content/blog/limbo-the-asymptote-tactics-games/card_tactics.gif",
-    "content/blog/limbo-the-asymptote-tactics-games/rotation_gif.gif",
-    "content/blog/__untitled__/2022-10-17.md",
-    "content/blog/making-obsidian-plugin-mtg/index.md",
-    "content/media/evostar.png"
+    "content/blog/2020/06/14/synth-jam-4-7th-dimension/index.md",
+    "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/index.md",
+    "content/blog/2022/10/17/limbo-the-asymptote-tactics-games/index.md",
+    "content/blog/2022/10/02/making-obsidian-plugin-mtg/index.md",
+    "content/blog/2022/03/06/what-ive-been-doing-this-past-year/index.md",
+    "content/blog/2020/06/25/synth-jam-6-or-bitstream-hymn/index.md",
+    "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/dall-e-mtg-pixelart.png",
+    "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/dall-e-limbo-pixelart.png",
+    "content/blog/2022/10/23/ai-thumbnails-with-stable-diffusion/dall-e-pixelart-keyboard3.png",
+    "content/blog/2022/10/23/2022-10-23.md"
   ]
 }

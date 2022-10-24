@@ -41,6 +41,11 @@ query blogListQuery {
                 date
                 title
                 tags
+                thumbnail {
+                    childImageSharp {
+                        gatsbyImageData
+                    }
+                }
             }
         }
       }

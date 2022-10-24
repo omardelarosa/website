@@ -1,6 +1,6 @@
 {
   "newFileLocation": "current",
-  "attachmentFolderPath": "content/media",
+  "attachmentFolderPath": "./",
   "userIgnoreFilters": [
     "node_modules/",
     "content/assets/"

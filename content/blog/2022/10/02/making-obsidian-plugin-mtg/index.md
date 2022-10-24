@@ -7,6 +7,7 @@ publishedAt: 1664746807915
 slug: making-obsidian-plugin-mtg
 tags: ["mtg", "code", "obsidian"]
 ogDescription: an article about making a plugin for Obsidian note-taking app
+thumbnail: ./thumbnails/1.png
 ---
 
 So I play a ton of [Magic: The Gathering](https://magic.wizards.com/en) these days.  Perhaps that warrants its own post, but as my collection grows and I try to keep up with meta decks I found that using [Deckbox.org](https://deckbox.org/) is nice but cumbersome.  It forces me into its UI and clicking around to add/remove cards.  What I've always wanted is something close to plain-text decklists and just have my collection magically available to them.  

@@ -79,7 +79,13 @@ exports.createPages = ({ graphql, actions }) => {
                             frontmatter {
                                 title
                                 tags
+                                thumbnail {
+                                    childImageSharp {
+                                        gatsbyImageData
+                                    }
+                                }
                             }
+                            rawMarkdownBody
                         }
                     }
                 }
