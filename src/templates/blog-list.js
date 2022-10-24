@@ -29,7 +29,7 @@ export default class BlogList extends React.Component {
     return (
         <Layout location={this.props.location} title={siteTitle}>
             <SEO
-                title={`Hypertexty Thoughts ${ !isFirst ? "| Posts Page " + String(ctx.currentPage) + " of " + String(ctx.numPages) + ") ": "| "}omardelarosa.com`}
+                title={`Hypertexty Thoughts ${ !isFirst ? "| Posts Page " + String(ctx.currentPage) + " of " + String(ctx.numPages) : " | omardelarosa.com "}`}
                 keywords={[
                     'blog',
                     'gatsby',
