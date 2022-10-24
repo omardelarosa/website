@@ -10,39 +10,35 @@ ogDescription: an article about making AI Thumbnails with Stable Diffusion
 thumbnail: ./pixelated-alien-landscape.png
 ---
 
-So earlier today, I added pagination to these posts:
+So earlier today, I had a thought:
 
-![](./pagination-demo.gif)
+> What if all of these posts had unique thumbnail images beside them?
 
-I also restructured my posts URLs a bit going from `/content/blog/slug-goes-here ` to `/content/blog/YYYY/MM/DD/slug-goes-here`.  Had to setup some redirects, etc, but that was simple enough.
+![AI Thumbnails](./ai-thumbnails-concept.gif)
 
-This required a bit of work on the `migrate.js` script in here, but it got me thinking about making more programatic changes to all my posts at once.  One crazy idea I had is:
+Then reality set in: 
 
-> What if all my posts had little thumbnail images beside them?
-
-![AI Thumbnails](./ai-thumbnails-concept.png)
-
-Then I thought:
-
-> Damn.  Where am I gonna get these images?  I don't have an illustrator or a design team.
+> I don't have an illustrator or a design team.  I'm just one guy with a markdown blog.
 
 Then I had a little mini eureka moment:
 
 ![mind explosion](https://media2.giphy.com/media/lXu72d4iKwqek/giphy.gif?cid=ecf05e47wdf6x5ki3ugw8bdyt07p9tbvuivfisl6otesu5oa&rid=giphy.gif&ct=g)
 
-> What if I generated using [DALL-E](https://labs.openai.com/) or [Stable Diffusion](https://huggingface.co/spaces/stabilityai/stable-diffusion)?
+> What if I generated all my thumbnails using [DALL-E](https://labs.openai.com/) and/or [Stable Diffusion](https://huggingface.co/spaces/stabilityai/stable-diffusion)?
 
-## How To Generate Images Manually
+And so I did!
 
-So you can easily generate little images using DALL-E and save them with each post:
+## How To Generate Images Manually using DALL-E
+
+So one can easily generate little images using [OpenAI's DALL-E API](https://labs.openai.com/) and save them with each post:
 
 [![Birthday image generated via DALL-E](./dall-e-birthday-cake-pixelart.png)](https://labs.openai.com/e/R81D9SxOnv9GPjRzMHhv9wgd)
 [![Pixel Art Keyboard Made using DALL-E](./dall-e-pixelart-keyboard1.png)](https://labs.openai.com/e/ZGVY68mVdGN7uXQpErT9RrIl)
-However, that process is pretty manual.  I'd like it to be something like a pipeline that I can run during my Gatsby site build (or before it).
+However, that process is pretty manual. The ideal process would be something like a pipeline or some way to do it programmaticall during the Gatsby `build` task (or before it).
 
-## How to Generate a list of Prompts
+## Generating A List of Text Prompts
 
-So I figured no matter what route, I needed to generate a list of all my posts, their source filepaths and their tags, etc.  These could be used to make prompts Using my GatsbyJS GQL Schema, the query looks like this:
+Regardless of which route, a list of all the blog posts needs to be generated with their source filepaths and their tags, etc.  These could be used to make prompts from.  So using GatsbyJS GQL Schema a query like this can be created to extract text content from all of your posts.
 
 ```gql
 query PostsTagsEtc {
@@ -63,7 +59,7 @@ query PostsTagsEtc {
 }
 ```
 
-This results in some nice JSON I can use to make my prompts:
+This returns some nice, structured JSON to fuel image-gen model prompts:
 
 ```json
 {
@@ -109,7 +105,7 @@ This results in some nice JSON I can use to make my prompts:
         }, ]}}}
 ```
 
-From here, I can then make prompts from the title, tags and/or slugs by saving the above result as a json file and then using a simple python script to format it for my pipeline:
+From here, the above results are saved as a json file and then using a simple python script to format will transform it into an easier to work with list I've called `posts.json` here:
 
 ```python
 import json
@@ -132,36 +128,29 @@ with open(input_file_name, 'r') as f:
     for edge in data["data"]["allMarkdownRemark"]["edges"]:
         prompt = None
         slug = edge["node"]["frontmatter"]["slug"]
-        
-        if slug is not None:
-            slug_as_words = slug.split("-")
-            prompt = " ".join(slug_as_words)
-        else:
-            title = edge["node"]["frontmatter"]["title"]
-            if title is not None:
-                prompt = title
-            else:
-                print("no slug or title found for: ", edge)
+		# This uses the slug as a prompt, but it can be any field
+        slug_as_words = slug.split("-")
+        prompt = " ".join(slug_as_words)
+        outdir = sourcefilepath.replace("index.md", outdir_prefix)
         if prompt is not None:
             output.append({
                 # This is the actual prompt
                 'prompt': prompt,
-                'outdir': sourcefilepath.replace("index.md", outdir_prefix)
+                'outdir': outdir
             })
 
 # Write the output file
 with open(output_file_name, 'w') as json_file:
     json.dump(output, json_file)
-    print("wrote prompts to: ", output_file_name)
 ```
 
-Obviously you can experiment with better systems for generating prompts, but I just went with a simple transformation on my post titles and slugs.
+This is where most of the experimentation can take place for better systems of generating prompts, but I just went with a simple transformation on my post titles and slugs for the sake of example.
 
-Afterwards, you can then save your resulting `prompts.json` file and keep it around
+Afterwards, the resulting `prompts.json` file can be kept around and used to generate examples (i.e. prompts) for your model.
 
 ## Stable Diffusion Model Pipeline
 
-For the sake of simplicity, I went with using a Google Colab Notebook as a base and then updated it with some additional code to process my `prompts.json` file and generate images for me that I could download as simple files later.  
+For the sake of simplicity, I went with using [@woctezuma's Google Colab Notebook as a base](https://github.com/woctezuma/stable-diffusion-colab) and then updated it with some additional code to process my `prompts.json` file and generate images for me that I could download as simple files later.  
 
 The first set of results didn't look great to me, but at least they worked as a proof of concept:
 
@@ -169,14 +158,16 @@ The first set of results didn't look great to me, but at least they worked as a 
 
 ## Conclusion
 
-I don't think I like the results enough to actually use these images, but you can see [my full notebook on Github](https://github.com/omardelarosa/website/blob/master/python/AI_Thumbnails_using_stable_diffusion.ipynb) and try it for yourself.  The results are okay, but I think I need to spend a bit more time refining the prompts for better results.  For now, I think using these DALL-E generated pixel art as a small, finite library works well for me. 
+Since I'm going for this pretty pixel-art-heavy style on the website, I don't think I like the results enough to actually use these images from Stable Diffusion, but you can see [my full notebook on Github](https://github.com/omardelarosa/website/blob/master/python/AI_Thumbnails_using_stable_diffusion.ipynb) and try it for yourself.  If you don't need "pixelart style", then the results actually look pretty usable.
 
-In the future I'd like to spend some time getting set up and familiar with [InvokeAI](https://github.com/invoke-ai/InvokeAI) locally to make this all run on my laptop on each build so I can generate one for each post.
+For now, I stuck to using the DALL-E generated pixel art as a small, finite library for my limited number of posts.
 
-Just with the demo installation and a simple prompt of:
+In the future I'd like to spend some time getting set up and familiar with [InvokeAI](https://github.com/invoke-ai/InvokeAI) locally to make this all run on my laptop (rather than spending money on Google AI Platform).  That way, it would be easy to generate a thumbnail for each post as its written.
+
+So far, InvokeAI looks really promising.  With hust with the demo installation and a simple prompt of:
 
 ```
-a fantastic alien landscape -W576 -H512 -s60 -n4
+invoke> a fantastic alien landscape -W576 -H512 -s60 -n4
 ```
 
 I generated the following cool alien landscape images:
@@ -190,6 +181,8 @@ I generated the following cool alien landscape images:
 
 ![Invoke AI generated alien landscape](./invokeai_alient_landscape_04.png)
 
-Now all I need to do is find a good way to give these a nice pixel-art postprocessing effect:
+Now all I need to do is find a good way to give these a nice pixel-art postprocessing effect like this automatically:
 
 ![Pixel Art Alien Landscape](./pixelated-alien-landscape.png)
+
+Alas, it'll have to wait for the next post.
