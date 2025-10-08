@@ -5,6 +5,8 @@ createdAt: 1550622322193
 publishedAt: 1550622322193
 slug: readings-doodles
 tags: ["process", "reading_response", "w03"]
+aliases:
+- readings-doodles
 ---
 
 [Sunni Brown's defense of doodles](https://alistapart.com/article/the-miseducation-of-the-doodle) makes a very strong case in their favor. Starting with the opening annecdote about their utility in helping Virginia Scofield get through a very tough subject matter in a PhD program, she frames their utility from the get go.

@@ -16,6 +16,8 @@ tags:
         "retrogaming",
         "devlog",
     ]
+aliases:
+- devlog-1-moonspore-hollow
 ---
 
 For the past few weeks, I've been working on my first game project in [Godot Engine](https://godotengine.org). It's inspired (broadly speaking) by SNES action RPG games, but I plan on taking advantage of some of capabilities of modern hardware to make it more like an SNES++ game.

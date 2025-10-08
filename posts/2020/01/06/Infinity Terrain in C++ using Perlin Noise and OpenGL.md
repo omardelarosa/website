@@ -16,6 +16,8 @@ tags:
         "gundam",
         "proceduralgeneration",
     ]
+aliases:
+- infinity-terrain-in-c++-using-perlin-noise-and-opengl
 ---
 
 ![infinity terrain](images/GIFs/gundam-flyover5.1-title.gif)

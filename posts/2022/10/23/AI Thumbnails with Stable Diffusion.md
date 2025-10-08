@@ -8,6 +8,8 @@ slug: ai-thumbnails-with-stable-diffusion
 tags: ["productivity", "code", "aiart", "update", "stable diffusion", "dall-e", "openai", "invokeai", "ai", "ml"]
 ogDescription: an article about making AI Thumbnails with Stable Diffusion
 thumbnail: ./pixelated-alien-landscape.png
+aliases:
+- ai-thumbnails-with-stable-diffusion
 ---
 
 So earlier today, I had a thought:

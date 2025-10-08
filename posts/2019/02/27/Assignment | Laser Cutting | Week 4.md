@@ -5,6 +5,8 @@ createdAt: 1551296692788
 publishedAt: 1551296692788
 slug: assignment-lasery-cutting
 tags: ["hidden", "process", "w04"]
+aliases:
+- assignment-lasery-cutting
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sAyTYVtiF2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

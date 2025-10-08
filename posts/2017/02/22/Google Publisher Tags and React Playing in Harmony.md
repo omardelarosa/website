@@ -16,6 +16,8 @@ tags:
         "adtech",
     ]
 ogDescription: an article about using react and google publisher tag together in harmony
+aliases:
+- gpt-and-react
 ---
 
 # Doing Google Publisher Tags the React Way

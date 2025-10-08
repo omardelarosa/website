@@ -14,6 +14,8 @@ tags:
         "proceduralgeneration",
     ]
 thumbnail: ./thumbnails/1.png
+aliases:
+- synth-jam-6-or-bitstream-hymn
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4JZvE5nQtC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

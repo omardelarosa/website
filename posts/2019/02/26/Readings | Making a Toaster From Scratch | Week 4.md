@@ -5,6 +5,8 @@ createdAt: 1551218353946
 publishedAt: 1551218353946
 slug: readings-toaster-from-scratch
 tags: ["hidden", "process", "reading", "w04", "tedtalks"]
+aliases:
+- readings-toaster-from-scratch
 ---
 
 After watching [Thomas Thwaites talk about his efforst making a toaster from scratch](https://www.ted.com/talks/thomas_thwaites_how_i_built_a_toaster_from_scratch), I'm left with a newfound appreciation for the infrastructure supporting the manufacturing of basic goods I use in my day-to-day life.

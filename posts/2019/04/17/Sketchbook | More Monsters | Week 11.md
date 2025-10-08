@@ -5,6 +5,8 @@ createdAt: 1555503187483
 publishedAt: 1555503187483
 slug: sketchbook-more-monsters
 tags: ["process", "w11", "sketchbook"]
+aliases:
+- sketchbook-more-monsters
 ---
 
 Ideas for more in-game monsters.

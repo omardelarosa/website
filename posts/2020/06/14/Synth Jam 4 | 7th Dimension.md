@@ -5,6 +5,8 @@ createdAt: 1592146033379
 publishedAt: 1592146033379
 slug: synth-jam-4-7th-dimension
 tags: ["synth", "music", "video", "jam", "livelooping"]
+aliases:
+- synth-jam-4-7th-dimension
 ---
 
 I'm on a roll. This is my fourth week of making synth jams. This time I tried recording directly to my Tascam recorder from the mixer taking the computer completely out of the loop.

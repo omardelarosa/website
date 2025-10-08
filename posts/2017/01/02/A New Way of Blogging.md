@@ -7,6 +7,8 @@ publishedAt: 1483398779432
 slug: new-blog
 tags: ["webdev", "news", "md"]
 ogDescription: an introduction to the new bloging system.
+aliases:
+- new-blog
 ---
 
 It's been a while since I wrote a blog post. Why? Well on the one hand, I've had a shortage of free time. On the other, I've spent way too much time configuring and dealing with [random](http://omardelarosa.tumblr.com) [blogging](http://blog.omardelarosa.com) platforms without really getting the things I want out of them:

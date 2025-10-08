@@ -5,6 +5,8 @@ createdAt: 1550017810145
 publishedAt: 1550017810145
 slug: love-letter-assignment
 tags: ["process", "assignment", "w02"]
+aliases:
+- love-letter-assignment
 ---
 
 ## A Love Letter To Spotify

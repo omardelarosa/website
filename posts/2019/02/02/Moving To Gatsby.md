@@ -5,6 +5,8 @@ createdAt: 1549146990560
 publishedAt: 1549146990560
 slug: moving-to-gatsby
 tags: ["webdev", "news", "js", "gatsby", "graphql"]
+aliases:
+- moving-to-gatsby
 ---
 
 It's been fun [blogging with my own homebrew static blogging engine](/posts/new-blog/) for the past year or two. Was a very lightweight way to play around with static blogging and get away from content management systems. However, with full-time work and part-time grad school, I've had very little time to fiddle with my framework. This has left my blog looking pretty neglected over the past year or so.
