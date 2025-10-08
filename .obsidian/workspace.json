@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "929a41a294c7f920",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b77cc4b10d3f37e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "387ef8ff007f8ac5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b3ef400fcaad9c84",
+    "type": "split",
+    "children": [
+      {
+        "id": "b69ed2f207fda2b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ee8548659649e2f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "76cac8d566db3e21",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b132f826244e4514",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b0c8f70f1b0684cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "400060fb13a8d21a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bfd2104c0838230",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "5e1f96ba9b48cc01",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "284dfd84dde97529",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1118a20f07fbb7e6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "publish:Publish changes...": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "tldraw:Create new tldrawing": false
+    }
+  },
+  "active": "387ef8ff007f8ac5",
+  "lastOpenFiles": [
+    "posts/2018/06/13/moving-back-to-github-pages/_index.md",
+    "posts/2018/06/17/markov-chain-rhythms/_index.md",
+    "posts/2018/06/16/micro-responsive-grid-system-in-stylus/_index.md",
+    "posts/2018/06/05/markov-chain-music/_index.md",
+    "posts/2020/06/25/synth-jam-6-or-bitstream-hymn/_index.md",
+    "posts/2020/06/14/synth-jam-4-7th-dimension/_index.md",
+    "posts/2020/06/07/synth-jam-3-or-ion-daydream/_index.md",
+    "posts/2020/01/06/infinity-terrain-in-c++-using-perlin-noise-and-opengl/_index.md",
+    "posts/2020/05/31/synth-jam-or-spooky-action-at-a-distance/_index.md",
+    "posts/2019/07/30/devlog-1-moonspore-hollow/_index.md",
+    "posts/2019/02/12/love-letter-assignment/_index.md",
+    "posts/2019/02/12/assignment-inputs-map/_index.md",
+    "posts/2019/02/12/constant-io-blend-trees-and-animation/_index.md",
+    "posts/2019/02/12/personal-inventory/_index.md",
+    "posts/2019/02/12/sketchbook-zombies-and-subways/_index.md",
+    "posts/2019/02/06/process-organizing-sprite-sheets/_index.md",
+    "posts/2019/02/06/sketchbook-organizing-sprite-sheets/_index.md",
+    "posts/2019/02/06/reading-response-design-for-the-real-world/_index.md",
+    "posts/2019/02/26/readings-toaster-from-scratch/_index.md",
+    "posts/2019/02/26/constant-io-the-core-game-loop/_index.md",
+    "posts/2019/02/26/sketchbook-vampires-uis-and-world-layouts/_index.md",
+    "posts/2019/02/19/readings-doodles/_index.md",
+    "posts/2019/02/19/sketchbook-or-level-structure/_index.md",
+    "posts/2019/02/11/readings-design-thinking/_index.md",
+    "posts/2019/02/27/assignment-lasery-cutting/_index.md",
+    "posts/2019/02/18/readings-ted-talks/_index.md",
+    "favicon.ico",
+    "favicon32x32.png.sb-de7d9ee9-Kjvgft",
+    "favicon32x32.png",
+    "publish.css",
+    "posts/2022/10/17/limbo-the-asymptote-tactics-games/thumbnails/1.png",
+    "posts/2022/10/02/making-obsidian-plugin-mtg/thumbnails/1.png",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion/pixelated-alien-landscape.png",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion/invokeai_alient_landscape_01.png",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion/pagination-demo.gif",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion/notebook-results.gif",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion/dall-e-pixelart-keyboard3.png",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion/invokeai_alient_landscape_04.png",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion/invokeai_alient_landscape_03.png",
+    "posts/2022/10/17/limbo-the-asymptote-tactics-games/thumbnails",
+    "posts/2022/10/02/making-obsidian-plugin-mtg/thumbnails",
+    "posts/2022/10/23/ai-thumbnails-with-stable-diffusion",
+    "posts/2022/10/17/limbo-the-asymptote-tactics-games",
+    "posts/2022/10/02/making-obsidian-plugin-mtg",
+    "posts/2022/10/17",
+    "posts/2022/10/23"
+  ]
+}
