@@ -4,7 +4,7 @@ date: 1554843872793
 createdAt: 1554843872793
 publishedAt: 1554843872793
 slug: readings-seeing-is-believing-and-subway-trains
-tags: ["process", "w10", "reading_response", "citylens"]
+tags: ["process", "w10", "reading-response", "citylens"]
 aliases:
 - readings-seeing-is-believing-and-subway-trains
 ---
@@ -61,3 +61,5 @@ Ultimately, Siegle breaks down AR's utility in education into two categories:
 2. Trigger Images
 
 Both of these can have some really interesting applications for my own project. I will explore these in [my next post.](/posts/final-project-research-phase)
+
+#process, #w10, #reading-response, #citylens

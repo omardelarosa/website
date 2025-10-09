@@ -4,7 +4,7 @@ date: 1550622322193
 createdAt: 1550622322193
 publishedAt: 1550622322193
 slug: readings-doodles
-tags: ["process", "reading_response", "w03"]
+tags: ["process", "reading-response", "w03"]
 aliases:
 - readings-doodles
 ---
@@ -45,3 +45,5 @@ In each one she reminds us of what is possible in a doodle and how powerful of a
 Furthermore, she reminds us that doodles needn't be solitary. She calls this social mode "group doodling". In this, she not only gives us the ability to permit ourselves as individuals to doodle, but also invites our peers and coworkers. Through all this she not only sells us on the advantages of doodling, but she gives us the chance to evangelize those benefits through groups.
 
 I, for one, am now sold on the benefits of doodling. I'm now off to doodle.
+
+#process, #reading-response, #w03

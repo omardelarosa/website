@@ -12,3 +12,5 @@ aliases:
 Ideas for more in-game monsters.
 
 ![](./sketch1.jpg)
+
+#process, #w11, #sketchbook

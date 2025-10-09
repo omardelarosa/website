@@ -6,7 +6,7 @@ createdAt: 1483396849251
 publishedAt: 1483398779432
 slug: new-blog
 tags: ["webdev", "news", "md"]
-ogDescription: an introduction to the new bloging system.
+description: an introduction to the new bloging system.
 aliases:
 - new-blog
 ---
@@ -38,3 +38,5 @@ $ git push origin master
 ```
 
 So yeah, this new website is still a work in progress, but more posts and updates to come.
+
+#webdev, #news, #md

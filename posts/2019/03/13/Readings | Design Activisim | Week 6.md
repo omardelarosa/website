@@ -30,3 +30,5 @@ This idea of "ephemeral seating" really spoke to me because:
 3. as primitive people long ago, there was only ephemeral seating
 
 Building on _3._, the fact that our addiction to "distributed manufacturing" has gotten so intense that even our park benches require global shipping and plastic and non-local-parts is kind of absurd. Why shouldn't we just sit on part benches made of naturally degrading waste biproducts?
+
+#hidden, #process, #reading, #w06

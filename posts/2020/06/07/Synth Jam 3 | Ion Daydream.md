@@ -56,3 +56,5 @@ Here's the full list of gear I used, in case you wanna try this yourself.
 ### [demedash t120 deluxe](https://www.demedasheffects.com/pages/t-120-videotape-echo)
 
 <a href="https://www.demedasheffects.com/pages/t-120-videotape-echo"><img src="https://res.cloudinary.com/reverb-sites/image/upload/t_gallery/b3uqqujwt02aspvmwjha.jpg" width=300 /></a>
+
+#music, #video, #synth, #jam, #livelooping

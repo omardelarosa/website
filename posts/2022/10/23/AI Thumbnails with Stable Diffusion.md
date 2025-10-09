@@ -1,12 +1,12 @@
 ---
-title: AI Thumbnails with Stable Diffusion 
+title: AI Thumbnails with Stable Diffusion
 author: omardelarosa
 date: 1666562513166
 createdAt: 1666562513166
 publishedAt: 1666562513166
 slug: ai-thumbnails-with-stable-diffusion
-tags: ["productivity", "code", "aiart", "update", "stable diffusion", "dall-e", "openai", "invokeai", "ai", "ml"]
-ogDescription: an article about making AI Thumbnails with Stable Diffusion
+tags: ["productivity", "code", "aiart", "update", "stable-diffusion", "dall-e", "openai", "invokeai", "ai", "ml"]
+description: an article about making AI Thumbnails with Stable Diffusion
 thumbnail: ./pixelated-alien-landscape.png
 aliases:
 - ai-thumbnails-with-stable-diffusion
@@ -18,7 +18,7 @@ So earlier today, I had a thought:
 
 ![AI Thumbnails](./ai-thumbnails-concept.gif)
 
-Then reality set in: 
+Then reality set in:
 
 > I don't have an illustrator or a design team.  I'm just one guy with a markdown blog.
 
@@ -50,7 +50,7 @@ query PostsTagsEtc {
         frontmatter {
           tags
           title
-          ogDescription
+          description
           slug
           date
         }
@@ -152,7 +152,7 @@ Afterwards, the resulting `prompts.json` file can be kept around and used to gen
 
 ## Stable Diffusion Model Pipeline
 
-For the sake of simplicity, I went with using [@woctezuma's Google Colab Notebook as a base](https://github.com/woctezuma/stable-diffusion-colab) and then updated it with some additional code to process my `prompts.json` file and generate images for me that I could download as simple files later.  
+For the sake of simplicity, I went with using [@woctezuma's Google Colab Notebook as a base](https://github.com/woctezuma/stable-diffusion-colab) and then updated it with some additional code to process my `prompts.json` file and generate images for me that I could download as simple files later.
 
 The first set of results didn't look great to me, but at least they worked as a proof of concept:
 
@@ -188,3 +188,5 @@ Now all I need to do is find a good way to give these a nice pixel-art postproce
 ![Pixel Art Alien Landscape](./pixelated-alien-landscape.png)
 
 Alas, it'll have to wait for the next post.
+
+#productivity, #code, #aiart, #update, #stable-diffusion, #dall-e, #openai, #invokeai, #ai, #ml

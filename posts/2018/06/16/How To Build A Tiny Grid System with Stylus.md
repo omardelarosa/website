@@ -6,7 +6,7 @@ createdAt: 1529164637478
 publishedAt: 1529164637478
 slug: micro-responsive-grid-system-in-stylus
 tags: ["webdev", "css", "js", "style", "stylus"]
-ogDescription: an article about building a tiny, responsive grid system using stylus css preprocessr by omar delarosa
+description: an article about building a tiny, responsive grid system using stylus css preprocessr by omar delarosa
 aliases:
 - micro-responsive-grid-system-in-stylus
 ---
@@ -191,3 +191,5 @@ For examples on how to use this, you can check out [the source code for this sit
 
 <iframe height='265' scrolling='no' title='Simple CSS Grid' src='//codepen.io/omdel/embed/vrJwJQ/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/omdel/pen/vrJwJQ/'>Simple CSS Grid</a> by omar delarosa (<a href='https://codepen.io/omdel'>@omdel</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+#webdev, #css, #js, #style, #stylus

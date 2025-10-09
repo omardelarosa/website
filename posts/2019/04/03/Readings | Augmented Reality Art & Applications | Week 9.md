@@ -4,7 +4,7 @@ date: 1554319615663
 createdAt: 1554319615663
 publishedAt: 1554319615663
 slug: readings-augmented-reality-art-and-applications
-tags: ["process", "reading_response", "w09", "citylens"]
+tags: ["process", "reading-response", "w09", "citylens"]
 aliases:
 - readings-augmented-reality-art-and-applications
 ---
@@ -24,3 +24,5 @@ While certainly playful and interesting, after reading I asked myself if there w
 So one idea that stuck out to me was perhaps using a few features from Vuforia's AR API such as [Image Targets](https://library.vuforia.com/articles/Training/Image-Target-Guide) to place objects in the real world the, when viewed with certain mobile applications, trigger additional context to appear. For example, perhaps for the hearing impaired they could aim a phone app at some sticker or image on an object in the real world the depends on auditory data and have a visual illustration pop up that gives them some timely information about the object. Thus creating a possible implementation for "environmental annotations".
 
 ![](https://vuforialibrarycontent.vuforia.com/Images/devGuide_ImageTargets.jpg)
+
+#process, #reading-response, #w09, #citylens

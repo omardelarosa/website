@@ -18,3 +18,5 @@ Anyway, this will be the first of my _Discovered Gems_ post that attempts to kee
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MFUmt6F44cc" frameborder="0" allowfullscreen></iframe>
 
 As a great, woozy, hazy, quasi-lo-fi rock track, it's right up the alley of anyone who loves Real Estate or Mac DeMarco (like this guy). The lyrics are also circular, simple and sparse. A song that tries without trying.
+
+#music, #recommendation, #news

@@ -6,7 +6,7 @@ createdAt: 1528251387589
 publishedAt: 1528251387589
 slug: markov-chain-music
 tags: ["music", "composition", "livecode", "compsci", "ai", "sonicpi"]
-ogDescription: an article about using markov chains and sonicpi to make music by omar delarosa
+description: an article about using markov chains and sonicpi to make music by omar delarosa
 aliases:
 - markov-chain-music
 ---
@@ -95,3 +95,5 @@ To see this in action, here's a brief video I made using this system to generate
 _NOTE: I have posted all the code for that video and [a slightly more detailed explanation with a neat graph as a gist.](https://gist.github.com/omardelarosa/e962e595de9bd1b7f94afde803997831)_
 
 For now, I am still experimenting with how to make more intricate music using this system. For example, I would like to better randomize beat programming with this system in the near future. However, I will probably save that for a future post.
+
+#music, #composition, #livecode, #compsci, #ai, #sonicpi

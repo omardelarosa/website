@@ -10,3 +10,5 @@ aliases:
 ---
 
 [**[THIS POST INTENTIONALLY LEFT BLANK]**](/posts/constant-i-o-procedurally-generated-levels)
+
+#process, #w05, #gamedev, #hidden, #assignment

@@ -4,7 +4,7 @@ date: 1549936887453
 createdAt: 1549936887453
 publishedAt: 1549936887453
 slug: readings-design-thinking
-tags: ["process", "w02", "reading_response"]
+tags: ["process", "w02", "reading-response"]
 aliases:
 - readings-design-thinking
 ---
@@ -42,3 +42,5 @@ Another key point is his identification of why he believes Apple succeeds at wha
 3. motor-goals
 
 Without re-iterating the details of their respective definitions, he mentions how Appl's success with the iPod is a testament to its supporting "the entire activity involved in listening to music: discovering it, purchasing it, getting it inthe music player, developing playlists (that could be shared), and listening to the music". This in turn supports all three levels of goals for the user and thereby succeeds as a result.
+
+#process, #w02, #reading-response

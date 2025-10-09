@@ -4,7 +4,7 @@ date: 1557349223522
 createdAt: 1557349223522
 publishedAt: 1557349223522
 slug: project-or-final-prototype
-tags: ["process", "w14", "augmented_reality", "ar", "citylens"]
+tags: ["process", "w14", "augmented-reality", "ar", "citylens"]
 aliases:
 - project-or-final-prototype
 ---
@@ -49,10 +49,12 @@ src
 
 public
 ├── images   # svgs for app
-│   ├── camera-icon.svg
-│   └── x-icon.svg
+│   ├── camera-icon.svg
+│   └── x-icon.svg
 ├── index.html  # outer template
 └── models  # 3D models
-    ├── MTA_Platform_Spread.glb
-    └── MTA_Platform_Stand.glb
+    ├── MTA_Platform_Spread.glb
+    └── MTA_Platform_Stand.glb
 ```
+
+#process, #w14, #augmented-reality, #ar, #citylens

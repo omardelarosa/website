@@ -6,13 +6,13 @@ createdAt: 1664746807915
 publishedAt: 1664746807915
 slug: making-obsidian-plugin-mtg
 tags: ["mtg", "code", "obsidian"]
-ogDescription: an article about making a plugin for Obsidian note-taking app
+description: an article about making a plugin for Obsidian note-taking app
 thumbnail: ./thumbnails/1.png
 aliases:
 - making-obsidian-plugin-mtg
 ---
 
-So I play a ton of [Magic: The Gathering](https://magic.wizards.com/en) these days.  Perhaps that warrants its own post, but as my collection grows and I try to keep up with meta decks I found that using [Deckbox.org](https://deckbox.org/) is nice but cumbersome.  It forces me into its UI and clicking around to add/remove cards.  What I've always wanted is something close to plain-text decklists and just have my collection magically available to them.  
+So I play a ton of [Magic: The Gathering](https://magic.wizards.com/en) these days.  Perhaps that warrants its own post, but as my collection grows and I try to keep up with meta decks I found that using [Deckbox.org](https://deckbox.org/) is nice but cumbersome.  It forces me into its UI and clicking around to add/remove cards.  What I've always wanted is something close to plain-text decklists and just have my collection magically available to them.
 
 Since I couldn't find such a tool, I decided to make my own as a plugin for the Obsidian app:
 
@@ -58,7 +58,7 @@ It turns out that making an Obsidian plugin is pretty simple using [the Obsidian
 The whole thing basically works like this:
 ```typescript
 this.registerMarkdownCodeBlockProcessor(
-	'mtg-deck', 
+	'mtg-deck',
 	async (source: string, el: HTMLElement, ctx) => {
 	     // Get the counts from your CSV file
 		this.cardCounts = await syncCounts(vault, this.settings);
@@ -84,3 +84,5 @@ I've named my card name column `Name` and my card quantity `Count` .  If you use
 ![Obsidian MtG settings](https://github.com/omardelarosa/obsidian-mtg/raw/master/docs/img/example_settings.png)
 
 Anyway, if you use the plugin and like it, please let me know.  I hope it gets accepted into the core plugins registry and, whether it does or not, I hope to add more features to it soon.
+
+#mtg, #code, #obsidian

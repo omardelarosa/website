@@ -14,3 +14,5 @@ _For this week's sketches, I changed up my hardware a bit and used a new Moleski
 ![](./sketch1.png)
 
 ![](./sketch2.png)
+
+#process, #w09, #sketchbook

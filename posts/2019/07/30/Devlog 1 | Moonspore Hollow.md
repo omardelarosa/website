@@ -8,10 +8,10 @@ tags:
     [
         "gamedev",
         "godot",
-        "godot engine",
+        "godot-engine",
         "moonspore",
         "demo",
-        "indie game",
+        "indie-game",
         "pixelart",
         "retrogaming",
         "devlog",
@@ -50,3 +50,5 @@ You can see a brief playthrough of my first test-level here:
 ### The Future
 
 I hope to have more updates to come soon and I will be publishing a demo to [my itch.io channel](https://nabisco.itch.io/) real soon. In the meantime, be sure to follow my itch.io channel. My username there is _nabisco_. Or drop me a line with your feedback by one of my many social channels.
+
+#gamedev, #godot, #godot-engine, #moonspore, #demo, #indie-game, #pixelart, #retrogaming, #devlog

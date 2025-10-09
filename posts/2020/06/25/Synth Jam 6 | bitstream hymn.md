@@ -224,3 +224,5 @@ live_loop :bt do
   sleep M/16
 end
 ```
+
+#music, #video, #synths, #livelooping, #sonicpi, #proceduralgeneration

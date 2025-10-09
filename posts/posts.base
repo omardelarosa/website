@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("posts")
+        - file.ext == "md"
+        - file.name != "_posts"
+    order:
+      - file.name
+      - file.fullname
+      - createdAt
+    sort:
+      - property: createdAt
+        direction: DESC
+    columnSize:
+      file.fullname: 691

@@ -4,7 +4,7 @@ date: 1550504711663
 createdAt: 1550504711663
 publishedAt: 1550504711663
 slug: readings-ted-talks
-tags: ["process", "reading_response", "w03"]
+tags: ["process", "reading-response", "w03"]
 aliases:
 - readings-ted-talks
 ---
@@ -34,3 +34,5 @@ Ultimately, his placebo analogy to TED talks draws attention to how TED talks ca
 > In this case the placebo is worse than ineffective, it's harmful. It's diverts your interest, enthusiasm and outrage until it's absorbed into this black hole of affectation.
 
 Granted, comparing TED talks to black holes of affection is a pretty harsh statement, but it drives the point home that we (as an audience) should really demand more from the format. Demand a little less conversation, and maybe more direct action. Besides, y'know, thoughts-and-prayers-only-level responses to problems.
+
+#process, #reading-response, #w03

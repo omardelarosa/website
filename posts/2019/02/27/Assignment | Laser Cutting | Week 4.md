@@ -22,3 +22,5 @@ aliases:
 ![](./lasercut5.jpg)
 
 ![](./lasercut6.jpg)
+
+#hidden, #process, #w04

@@ -22,3 +22,5 @@ I've watched this project grow for the past few years, albeit from the sidelines
 In just about a day, I was able to migrate all my old posts and reconfigure the starter blog into the blog you are now reading. The most exciting new change is the addition of [tags](/tags) which will help making navigation much better. I'm only scratching the surface of this framework and hopefully a lot more changes (and posts) are coming in 2019.
 
 You can see the source code and markdown of this here blog on its [new repo](https://github.com/omardelarosa/website). However, my old website code based on my little homebrew framework, I'll keep around [on github](https://github.com/omardelarosa/omardelarosa.github.io) for posterity.
+
+#webdev, #news, #js, #gatsby, #graphql

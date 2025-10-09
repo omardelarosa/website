@@ -8,12 +8,12 @@ tags:
     [
         "process",
         "w14",
-        "machine_learning",
+        "machine-learning",
         "ml",
         "adobe",
         "lectures",
         "update",
-        "neural_networks",
+        "neural-networks",
         "gan",
         "nn",
     ]
@@ -50,3 +50,5 @@ From this prompt she split us up into a small group that brainstormed about solu
 ![UI for GAN-powered](./result.jpg)
 
 Overall, the experience was quite a blast. I hope they come back and do more events at NYU.
+
+#process, #w14, #machine-learning, #ml, #adobe, #lectures, #update, #neural-networks, #gan, #nn

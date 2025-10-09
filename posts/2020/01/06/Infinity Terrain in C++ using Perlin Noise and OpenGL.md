@@ -376,3 +376,5 @@ This can also be controlled in tandem with the pixelation shader.
 You can check out the full source code of the project on my Github at:
 
 [omardelarosa/infinity-terrain-3d](https://github.com/omardelarosa/infinity-terrain-3d)
+
+#gamedev, #c++, #opengl, #tutorial, #graphics, #cg, #cpp, #gundam, #proceduralgeneration

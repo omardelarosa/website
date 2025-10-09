@@ -6,7 +6,7 @@ createdAt: 1511974081367
 publishedAt: 1511974081367
 slug: static-hosting-saga-2
 tags: ["webdev", "news", "md"]
-ogDescription: an article about getting static hosting to work via Amazon S3 and kinda sorta blogging like a hacker
+description: an article about getting static hosting to work via Amazon S3 and kinda sorta blogging like a hacker
 aliases:
 - static-hosting-saga-2
 ---
@@ -88,3 +88,5 @@ Once all these steps are done, you should have a fully functioning HTTPS static 
 After doing all this, I set up a few helpful scripts to "deploy" my site. That script can be found [here on the Github repo for this site.](https://github.com/omardelarosa/omardelarosa.github.io/blob/master/deploy.sh).
 
 In that script I also purge the cache after publishing and send the sitemap to Google.
+
+#webdev, #news, #md

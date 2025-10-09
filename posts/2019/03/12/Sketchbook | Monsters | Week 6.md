@@ -12,3 +12,5 @@ aliases:
 This week, I sketched out some monster concepts based on mythological animations but given a kind of robot/alien style.
 
 ![](./Sketches.jpg)
+
+#process, #w06, #sketchbook

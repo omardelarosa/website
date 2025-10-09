@@ -6,7 +6,7 @@ createdAt: 1529248388892
 publishedAt: 1529248388892
 slug: markov-chain-rhythms
 tags: ["music", "composition", "livecode", "compsci", "ai", "sonicpi"]
-ogDescription: an article about building rhythms, chords and melodic patterns using markov chaining and then applying drake's voice on top by omar delarosa
+description: an article about building rhythms, chords and melodic patterns using markov chaining and then applying drake's voice on top by omar delarosa
 aliases:
 - markov-chain-rhythms
 ---
@@ -395,3 +395,5 @@ This system scales well for samples too. Now to figure out how to scale this out
 For now, check out a markov-chain-powered remix of "Hotline Bling" by Drake I auto-composed using this technique on YouTube:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4SemYvZ58FU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+#music, #composition, #livecode, #compsci, #ai, #sonicpi

@@ -6,7 +6,7 @@ createdAt: 1483498714035
 publishedAt: 1483504269673
 slug: making-a-markdown-blog-using-webpack
 tags: ["webpack", "webdev", "js", "md"]
-ogDescription: an article about making a static-file blog using webpack and html-webpack-plugin by omar delarosa
+description: an article about making a static-file blog using webpack and html-webpack-plugin by omar delarosa
 aliases:
 - making-a-markdown-blog-using-webpack
 ---
@@ -285,3 +285,5 @@ To see a working example of this, just check out the following files in the sour
 -   [`templates/blog.pug`](https://github.com/omardelarosa/omardelarosa.github.io/blob/master/templates/blog.pug)
 
 Although there are a couple other things going on in the webpack configs for this project (such as a distinction between static `pages` and `posts`), the principles are basically the same as the above examples.
+
+#webpack, #webdev, #js, #md

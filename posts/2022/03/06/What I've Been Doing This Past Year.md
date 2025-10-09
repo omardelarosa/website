@@ -4,7 +4,7 @@ date: 1646609399762
 createdAt: 1646609399762
 publishedAt: 1646609399762
 slug: its-been-too-long
-tags: ['code', 'update', 'machine_learning', 'reinforcement_learning']
+tags: ['code', 'update', 'machine-learning', 'reinforcement-learning']
 thumbnail: ./thumbnails/1.png
 aliases:
 - its-been-too-long
@@ -15,5 +15,7 @@ It's been a really long time since I posted here.  *Too* long if you ask me.  An
 ML Home is part of our installation of [Backstage](https://backstage.io/) and looks a bit like this:
 
 [![ML Home Screenshot](https://engineering.atspotify.com/wp-content/uploads/sites/2/2022/01/Spotify-ML-Home-700x355.png)](https://engineering.atspotify.com/2022/01/product-lessons-from-ml-home-spotifys-one-stop-shop-for-machine-learning/)
-    
+
 It's a dashboard linking up a number of interconnected services.  Anyway, read the blog post.  It's great.
+
+#code, #update, #machine-learning, #reinforcement-learning

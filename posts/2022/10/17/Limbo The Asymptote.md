@@ -6,7 +6,7 @@ createdAt: 1666008503489
 publishedAt: 1666008503489
 slug: limbo-the-asymptote-tactics-games
 tags: ["productivity", "code", "gamedev", "aiart", "tactics", "project", "update"]
-ogDescription: an article about perfect being the enemy of good and asymptotes
+description: an article about perfect being the enemy of good and asymptotes
 thumbnail: ./thumbnails/1.png
 aliases:
 - limbo-the-asymptote-tactics-games
@@ -14,7 +14,7 @@ aliases:
 
 This morning I watched [a YouTube video by Phil Edwards](https://www.youtube.com/watch?v=EUmgvsGnw0w) where he reacts to reactions about his reaction to DALL-E and AI-generated art in general.  It was interesting because he described systems he uses to protect his job against AI.  Anyway, as an engineer on an ML Platform I'm probably more a part of the problem than the solution, but his video had a few nuggets of wisdom for me nonetheless.
 
-One of the nuggets is the notion of how to "limbo the asymptote".  What this means is roughly the same as "perfect is the enemy of good".  
+One of the nuggets is the notion of how to "limbo the asymptote".  What this means is roughly the same as "perfect is the enemy of good".
 
 ![limbo the asymptote](./limbo.png)
 
@@ -35,4 +35,6 @@ However, I was inspired to let go of any notions of perfectionism and accept usi
 It's still pretty rough and I need to add working cards, but this pure GDScript project I think can go a lot further than that hybrid Python one.
 
 For now, it's just baby steps but I am hoping to have something a lot more robust to show soon.  Hopefully this weekend of inspired continuation on this project isn't a fluke!
+
+#productivity, #code, #gamedev, #aiart, #tactics, #project, #update
 

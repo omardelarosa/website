@@ -26,3 +26,5 @@ As if the supply chain issue wasn't enough, the craft/process is equally complex
 Ultimately, the 1000+ pound sticker price of his clearly inferior, hand-made, non-functioning toaster on the shelf alongside the others frames the problem quite well: the modern world literally cannot afford hand-made toasters. This leaves me thinking that many of the "hand-made" or "hand-crafted" products I buy are purely luxury items. They are subtle metaphors for the absurdity of my own elegiac dissatisfaction with the mass-produced goods that are so embedded in our modern lives perhaps so deeply we've passed a point of no return.
 
 As he pointed out, we may now be livingin in "the Anthropocene" era or "the age of Man", defined perhaps by the strata of plastic material we are leaving behind in the geological record. This means that mass-produced goods are not just at a point of now return, their polymers and raw materials might just be the legacy we leave behind and define our species in the long-run.
+
+#hidden, #process, #reading, #w04, #tedtalks

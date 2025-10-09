@@ -26,3 +26,5 @@ While devices to interact with the environment are one side of this, another sid
 ### Next Steps
 
 Over the next few weeks, I will continue exploring these concepts and share the results here.
+
+#process, #project, #w07, #citylens

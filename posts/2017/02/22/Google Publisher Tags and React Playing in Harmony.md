@@ -15,7 +15,7 @@ tags:
         "gpt",
         "adtech",
     ]
-ogDescription: an article about using react and google publisher tag together in harmony
+description: an article about using react and google publisher tag together in harmony
 aliases:
 - gpt-and-react
 ---
@@ -164,3 +164,5 @@ This avoids using any event-listeners or clumsy `googletag.apiReady` checks or `
 Instead, you let `React` be `React` and `GPT` be `GPT`. A shiny, new modern library working in tandem with a semi-retro, closure-y one.
 
 [ Insert GIF of React logo shaking hands with Google For Publishers Logo Here ]
+
+#webdev, #tutorial, #development, #technology, #react, #gpt, #adtech

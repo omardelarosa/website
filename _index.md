@@ -1,1 +1,3 @@
-This is a test site.  Looking for posts
+---
+alias: Welcome.md
+---
