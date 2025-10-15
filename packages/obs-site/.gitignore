@@ -1,4 +1,6 @@
 .obsidian/plugins/
 .obsidian/themes/
 .DS_Store
+
+# Specific to Obsidian
 .obsidian/themes/AnuPpuccin/
