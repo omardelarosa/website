@@ -1,2 +1,4 @@
 [build]
-publish = "/packages/gatsby-website/public"
+publish = "packages/gatsby-website/public"
+package = "packages/gatsby-website"
+command = "npm run build-prod"
