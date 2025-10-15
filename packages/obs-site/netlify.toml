@@ -1,5 +1,6 @@
 [build]
 publish = "packages/obs-site/"
+package = "packages/obs-site"
 command = "touch index.html && echo 'Hello, World!' > index.html"
 
 [[redirects]]
