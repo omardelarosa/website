@@ -1,0 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/press-start-2p');
+
+  :root {
+    --font-title: "Press Start 2P", sans-serif;
+  }
+
+/*reset body*/
+body {
+    background-image: none;
+    background-image: var(--color-background);
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-size: 18px !important;
+    hyphens: manual !important;
+  }
+
+  .tree-item-inner a {
+    text-transform: lowercase !important;
+  }
+
+  .site-body-left-column-site-name {
+    text-align: center;
+    font-family: var(--font-title);
+  }
+
+  .site-body-left-column-site-logo {
+    text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .socials .sprite {
+    max-width: 64px;
+  }
+
+  .socials .socials-box {
+    padding: 2em;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .socials .socials-box .social-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .posted-at {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.8em;
+    color: #666;
+  }

@@ -1,0 +1,6 @@
+{
+    "siteId": "50a63bb8de993dcac64ed553d946feeb",
+    "host": "publish-01.obsidian.md",
+    "included": [],
+    "excluded": ["assets/**", "media/**"]
+}
