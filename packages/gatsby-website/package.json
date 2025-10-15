@@ -7,7 +7,7 @@
     "dependencies": {
         "argparse": "^2.0.1",
         "classnames": "^2.3.2",
-        "gatsby": "^4.23.1",
+        "gatsby": "~4.23.1",
         "gatsby-cli": "^4.23.0",
         "gatsby-image": "^3.11.0",
         "gatsby-plugin-facebook-analytics": "^4.23.0",
@@ -59,12 +59,12 @@
         "url": "git+https://github.com/omardelarosa/website.git"
     },
     "scripts": {
-        "build": "npm run gatsby build",
+        "build": "npx gatsby@4.23.1 build",
         "post-build": "./tasks/post-build.sh",
         "build-prod": "npm run build && npm run post-build",
-        "develop": "npm rungatsby develop",
+        "develop": "npx gatsby@4.23.1 develop",
         "start": "npm run develop",
-        "serve": "npm run gatsby serve",
+        "serve": "npx gatsby@4.23.1 serve",
         "migrate": "node ./tasks/migrate.js",
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
     },
