@@ -59,12 +59,12 @@
         "url": "git+https://github.com/omardelarosa/website.git"
     },
     "scripts": {
-        "build": "gatsby build",
+        "build": "npm run gatsby build",
         "post-build": "./tasks/post-build.sh",
         "build-prod": "npm run build && npm run post-build",
-        "develop": "gatsby develop",
+        "develop": "npm rungatsby develop",
         "start": "npm run develop",
-        "serve": "gatsby serve",
+        "serve": "npm run gatsby serve",
         "migrate": "node ./tasks/migrate.js",
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
     },
