@@ -1,0 +1,392 @@
+{
+  "main": {
+    "id": "929a41a294c7f920",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e07b44f9b5221cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dac8e1a6c5ecb7f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Lightning Soldiers.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lightning Soldiers"
+            }
+          },
+          {
+            "id": "905125016115e85e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Naya Dinosaurs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Naya Dinosaurs"
+            }
+          },
+          {
+            "id": "720322ced67bcba5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Obeka Upkeeps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obeka Upkeeps"
+            }
+          },
+          {
+            "id": "118d9f6361d83d1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Temur Stompy Thrasios.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Temur Stompy Thrasios"
+            }
+          },
+          {
+            "id": "fdd675252e3a1881",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Kefka Grixis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Kefka Grixis"
+            }
+          },
+          {
+            "id": "896a1ea75d86af49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Iron Man Artifacts.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Iron Man Artifacts"
+            }
+          },
+          {
+            "id": "596a005a3a935359",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Bilbo Life.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bilbo Life"
+            }
+          },
+          {
+            "id": "07a870b4cdc0bd17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "magic the gathering/decklists/EDH/Bant Counters Matter.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bant Counters Matter"
+            }
+          },
+          {
+            "id": "db96e5a7f905aa50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hello.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hello"
+            }
+          },
+          {
+            "id": "a3213889edab584d",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "posts/posts.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "posts"
+            }
+          },
+          {
+            "id": "2b86cbba6a7000c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/web/A New Way of Blogging.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "A New Way of Blogging"
+            }
+          },
+          {
+            "id": "62970e9f2e96042f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/web/A New Way of Blogging.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "A New Way of Blogging"
+            }
+          },
+          {
+            "id": "36b981f12be7a51e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2019/02/11/Readings | Design Thinking | Week 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Readings | Design Thinking | Week 2"
+            }
+          }
+        ],
+        "currentTab": 12
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b3ef400fcaad9c84",
+    "type": "split",
+    "children": [
+      {
+        "id": "b69ed2f207fda2b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ee8548659649e2f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "76cac8d566db3e21",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b132f826244e4514",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 545.5
+  },
+  "right": {
+    "id": "b0c8f70f1b0684cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "400060fb13a8d21a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bfd2104c0838230",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "hello.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for hello"
+            }
+          },
+          {
+            "id": "5e1f96ba9b48cc01",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "284dfd84dde97529",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1118a20f07fbb7e6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "publish:Publish changes...": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "tldraw:Create new tldrawing": false
+    }
+  },
+  "active": "5ee8548659649e2f",
+  "lastOpenFiles": [
+    "thoughts",
+    "posts/2022/03/06/What I've Been Doing This Past Year.md",
+    "programming/web/A New Way of Blogging.md",
+    "programming/ml",
+    "👋 hello.md",
+    "programming/web",
+    "💡about.md",
+    "gamedev/Organazing Sprite Sheets.md",
+    "⏱️ lately.md",
+    "gamedev/_media/Poof.gif",
+    "gamedev/_media",
+    "gamedev/_gamedev.md",
+    "music/Markov Chain Rhythms using SonicPi (ft. Drake).md",
+    "programming/web/How To Build A Tiny Grid System with Stylus.md",
+    "posts/2018/06/13/Moving Back To Github Pages (or Static Hosting Saga 3).md",
+    "music/Making Markov Chain Hip Hop with SonicPi.md",
+    "music/_music.md",
+    "music/writing/Discovered Gem - Pipe Dream.md",
+    "programming/web/Simple HTTPS Setup S3 + CloudFlare.md",
+    "posts/2017/11/28/Static Hosting Updates 1.md",
+    "programming/web/Google Publisher Tags and React Playing in Harmony.md",
+    "music/Untitled",
+    "music/writing",
+    "music/originals",
+    "programming/web/Making a Markdown Blog Using Webpack.md",
+    "programming/_programming.md",
+    "posts/2017/01/02/_programming.md",
+    "hello.md",
+    "programming",
+    "lately.md",
+    "obsidian.css",
+    "about.md",
+    "_index.md",
+    "日本語🇯🇵/日本語🇯🇵.md",
+    "日本語🇯🇵",
+    "posts/_posts.md",
+    "posts/posts.base",
+    "assets/insta.png",
+    "assets/Screenshot 2025-10-09 at 9.49.59 AM.png",
+    "magic the gathering/decklists/EDH/Oswald Flowchart.excalidraw.png",
+    "favicon32x32.png",
+    "posts/2020/06/25/thumbnails/1.png",
+    "posts/2020/01/06/images/GIFs/wobble.gif",
+    "posts/2020/01/06/images/GIFs/gundam-terrain-sector-translation.mov.gif",
+    "posts/2020/01/06/images/GIFs/gundam-terrain-sector-translation2.mov.gif",
+    "posts/2020/01/06/images/GIFs/gundam-flyover_5_4.mov.gif"
+  ]
+}
