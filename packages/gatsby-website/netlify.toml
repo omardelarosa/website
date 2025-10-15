@@ -2,7 +2,8 @@
 publish = "packages/gatsby-website/public"
 package = "packages/gatsby-website"
 command = "cd packages/gatsby-website && npm install && npm run build-prod"
-
+# ignore changes to any other package
+ignore = "git diff --name-only $CACHED_COMMIT_REF $COMMIT_REF | tr -d '\n' | grep -qv '^packages/gatsby-website/'"
 
 [[redirects]]
   from = "https://omardelarosa.com/tags/*"
@@ -14,16 +15,4 @@ command = "cd packages/gatsby-website && npm install && npm run build-prod"
   from = "https://omardelarosa.com/posts/*"
   to = "https://classic.omardelarosa.com/posts/:splat"
   status = 301
-  force = true
-
-[[redirects]]
-  from = "https://omardelarosa.com/"
-  to = "https://omardelarosa.com/notes/"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "https://omardelarosa.com/*"
-  to = "https://omardelarosa.com/notes/:splat"
-  status = 200
   force = true

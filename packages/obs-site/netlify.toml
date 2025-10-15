@@ -2,9 +2,11 @@
 publish = "packages/obs-site"
 package = "packages/obs-site"
 command = "echo 'noop build...'"
+# ignore changes to any other package
+ignore = "git diff --name-only $CACHED_COMMIT_REF $COMMIT_REF | tr -d '\n' | grep -qv '^packages/obs-site/'"
 
 [[redirects]]
-  from = "https://omardelarosa.com/notes/*"
-  to = "https://publish.obsidian.md/serve?url=omardelarosa.com/notes/:splat"
+  from = "https://omardelarosa.com/*"
+  to = "https://publish.obsidian.md/serve?url=omardelarosa.com/:splat"
   status = 200
   force = true
