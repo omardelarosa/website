@@ -1,7 +1,7 @@
 [build]
 publish = "packages/obs-site"
 package = "packages/obs-site"
-command = "touch packages/obs-site/index.html && echo 'Hello, World!' > packages/obs-site/index.html"
+command = "echo 'noop build...'"
 
 [[redirects]]
   from = "https://omardelarosa.com/notes/*"
