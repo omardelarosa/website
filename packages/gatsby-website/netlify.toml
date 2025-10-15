@@ -1,5 +1,4 @@
 [build]
-base = "packages/gatsby-website/"
 publish = "packages/gatsby-website/public"
 package = "packages/gatsby-website"
-command = "npm run build-prod"
+command = "cd packages/gatsby-website && npm run build-prod"
