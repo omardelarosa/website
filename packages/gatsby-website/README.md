@@ -1,6 +1,6 @@
 # Website
 
-The source code for my blog and personal website built using Gatsby. Visit at [omardelarosa.com](https://www.omardelarosa.com)
+The source code for my blog and personal website built using Gatsby. Visit at [omardelarosa.com](https://classic.omardelarosa.com)
 
 The code is based on the following starter project: https://github.com/gatsbyjs/gatsby-starter-blog
 
