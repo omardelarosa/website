@@ -2,8 +2,6 @@
 publish = "packages/obs-site"
 package = "packages/obs-site"
 command = "echo 'noop build...'"
-# ignore changes to any other package
-ignore = "git diff --name-only $CACHED_COMMIT_REF $COMMIT_REF | tr -d '\n' | grep -qv '^packages/obs-site/'"
 
 [[redirects]]
   from = "https://omardelarosa.com/*"
