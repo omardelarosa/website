@@ -59,13 +59,13 @@
         "url": "git+https://github.com/omardelarosa/website.git"
     },
     "scripts": {
-        "build": "cd packages/gatsby-website && gatsby build",
-        "post-build": "./packages/gatsby-website/tasks/post-build.sh",
-        "build-prod": "cd packages/gatsby-website && npm run build && npm run post-build",
-        "develop": "cd packages/gatsby-website && gatsby develop",
-        "start": "cd packages/gatsby-website && npm run develop",
-        "serve": "cd packages/gatsby-website && gatsby serve",
-        "migrate": "cd packages/gatsby-website && node ./packages/gatsby-website/tasks/migrate.js",
+        "build": "gatsby build",
+        "post-build": "./tasks/post-build.sh",
+        "build-prod": "npm run build && npm run post-build",
+        "develop": "gatsby develop",
+        "start": "npm run develop",
+        "serve": "gatsby serve",
+        "migrate": "node ./tasks/migrate.js",
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
     },
     "devDependencies": {
