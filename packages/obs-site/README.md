@@ -1,3 +1,0 @@
-# Obsidian Website
-
-TBD
