@@ -1,2 +1,3 @@
 [build]
 publish = "packages/gatsby-website/public"
+command = "mkdir -p packages/gatsby-website/public && npm run build"
