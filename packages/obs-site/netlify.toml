@@ -1,3 +1,9 @@
 [build]
 publish = "packages/obs-site/"
-command = "npm run build"
+command = "touch index.html && echo 'Hello, World!' > index.html"
+
+[[redirects]]
+  from = "https://obsidian.omardelarosa.com/*"
+  to = "https://publish.obsidian.md/serve?url=obsidian.omardelarosa.com/:splat"
+  status = 200
+  force = true
