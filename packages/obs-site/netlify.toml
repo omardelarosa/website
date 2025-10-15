@@ -1,10 +1,10 @@
 [build]
-publish = "packages/obs-site/"
+publish = "packages/obs-site"
 package = "packages/obs-site"
-command = "touch index.html && echo 'Hello, World!' > index.html"
+command = "touch packages/obs-site/index.html && echo 'Hello, World!' > packages/obs-site/index.html"
 
 [[redirects]]
-  from = "https://obsidian.omardelarosa.com/*"
-  to = "https://publish.obsidian.md/serve?url=obsidian.omardelarosa.com/:splat"
+  from = "https://omardelarosa.com/notes/*"
+  to = "https://publish.obsidian.md/serve?url=omardelarosa.com/notes/:splat"
   status = 200
   force = true
