@@ -3,5 +3,7 @@
   "obsidian-columns",
   "obsidian-excalidraw-plugin",
   "obsidian-mtg",
-  "tldraw"
+  "tldraw",
+  "templater-obsidian",
+  "dataview"
 ]

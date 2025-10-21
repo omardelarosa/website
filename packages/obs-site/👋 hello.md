@@ -1,6 +1,6 @@
 ## i'm **omar delarosa**
 
-I am primarily a software engineer working with recommender systems with an interest in creative coding, competitive TCGs and art in my spare time.  In said spare time I do [[_music]], [[_visuals]], [[_gamedev]] and play a lot of [[_magic the gathering]]
+I am a software engineer working on recommender systems with an interest in [[_music]], [[_visuals]], [[_gamedev]] and playing [[_magic the gathering]].
 ### what is this
 
 This site is a place to put a bunch of my thoughts and writing.  It's kind of a scratch pad and also a kind of journal.  You can read more about me and what I do on the [[about]] page or just by browsing the nav menu to the left.  
