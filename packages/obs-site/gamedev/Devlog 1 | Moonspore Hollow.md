@@ -20,7 +20,6 @@ aliases:
 - devlog-1-moonspore-hollow
 ---
 
-<% tp.frontmatter["variable name with spaces"] %>
 
 ---
 
