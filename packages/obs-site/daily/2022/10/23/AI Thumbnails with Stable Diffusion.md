@@ -2,7 +2,7 @@
 title: AI Thumbnails with Stable Diffusion
 author: omardelarosa
 date: 1666562513166
-created:  1666562513166
+createdAt: 1666562513166
 publishedAt: 1666562513166
 slug: ai-thumbnails-with-stable-diffusion
 tags: ["productivity", "code", "aiart", "update", "stable-diffusion", "dall-e", "openai", "invokeai", "ai", "ml"]
@@ -16,7 +16,7 @@ So earlier today, I had a thought:
 
 > What if all of these posts had unique thumbnail images beside them?
 
-![AI Thumbnails](programming/_media/ai-thumbnails-concept.gif)
+![AI Thumbnails](daily/2022/10/23/ai-thumbnails-concept.gif)
 
 Then reality set in:
 
@@ -34,8 +34,8 @@ And so I did!
 
 So one can easily generate little images using [OpenAI's DALL-E API](https://labs.openai.com/) and save them with each post:
 
-[![Birthday image generated via DALL-E](programming/_media/dall-e-birthday-cake-pixelart.png)](https://labs.openai.com/e/R81D9SxOnv9GPjRzMHhv9wgd)
-[![Pixel Art Keyboard Made using DALL-E](programming/_media/dall-e-pixelart-keyboard1.png)](https://labs.openai.com/e/ZGVY68mVdGN7uXQpErT9RrIl)
+[![Birthday image generated via DALL-E](daily/2022/10/23/dall-e-birthday-cake-pixelart.png)](https://labs.openai.com/e/R81D9SxOnv9GPjRzMHhv9wgd)
+[![Pixel Art Keyboard Made using DALL-E](daily/2022/10/23/dall-e-pixelart-keyboard1.png)](https://labs.openai.com/e/ZGVY68mVdGN7uXQpErT9RrIl)
 However, that process is pretty manual. The ideal process would be something like a pipeline or some way to do it programmaticall during the Gatsby `build` task (or before it).
 
 ## Generating A List of Text Prompts
@@ -156,7 +156,7 @@ For the sake of simplicity, I went with using [@woctezuma's Google Colab Noteboo
 
 The first set of results didn't look great to me, but at least they worked as a proof of concept:
 
-![Making Pixel Art Thumbnails](programming/_media/notebook-results.gif)
+![Making Pixel Art Thumbnails](daily/2022/10/23/notebook-results.gif)
 
 ## Conclusion
 
@@ -174,18 +174,18 @@ invoke> a fantastic alien landscape -W576 -H512 -s60 -n4
 
 I generated the following cool alien landscape images:
 
-![Invoke AI generated alien landscape](programming/_media/invokeai_alient_landscape_01.png)
+![Invoke AI generated alien landscape](daily/2022/10/23/invokeai_alient_landscape_01.png)
 
-![Invoke AI generated alien landscape](programming/_media/invokeai_alient_landscape_02.png)
+![Invoke AI generated alien landscape](daily/2022/10/23/invokeai_alient_landscape_02.png)
 
 
-![Invoke AI generated alien landscape](programming/_media/invokeai_alient_landscape_03.png)
+![Invoke AI generated alien landscape](daily/2022/10/23/invokeai_alient_landscape_03.png)
 
-![Invoke AI generated alien landscape](programming/_media/invokeai_alient_landscape_04.png)
+![Invoke AI generated alien landscape](daily/2022/10/23/invokeai_alient_landscape_04.png)
 
 Now all I need to do is find a good way to give these a nice pixel-art postprocessing effect like this automatically:
 
-![Pixel Art Alien Landscape](programming/_media/pixelated-alien-landscape.png)
+![Pixel Art Alien Landscape](daily/2022/10/23/pixelated-alien-landscape.png)
 
 Alas, it'll have to wait for the next post.
 
