@@ -6,18 +6,17 @@ createdAt: 1487820831393
 publishedAt: 1487820831393
 slug: gpt-and-react
 tags:
-    [
-        "webdev",
-        "tutorial",
-        "development",
-        "technology",
-        "react",
-        "gpt",
-        "adtech",
-    ]
+  - webdev
+  - tutorial
+  - development
+  - technology
+  - react
+  - gpt
+  - adtech
 description: an article about using react and google publisher tag together in harmony
 aliases:
-- gpt-and-react
+  - gpt-and-react
+  - posts/2017/02/22/Google Publisher Tags and React Playing in Harmony.md
 ---
 
 # Doing Google Publisher Tags the React Way

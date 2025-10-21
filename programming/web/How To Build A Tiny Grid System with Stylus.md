@@ -5,10 +5,16 @@ date: 1529164637478
 createdAt: 1529164637478
 publishedAt: 1529164637478
 slug: micro-responsive-grid-system-in-stylus
-tags: ["webdev", "css", "js", "style", "stylus"]
+tags:
+  - webdev
+  - css
+  - js
+  - style
+  - stylus
 description: an article about building a tiny, responsive grid system using stylus css preprocessr by omar delarosa
 aliases:
-- micro-responsive-grid-system-in-stylus
+  - micro-responsive-grid-system-in-stylus
+  - posts/2018/06/16/How To Build A Tiny Grid System with Stylus.md
 ---
 
 ## Background

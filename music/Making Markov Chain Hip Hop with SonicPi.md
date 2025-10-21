@@ -5,10 +5,17 @@ date: 1528251387589
 createdAt: 1528251387589
 publishedAt: 1528251387589
 slug: markov-chain-music
-tags: ["music", "composition", "livecode", "compsci", "ai", "sonicpi"]
+tags:
+  - music
+  - composition
+  - livecode
+  - compsci
+  - ai
+  - sonicpi
 description: an article about using markov chains and sonicpi to make music by omar delarosa
 aliases:
-- markov-chain-music
+  - markov-chain-music
+  - posts/2018/06/05/Making Markov Chain Hip Hop with SonicPi.md
 ---
 
 For a long time, I've tried to merge two significant pursuits in my life: music and code. Although the two are not mutually exclusive, I've pursued them each relatively independently of one another. Or at least, [my primary music project, Little Insects](https://littleinsects.bandcamp.com/) has never been overtly "high tech".

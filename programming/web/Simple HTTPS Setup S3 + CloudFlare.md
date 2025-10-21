@@ -5,10 +5,14 @@ date: 1511974081367
 createdAt: 1511974081367
 publishedAt: 1511974081367
 slug: static-hosting-saga-2
-tags: ["webdev", "news", "md"]
+tags:
+  - webdev
+  - news
+  - md
 description: an article about getting static hosting to work via Amazon S3 and kinda sorta blogging like a hacker
 aliases:
-- static-hosting-saga-2
+  - static-hosting-saga-2
+  - posts/2017/11/29/Simple HTTPS Setup S3 + CloudFlare.md
 ---
 
 After a bit more investigation yesterday, I realized that github pages forces my website headers to always be 30x. This is not ideal. Furthermore, it makes it tough to use `https` protocol for my custom domain, which [google now favors in search results.](https://thenextweb.com/google/2015/12/17/unsecured-websites-are-about-to-get-hammered-in-googles-search-ranking/)

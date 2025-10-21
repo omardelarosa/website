@@ -12,7 +12,7 @@ I will keep adding more notes here over time.  Links to the most recent stuff wi
 
 ### where to find me elsewhere
 
-You can follow me elsewhere on the internet through these links below.  Don't be a stranger!
+You can follow me elsewhere on the internet through these links below:
 
 
 <div class="socials">

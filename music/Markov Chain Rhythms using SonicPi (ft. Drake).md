@@ -5,10 +5,17 @@ date: 1529248388892
 createdAt: 1529248388892
 publishedAt: 1529248388892
 slug: markov-chain-rhythms
-tags: ["music", "composition", "livecode", "compsci", "ai", "sonicpi"]
+tags:
+  - music
+  - composition
+  - livecode
+  - compsci
+  - ai
+  - sonicpi
 description: an article about building rhythms, chords and melodic patterns using markov chaining and then applying drake's voice on top by omar delarosa
 aliases:
-- markov-chain-rhythms
+  - markov-chain-rhythms
+  - posts/2018/06/17/Markov Chain Rhythms using SonicPi (ft. Drake).md
 ---
 
 A few weeks back [I started dabbling in using markov chains to make hip hop music](https://www.omardelarosa.com/posts/markov-chain-music.html). When I wrote that last post, there was one hurdle that I failed to overcome: generative beats. However, I spent the past few weeks thinking about how best to represent beats in a sane way in code.

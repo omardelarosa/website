@@ -5,10 +5,14 @@ date: 1483396849251
 createdAt: 1483396849251
 publishedAt: 1483398779432
 slug: new-blog
-tags: ["webdev", "news", "md"]
+tags:
+  - webdev
+  - news
+  - md
 description: an introduction to the new bloging system.
 aliases:
-- new-blog
+  - new-blog
+  - posts/2017/01/02/A New Way of Blogging.md
 ---
 
 It's been a while since I wrote a blog post. Why? Well on the one hand, I've had a shortage of free time. On the other, I've spent way too much time configuring and dealing with [random](http://omardelarosa.tumblr.com) [blogging](http://blog.omardelarosa.com) platforms without really getting the things I want out of them:

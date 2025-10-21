@@ -15,17 +15,13 @@ body {
     hyphens: manual !important;
   }
 
-  .tree-item-inner a {
-    text-transform: lowercase !important;
-  }
-
   .site-body-left-column-site-name {
-    text-align: center;
+    text-align: right;
     font-family: var(--font-title);
   }
 
   .site-body-left-column-site-logo {
-    text-align: center;
+    text-align: right;
   }
 
   .socials {
@@ -49,11 +45,4 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-  }
-
-  .posted-at {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 0.8em;
-    color: #666;
   }
