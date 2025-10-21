@@ -1,3 +1,5 @@
 {
-  "folder": "posts"
+  "folder": "daily",
+  "format": "YYYY/MM/DD/YYYY-MM-DD",
+  "template": "templates/_daily_template"
 }

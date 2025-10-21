@@ -5,6 +5,12 @@ command = "echo 'noop build...'"
 
 [[redirects]]
   from = "https://omardelarosa.com/*"
+  to = "https://classic.omardelarosa.com/projects"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://omardelarosa.com/*"
   to = "https://publish.obsidian.md/serve?url=omardelarosa.com/:splat"
   status = 200
   force = true

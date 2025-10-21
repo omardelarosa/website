@@ -4,14 +4,7 @@ date: 1549480489967
 createdAt: 1549480489967
 publishedAt: 1549480489967
 slug: process-organizing-sprite-sheets
-tags:
-  - process
-  - update
-  - w01
-  - castleblood
-aliases:
-  - process-organizing-sprite-sheets
-  - posts/2019/02/06/Organazing Sprite Sheets.md
+tags: ["process", "update", "w01", "castleblood"]
 ---
 
 As part of my Ideation and Prototyping class at NYU I will be creating a game prototype and [writing about the process each week](/process).
@@ -22,23 +15,21 @@ For the first entry, I decide to create a few pixelart sprites to use in Unity g
 
 The first is a pixelart player avatar for a game that can move in 8 directions and handles two basic actions: shooting and striking with a sword/melee weapon.
 
-![](gamedev/_media/ScientistSprites.png)
+![](academics/process/media/ScientistSprites.png)
 
 Below are some of the animations created from the sprite sheet:
 
-![](gamedev/_media/ScientistSprites-IdleDL.gif)
-![](gamedev/_media/ScientistSprites-JumpRD.gif)
-![](gamedev/_media/ScientistSprites-ShootDL.gif)
-![](gamedev/_media/ScientistSprites-SwingR.gif)
+![](academics/process/media/ScientistSprites-IdleDL.gif)
+![](academics/process/media/ScientistSprites-JumpRD.gif)
+![](academics/process/media/ScientistSprites-ShootDL.gif)
+![](academics/process/media/ScientistSprites-SwingR.gif)
 
 #### Smoke
 
 The second was a very simple smoke cloud to be used on objects that go "poof"
 
-![](gamedev/_media/SmokePoof.png)
+![](academics/process/media/SmokePoof.png)
 
 Here is the animated gif form:
 
-![](gamedev/_media/Poof.gif)
-
-#process #update #w01 #castleblood
+![](academics/process/media/Poof.gif)
