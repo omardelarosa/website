@@ -26,6 +26,7 @@
     // Apply saved theme
     app.setAttribute('data-theme', currentTheme);
     updateThemeIcon(themeToggle, currentTheme);
+    updateLogo(currentTheme);
 
     // Theme toggle handler
     themeToggle.addEventListener('click', () => {
@@ -33,11 +34,19 @@
       app.setAttribute('data-theme', currentTheme);
       localStorage.setItem('theme', currentTheme);
       updateThemeIcon(themeToggle, currentTheme);
+      updateLogo(currentTheme);
     });
   }
 
   function updateThemeIcon(button, theme) {
     button.textContent = theme === 'light' ? '🌙' : '☀️';
+  }
+
+  function updateLogo(theme) {
+    const logo = document.querySelector('.site-logo');
+    if (logo) {
+      logo.src = theme === 'dark' ? '/assets/pixelpic-dark.gif' : '/assets/pixelpic.gif';
+    }
   }
 
   // File tree rendering
@@ -78,7 +87,7 @@
 
       html += `
         <li class="tree-item tree-folder">
-          <details ${level === 0 ? 'open' : ''}>
+          <details>
             <summary class="tree-folder-summary">
               📁 ${dirName}
             </summary>

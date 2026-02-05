@@ -43,7 +43,7 @@
 }
 
 [data-theme="dark"] {
-  /* Catppuccin Mocha (Dark Mode) */
+  /* Catppuccin Mocha (Dark Mode) - Custom navbar background */
   --ctp-rosewater: rgb(245, 224, 220);
   --ctp-flamingo: rgb(242, 205, 205);
   --ctp-pink: rgb(245, 194, 231);
@@ -66,9 +66,9 @@
   --ctp-overlay0: rgb(105, 109, 134);
   --ctp-surface2: rgb(86, 89, 112);
   --ctp-surface1: rgb(67, 70, 90);
-  --ctp-surface0: rgb(49, 50, 68);
+  --ctp-surface0: rgb(59, 60, 77);
   --ctp-base: rgb(30, 30, 46);
-  --ctp-mantle: rgb(24, 24, 37);
+  --ctp-mantle: rgb(49, 50, 67);
   --ctp-crust: rgb(17, 17, 27);
 
   --bg-primary: var(--ctp-base);
@@ -207,15 +207,17 @@ body {
 .tree-link {
   display: block;
   padding: 0.5rem 0.75rem;
-  color: var(--text-primary);
+  color: var(--ctp-text);
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: 500;
 }
 
 .tree-link:hover {
   background: var(--bg-tertiary);
+  color: var(--ctp-lavender);
 }
 
 .tree-item.active .tree-link {
@@ -232,11 +234,14 @@ body {
   border-radius: 6px;
   font-size: 0.9rem;
   user-select: none;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  color: var(--ctp-text);
+  font-weight: 500;
 }
 
 .tree-folder-summary:hover {
   background: var(--bg-tertiary);
+  color: var(--ctp-lavender);
 }
 
 details > .tree-list {
