@@ -25,26 +25,60 @@ const md = new MarkdownIt({
   }
 });
 
-// Custom wiki link plugin
+// Custom plugin: handle Obsidian [[wikilinks]] and ![[embeds]]
 md.use((md) => {
   md.renderer.rules.text = (tokens, idx) => {
     const content = tokens[idx].content;
 
+    // Handle ![[embed]] before [[wikilink]] to avoid double-matching
+    let result = content.replace(/!\[\[([^\]]+)\]\]/g, (match, ref) => {
+      const parts = ref.split('|');
+      const filename = parts[0].trim();
+      const alt = parts[1] ? parts[1].trim() : filename;
+      const ext = path.extname(filename).toLowerCase();
+
+      if (IMAGE_EXTS.has(ext)) {
+        const fullPath = imageIndex.get(filename);
+        if (fullPath) {
+          return `<img src="${registerImage(fullPath)}" alt="${alt}" class="obsidian-embed">`;
+        }
+        return `<img src="/images/${filename}" alt="${alt}" class="obsidian-embed">`;
+      }
+
+      // Non-image embed: render as wiki-link
+      return `<a href="/${slugify(filename)}.html" class="wiki-link">${alt}</a>`;
+    });
+
     // Replace [[wiki links]] with proper HTML links
-    const wikiLinkRegex = /\[\[([^\]]+)\]\]/g;
-    return content.replace(wikiLinkRegex, (match, linkText) => {
-      // Handle links with display text: [[link|display]]
+    result = result.replace(/\[\[([^\]]+)\]\]/g, (match, linkText) => {
       const parts = linkText.split('|');
       const link = parts[0].trim();
       const display = parts[1] ? parts[1].trim() : link;
-
-      // Convert to URL-safe path
       const slug = slugify(link);
-      const href = `/${slug}.html`;
-      return `<a href="${href}" class="wiki-link">${display}</a>`;
+      return `<a href="/${slug}.html" class="wiki-link">${display}</a>`;
     });
+
+    return result;
   };
 });
+
+// Rewrite standard markdown image paths to dist/images/ and track for copying
+md.renderer.rules.image = (tokens, idx, options, env, self) => {
+  const token = tokens[idx];
+  let src = token.attrGet('src') || '';
+  const alt = self.renderInlineAsText(token.children, options, env);
+  const title = token.attrGet('title');
+
+  if (!/^https?:\/\//.test(src)) {
+    const resolved = resolveImagePath(src, env && env.filePath);
+    if (resolved) src = registerImage(resolved);
+  }
+
+  let html = `<img src="${src}" alt="${alt}"`;
+  if (title) html += ` title="${md.utils.escapeHtml(title)}"`;
+  html += '>';
+  return html;
+};
 
 // Helper function to create URL-safe slugs with percent-encoded non-ASCII characters
 function slugify(text) {
@@ -80,6 +114,15 @@ const fileTree = {
 
 // Tag index: tag slug -> array of fileInfo objects
 const tagIndex = new Map();
+
+// Supported image extensions for Obsidian embed resolution
+const IMAGE_EXTS = new Set(['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.avif', '.bmp', '.ico']);
+
+// Image index: basename -> fullPath (built during directory scan)
+const imageIndex = new Map();
+
+// Images pending copy to dist/images/: fullPath -> basename
+const pendingImages = new Map();
 
 // Post navigation map: slug -> { prev, next } (populated after buildTagIndex)
 let postNav = null;
@@ -130,10 +173,44 @@ function scanDirectory(dir, baseDir = SOURCE_DIR, tree = fileTree) {
         slug: slugify(item.replace('.md', ''))
       };
       tree.files.push(fileInfo);
+    } else {
+      // Collect image files for Obsidian embed resolution
+      const ext = path.extname(item).toLowerCase();
+      if (IMAGE_EXTS.has(ext)) {
+        imageIndex.set(item, fullPath);
+      }
     }
   }
 
   return tree;
+}
+
+// Resolve an image src to its full path on disk
+function resolveImagePath(src, markdownFilePath) {
+  if (!src) return null;
+  if (/^https?:\/\//.test(src)) return null; // external URL
+
+  // Absolute path from vault root
+  if (src.startsWith('/')) {
+    const full = path.join(SOURCE_DIR, src);
+    return fs.existsSync(full) ? full : null;
+  }
+
+  // Try relative to markdown file's directory
+  if (markdownFilePath) {
+    const full = path.resolve(path.dirname(markdownFilePath), src);
+    if (fs.existsSync(full)) return full;
+  }
+
+  // Fallback: search by basename in image index
+  return imageIndex.get(path.basename(src)) || null;
+}
+
+// Register an image for copying and return its dist path
+function registerImage(fullPath) {
+  const basename = path.basename(fullPath);
+  pendingImages.set(fullPath, basename);
+  return `/images/${basename}`;
 }
 
 // Extract tags from parsed markdown content and frontmatter
@@ -357,7 +434,7 @@ function generatePage(fileInfo, graphData) {
     markdownToRender = markdown.replace(/^#\s+.+?$/m, '').trim();
   }
 
-  const html = linkifyTags(md.render(markdownToRender));
+  const html = linkifyTags(md.render(markdownToRender, { filePath: fileInfo.fullPath }));
   const date = frontmatter.date || frontmatter.created || frontmatter.timestamp || null;
 
   // Format date if available
@@ -557,6 +634,15 @@ async function build() {
   const tagsIndexHtml = generateTagsIndex(graphData);
   fs.outputFileSync(path.join(DIST_DIR, 'tags.html'), tagsIndexHtml);
   console.log('  ✓ Generated tags.html');
+
+  // Copy images discovered during rendering
+  if (pendingImages.size > 0) {
+    console.log('🖼️  Copying images...');
+    for (const [srcPath, basename] of pendingImages.entries()) {
+      fs.copySync(srcPath, path.join(DIST_DIR, 'images', basename));
+    }
+    console.log(`  ✓ Copied ${pendingImages.size} image(s)`);
+  }
 
   // Copy static assets
   console.log('📦 Copying assets...');
