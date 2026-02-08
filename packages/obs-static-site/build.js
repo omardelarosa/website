@@ -213,6 +213,32 @@ function registerImage(fullPath) {
   return `/images/${basename}`;
 }
 
+// Post-process HTML to rewrite literal <img> tags with local src paths
+function rewriteHtmlImages(html, markdownFilePath) {
+  return html.replace(/<img([^>]*)>/gi, (match, attrs) => {
+    // Extract src attribute
+    const srcMatch = attrs.match(/src=["']([^"']+)["']/i);
+    if (!srcMatch) return match;
+
+    let src = srcMatch[1];
+
+    // Skip external URLs
+    if (/^https?:\/\//.test(src)) return match;
+
+    // Skip if already rewritten to /images/ or /assets/
+    if (src.startsWith('/images/') || src.startsWith('/assets/')) return match;
+
+    // Resolve and register the image
+    const resolved = resolveImagePath(src, markdownFilePath);
+    if (resolved) {
+      const newSrc = registerImage(resolved);
+      return match.replace(srcMatch[0], `src="${newSrc}"`);
+    }
+
+    return match;
+  });
+}
+
 // Extract tags from parsed markdown content and frontmatter
 function extractTagsFromContent(markdown, frontmatter) {
   const tags = new Set();
@@ -434,7 +460,9 @@ function generatePage(fileInfo, graphData) {
     markdownToRender = markdown.replace(/^#\s+.+?$/m, '').trim();
   }
 
-  const html = linkifyTags(md.render(markdownToRender, { filePath: fileInfo.fullPath }));
+  let html = md.render(markdownToRender, { filePath: fileInfo.fullPath });
+  html = rewriteHtmlImages(html, fileInfo.fullPath);
+  html = linkifyTags(html);
   const date = frontmatter.date || frontmatter.created || frontmatter.timestamp || null;
 
   // Format date if available
