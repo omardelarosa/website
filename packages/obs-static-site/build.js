@@ -189,7 +189,7 @@ function applyNavOrder(navConfig, tree) {
   const usedSlugs = new Set();
 
   for (const entry of navConfig) {
-    const key = slugify(entry);
+    const key = slugify(entry.replace(/\.md$/i, ''));
     const match = rootFiles.find(f => f.slug === key || f.slug.endsWith(key));
     if (match) {
       ordered.push(match);
