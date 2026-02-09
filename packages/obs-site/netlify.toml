@@ -1,9 +1,3 @@
 [build]
 publish = "packages/obs-static-site/dist"
 command = "cd packages/obs-static-site && npm install && npm run build"
-
-[[redirects]]
-  from = "https://omardelarosa.com/*"
-  to = "https://publish.obsidian.md/serve?url=omardelarosa.com/:splat"
-  status = 200
-  force = true
