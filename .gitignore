@@ -71,3 +71,7 @@ yarn-error.log
 ._*
 
 data/
+
+# Obsidian files
+packages/obs-site/.obsidian/workspace.json
+packages/obs-site/.obsidian/themes
