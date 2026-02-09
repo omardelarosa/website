@@ -7,7 +7,8 @@
     "build": "node build.js",
     "dev": "node build.js --watch",
     "serve": "node -e \"require('http').createServer((req,res)=>{const fs=require('fs');const path=require('path');let file=req.url=='/'?'/index.html':req.url;fs.readFile('./dist'+file,(err,data)=>{if(err){res.writeHead(404);res.end('Not found');return;}const ext=path.extname(file);const types={'html':'text/html','css':'text/css','js':'application/javascript','json':'application/json'};res.writeHead(200,{'Content-Type':types[ext.slice(1)]||'text/plain'});res.end(data);})}).listen(8080,()=>console.log('Server running at http://localhost:8080'))\"",
-    "watch": "nodemon --watch ../obs-site --watch templates --watch build.js --watch nav.json -e md,css,js,json --exec 'node build.js && npm run serve'"
+    "watch": "nodemon --watch ../obs-site --watch templates --watch build.js --watch nav.json -e md,css,js,json --exec 'node build.js && npm run serve'",
+    "test": "node build.test.js"
   },
   "keywords": [
     "obsidian",

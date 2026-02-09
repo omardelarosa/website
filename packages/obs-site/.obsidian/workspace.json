@@ -166,44 +166,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/web/A New Way of Blogging.md",
+                "file": "daily/2026/02/09/A New Vibe-coded Site Builder.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A New Way of Blogging"
-            }
-          },
-          {
-            "id": "36b981f12be7a51e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💡about.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "💡about"
-            }
-          },
-          {
-            "id": "57d0d9512d9c58b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "gamedev/Devlog 1 | Moonspore Hollow.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Devlog 1 | Moonspore Hollow"
+              "title": "A New Vibe-coded Site Builder"
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -355,10 +327,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "57d0d9512d9c58b9",
+  "active": "62970e9f2e96042f",
   "lastOpenFiles": [
-    "gamedev/Exploring Blend Trees and Animations 1.md",
+    "daily/2026/02/09/_media/Screenshot 2026-02-09 at 8.54.44 AM.png",
+    "daily/2026/02/09/_media",
+    "daily/2025/10/15/2025-10-15.md",
+    "daily/2026/02/09/A New Vibe-coded Site Builder.md",
+    "programming/web/A New Way of Blogging.md",
+    "daily/_daily.md",
+    "templates/_daily_template.md",
+    "daily/2018/06/13/Moving Back To Github Pages (or Static Hosting Saga 3).md",
+    "💡about.md",
     "gamedev/Devlog 1 | Moonspore Hollow.md",
+    "daily/2026/02/09",
+    "daily/2026/02",
+    "daily/2026",
+    "gamedev/Exploring Blend Trees and Animations 1.md",
     "👋 hello.md",
     "👷‍♂️ projects.md",
     "projects.md",
@@ -383,25 +367,13 @@
     "daily/2022/10/23",
     "daily/2022/10/17/thumbnails",
     "daily/2022/10/17/Limbo The Asymptote.md",
-    "daily/2022/10/17",
-    "daily/2022/10/02/thumbnails",
     "daily/2022/10/02/Making An Obsidian Plugin for MtG.md",
-    "daily/2022/10/02",
-    "daily/2022/03/06/thumbnails",
     "daily/2022/03/06/What I've Been Doing This Past Year.md",
     "daily/2019/04/02/Aseprite Animations and New Sprites.md",
     "daily/2019/03/24/Collaborative AR Game.md",
     "daily/2019/03/12/Concept Art and World Building.md",
     "daily/2019/03/06/Sketchbook of Game Structure.md",
     "daily/2019/03/06/Procedurally Generated Levels in the Style of Spelunky.md",
-    "daily/2019/02/26/Vampires UIs and World Layouts.md",
-    "daily/2019/02/26/Making a Toaster From Scratch.md",
-    "daily/2019/02/26/Core Game Loop.md",
-    "daily/2019/02/19/Sketchbook - Levels and Rooms.md",
-    "daily/2019/02/18/Tilemaps.md",
-    "daily/2019/02/12/Sketchbook 1.md",
-    "daily/2019/02/12/Inputs Map.md",
-    "daily/2019/02/12/Blend Trees and Animations.md",
-    "academics/process/Sketchbook 1 Sprite Structure.md"
+    "daily/2019/02/26/Vampires UIs and World Layouts.md"
   ]
 }
