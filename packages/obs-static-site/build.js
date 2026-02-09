@@ -10,6 +10,11 @@ const DIST_DIR = path.join(__dirname, 'dist');
 const OBSIDIAN_DIR = path.join(SOURCE_DIR, '.obsidian');
 const NAV_CONFIG_PATH = path.join(__dirname, 'nav.json');
 
+// Site metadata
+const SITE_NAME = 'omar delarosa';
+const SITE_URL = 'https://omardelarosa.com';
+const SITE_DESCRIPTION = 'Personal site and digital garden';
+
 // Initialize markdown parser with wiki link support and syntax highlighting
 const md = new MarkdownIt({
   html: true,
@@ -127,6 +132,9 @@ const pendingImages = new Map();
 // Post navigation map: slug -> { prev, next } (populated after buildTagIndex)
 let postNav = null;
 
+// Recent posts list (newest first), populated during build
+let recentPosts = [];
+
 // Resolve the best available date for a post, falling back to file mtime
 function resolvePostDate(fileInfo, frontmatter) {
   const candidates = [
@@ -137,7 +145,18 @@ function resolvePostDate(fileInfo, frontmatter) {
   ];
   for (const raw of candidates) {
     if (raw) {
-      const d = raw instanceof Date ? raw : new Date(raw);
+      if (raw instanceof Date) {
+        return raw;
+      }
+      // If it's a number, check if it's in seconds (10 digits) or milliseconds (13 digits)
+      if (typeof raw === 'number') {
+        // Unix timestamps in seconds are typically 10 digits, in milliseconds are 13 digits
+        const timestamp = raw < 10000000000 ? raw * 1000 : raw;
+        const d = new Date(timestamp);
+        if (!isNaN(d.getTime())) return d;
+      }
+      // Try parsing as string
+      const d = new Date(raw);
       if (!isNaN(d.getTime())) return d;
     }
   }
@@ -170,7 +189,10 @@ function scanDirectory(dir, baseDir = SOURCE_DIR, tree = fileTree) {
         name: item,
         path: relativePath,
         fullPath: fullPath,
-        slug: slugify(item.replace('.md', ''))
+        slug: slugify(item.replace('.md', '')),
+        // Will be populated by buildTagIndex
+        postDate: null,
+        postDateTimestamp: null
       };
       tree.files.push(fileInfo);
     } else {
@@ -272,6 +294,8 @@ function buildTagIndex(tree) {
     const tags = extractTagsFromContent(markdown, frontmatter);
     file.tags = tags;
     file.postDate = resolvePostDate(file, frontmatter);
+    // Store timestamp for client-side sorting (will be serialized to JSON)
+    file.postDateTimestamp = file.postDate ? file.postDate.getTime() : null;
     const h1Match = markdown.match(/^#\s+(.+?)$/m);
     file.postTitle = frontmatter.title || (h1Match ? h1Match[1] : file.name.replace('.md', ''));
     for (const tag of tags) {
@@ -313,6 +337,62 @@ function applyNavOrder(navConfig, tree) {
   tree.files.push(...ordered);
 }
 
+// Sort files in all directories by date in reverse chronological order
+function sortAllFilesByDate(tree) {
+  if (tree.files.length > 0) {
+    tree.files.sort((a, b) => {
+      const dateA = a.postDate || new Date(0);
+      const dateB = b.postDate || new Date(0);
+      return dateB - dateA;
+    });
+  }
+  for (const subTree of Object.values(tree.directories)) {
+    sortAllFilesByDate(subTree);
+  }
+}
+
+// Remove directories that contain no markdown files (directly or in any subdirectory)
+function pruneEmptyDirectories(tree) {
+  for (const [dirName, subTree] of Object.entries(tree.directories)) {
+    pruneEmptyDirectories(subTree);
+    if (subTree.files.length === 0 && Object.keys(subTree.directories).length === 0) {
+      delete tree.directories[dirName];
+    }
+  }
+}
+
+// Collect all posts sorted by date (newest first)
+function collectAllPosts(tree) {
+  const posts = [];
+  function collect(t) {
+    for (const f of t.files) {
+      if (!f.synthetic && f.postDate) posts.push(f);
+    }
+    for (const sub of Object.values(t.directories)) collect(sub);
+  }
+  collect(tree);
+  posts.sort((a, b) => b.postDate - a.postDate);
+  return posts;
+}
+
+// Generate HTML for the 5 most recent posts
+function generateRecentPostsHtml(excludeSlug) {
+  const posts = recentPosts
+    .filter(p => p.slug !== excludeSlug)
+    .slice(0, 5);
+  if (posts.length === 0) return '';
+
+  let html = '<h2>Recent Posts</h2>\n<ul class="recent-posts">\n';
+  for (const post of posts) {
+    const dateStr = post.postDate.toLocaleDateString('en-US', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    });
+    html += `<li><a href="/${post.slug}.html">${post.postTitle}</a> <time datetime="${post.postDate.toISOString()}">${dateStr}</time></li>\n`;
+  }
+  html += '</ul>';
+  return html;
+}
+
 // Build chronological prev/next navigation map across all posts
 function buildPostNav(tree) {
   const allPosts = [];
@@ -337,7 +417,8 @@ function buildPostNav(tree) {
 }
 
 // Replace #tags in rendered HTML with links, skipping code blocks
-function linkifyTags(html) {
+function linkifyTags(html, customTagIndex = null) {
+  const tagsToUse = customTagIndex || tagIndex;
   // Split on <pre> and <code> blocks so their content is left untouched
   const parts = html.split(/(<pre[\s\S]*?<\/pre>|<code[^>]*>[\s\S]*?<\/code>)/);
   return parts.map((part, i) => {
@@ -345,7 +426,7 @@ function linkifyTags(html) {
     return part.replace(/(<[^>]+>)|#([a-zA-Z][a-zA-Z0-9_-]*)/g, (match, htmlTag, tagName) => {
       if (htmlTag) return htmlTag;
       const slug = tagSlug(tagName);
-      if (tagIndex.has(slug)) {
+      if (tagsToUse.has(slug)) {
         return `<a href="/tags/${slug}.html" class="tag-link">#${tagName}</a>`;
       }
       return match;
@@ -353,14 +434,66 @@ function linkifyTags(html) {
   }).join('');
 }
 
+// Generate meta tags for SEO and social sharing
+function generateMetaTags(pageData) {
+  const { title, description, image, url, type = 'website' } = pageData;
+  const tags = [];
+
+  // Basic meta
+  if (description) {
+    tags.push(`<meta name="description" content="${description}">`);
+  }
+
+  // Open Graph
+  tags.push(`<meta property="og:title" content="${title}">`);
+  if (description) {
+    tags.push(`<meta property="og:description" content="${description}">`);
+  }
+  tags.push(`<meta property="og:type" content="${type}">`);
+  if (url) {
+    tags.push(`<meta property="og:url" content="${SITE_URL}${url}">`);
+  }
+  if (image) {
+    const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+    tags.push(`<meta property="og:image" content="${imageUrl}">`);
+  }
+  tags.push(`<meta property="og:site_name" content="${SITE_NAME}">`);
+
+  // Twitter Card
+  tags.push(`<meta name="twitter:card" content="summary_large_image">`);
+  tags.push(`<meta name="twitter:title" content="${title}">`);
+  if (description) {
+    tags.push(`<meta name="twitter:description" content="${description}">`);
+  }
+  if (image) {
+    const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+    tags.push(`<meta name="twitter:image" content="${imageUrl}">`);
+  }
+
+  return tags.join('\n  ');
+}
+
 // Common page shell renderer
-function renderPage(title, mainContent, pageSlug, graphData) {
+function renderPage(title, mainContent, pageSlug, graphData, metadata = {}) {
+  const metaTags = generateMetaTags({
+    title,
+    description: metadata.description || SITE_DESCRIPTION,
+    image: metadata.image || '/assets/pixelpic.gif',
+    url: `/${pageSlug}.html`,
+    type: metadata.type || 'website'
+  });
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
+  ${metaTags}
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/highlight.css">
 </head>
@@ -463,6 +596,12 @@ function generatePage(fileInfo, graphData) {
   let html = md.render(markdownToRender, { filePath: fileInfo.fullPath });
   html = rewriteHtmlImages(html, fileInfo.fullPath);
   html = linkifyTags(html);
+
+  // Inject recent posts for the "lately" page
+  if (fileInfo.name.toLowerCase().includes('lately')) {
+    html += generateRecentPostsHtml(fileInfo.slug);
+  }
+
   const date = frontmatter.date || frontmatter.created || frontmatter.timestamp || null;
 
   // Format date if available
@@ -507,7 +646,14 @@ function generatePage(fileInfo, graphData) {
         ${bottomMeta}
       </article>`;
 
-  return renderPage(title, mainContent, fileInfo.slug, graphData);
+  // Extract metadata for OG tags
+  const metadata = {
+    description: frontmatter.description || frontmatter.summary || '',
+    image: frontmatter.image || frontmatter.coverImage || '/assets/pixelpic.gif',
+    type: 'article'
+  };
+
+  return renderPage(title, mainContent, fileInfo.slug, graphData, metadata);
 }
 
 // Generate index page
@@ -521,7 +667,9 @@ function generateIndex(graphData) {
         </div>
       </div>`;
 
-  return renderPage('Home', mainContent, 'index', graphData);
+  return renderPage('Home', mainContent, 'index', graphData, {
+    description: SITE_DESCRIPTION
+  });
 }
 
 // Generate a tag page listing all posts for a given tag
@@ -541,7 +689,9 @@ function generateTagPage(tag, files, graphData) {
         </ul>
       </article>`;
 
-  return renderPage(`#${tag}`, mainContent, `tags/${tag}`, graphData);
+  return renderPage(`#${tag}`, mainContent, `tags/${tag}`, graphData, {
+    description: `Posts tagged with #${tag}`
+  });
 }
 
 // Generate /tags.html listing all tags sorted by post count descending
@@ -565,7 +715,9 @@ function generateTagsIndex(graphData) {
         </ul>
       </article>`;
 
-  return renderPage('Tags', mainContent, 'tags', graphData);
+  return renderPage('Tags', mainContent, 'tags', graphData, {
+    description: 'Browse all tags and topics'
+  });
 }
 
 // Build the site
@@ -584,6 +736,14 @@ async function build() {
   buildTagIndex(tree);
   console.log(`  ✓ Found ${tagIndex.size} unique tags`);
 
+  // Sort all files by date (newest first) within each directory
+  console.log('📅 Sorting files by date...');
+  sortAllFilesByDate(tree);
+  console.log('  ✓ Files sorted by date (newest first)');
+
+  // Prune empty directories from the file tree
+  pruneEmptyDirectories(tree);
+
   // Apply nav.json ordering to the file tree
   console.log('🧭 Applying nav order...');
   try {
@@ -599,6 +759,9 @@ async function build() {
   // Build chronological post navigation
   postNav = buildPostNav(tree);
   console.log(`  ✓ Built post nav (${postNav.size} posts)`);
+
+  // Collect recent posts for the "lately" page
+  recentPosts = collectAllPosts(tree);
 
   // Load graph data
   let graphData = null;
@@ -687,6 +850,33 @@ async function build() {
     console.log('  ✓ Copied media');
   }
 
+  // Copy favicon files to dist root (check both root and assets directory)
+  const faviconFiles = [
+    'favicon.ico',
+    'favicon.png',
+    'favicon32x32.png',
+    'favicon-16x16.png',
+    'favicon-32x32.png',
+    'apple-touch-icon.png',
+    'site.webmanifest'
+  ];
+  let copiedFavicons = 0;
+  for (const favicon of faviconFiles) {
+    // Try root directory first
+    let srcPath = path.join(SOURCE_DIR, favicon);
+    if (!fs.existsSync(srcPath) && fs.existsSync(assetsDir)) {
+      // Try assets directory
+      srcPath = path.join(assetsDir, favicon);
+    }
+    if (fs.existsSync(srcPath)) {
+      fs.copySync(srcPath, path.join(DIST_DIR, favicon));
+      copiedFavicons++;
+    }
+  }
+  if (copiedFavicons > 0) {
+    console.log(`  ✓ Copied ${copiedFavicons} favicon(s)`);
+  }
+
   // Copy template files (CSS and JS)
   console.log('📦 Copying template files...');
   const templatesDir = path.join(__dirname, 'templates');
@@ -700,8 +890,82 @@ async function build() {
   console.log(`📁 Output directory: ${DIST_DIR}`);
 }
 
-// Run build
-build().catch(err => {
-  console.error('❌ Build failed:', err);
-  process.exit(1);
-});
+// Export functions for testing
+module.exports = {
+  slugify,
+  tagSlug,
+  resolvePostDate,
+  generateMetaTags,
+  renderPage,
+  generateBottomMeta,
+  isTimestampValue,
+  buildTreeHTML: (tree) => {
+    // For testing: generate file tree JSON
+    return tree;
+  },
+  // Export for testing with mock data
+  generatePageFromData: (fileContent, fileName, slug, graphData = null) => {
+    const matter = require('gray-matter');
+    const { data: frontmatter, content: markdown } = matter(fileContent);
+
+    const h1Match = markdown.match(/^#\s+(.+?)$/m);
+    let markdownToRender = markdown;
+    let title = frontmatter.title || fileName.replace('.md', '');
+
+    if (h1Match) {
+      title = h1Match[1];
+      markdownToRender = markdown.replace(/^#\s+.+?$/m, '').trim();
+    }
+
+    // Use a simple env for testing (no file path for image resolution)
+    let html = md.render(markdownToRender, { filePath: null });
+
+    // Skip image rewriting for tests (requires file system)
+    html = linkifyTags(html);
+
+    const date = frontmatter.date || frontmatter.created || frontmatter.timestamp || null;
+
+    let dateHtml = '';
+    if (date) {
+      const dateObj = new Date(date);
+      const formattedDate = dateObj.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      dateHtml = `<div class="post-meta"><time class="post-date" datetime="${dateObj.toISOString()}">${formattedDate}</time></div>`;
+    }
+
+    const hasFrontmatter = date || frontmatter.title;
+    const headerClass = hasFrontmatter ? 'post-header' : 'post-header no-meta';
+
+    const bottomMeta = generateBottomMeta(frontmatter);
+
+    const mainContent = `
+      <article class="markdown-body">
+        <header class="${headerClass}">
+          <h1 class="post-title">${title}</h1>
+          ${dateHtml}
+        </header>
+        ${html}
+        ${bottomMeta}
+      </article>`;
+
+    const metadata = {
+      description: frontmatter.description || frontmatter.summary || '',
+      image: frontmatter.image || frontmatter.coverImage || '/assets/pixelpic.gif',
+      type: 'article'
+    };
+
+    return renderPage(title, mainContent, slug, graphData, metadata);
+  },
+  linkifyTags
+};
+
+// Only run build if this file is executed directly (not required as a module)
+if (require.main === module) {
+  build().catch(err => {
+    console.error('❌ Build failed:', err);
+    process.exit(1);
+  });
+}

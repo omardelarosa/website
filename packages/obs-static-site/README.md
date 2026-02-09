@@ -25,6 +25,12 @@ npm run build
 
 # Serve locally (after building)
 npm run serve
+
+# Watch mode (auto-rebuild on changes)
+npm run watch
+
+# Run unit tests
+npm test
 ```
 
 ### Build Output
@@ -69,9 +75,56 @@ publish = "packages/obs-static-site/dist"
 command = "cd packages/obs-static-site && npm install && npm run build"
 ```
 
+## Testing
+
+The build script includes comprehensive unit tests that verify HTML generation in-memory without requiring file system access.
+
+### Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Or using make
+make test
+```
+
+### Test Coverage
+
+The test suite covers:
+
+- **Slug generation**: URL-safe slugs with emoji/Unicode support
+- **Date parsing**: Unix timestamps (seconds/milliseconds), ISO dates
+- **Meta tag generation**: Open Graph and Twitter Card tags
+- **HTML rendering**: Page structure, metadata, navigation
+- **Markdown processing**: Code blocks, lists, frontmatter
+- **Tag linking**: #hashtag conversion with code block preservation
+
+### Testable Architecture
+
+The build script exports key functions for testing:
+
+```javascript
+const {
+  slugify,
+  tagSlug,
+  resolvePostDate,
+  generateMetaTags,
+  renderPage,
+  generateBottomMeta,
+  isTimestampValue,
+  generatePageFromData,
+  linkifyTags
+} = require('./build.js');
+```
+
+Tests use Node's built-in `assert` module and run without external dependencies.
+
 ## Technologies
 
-- **markdown-it**: Markdown parsing
+- **markdown-it**: Markdown parsing with syntax highlighting
+- **highlight.js**: Code syntax highlighting
 - **gray-matter**: Frontmatter extraction
 - **fs-extra**: File system operations
 - Vanilla JavaScript for client-side features (no framework)
+- Node.js built-in `assert` for testing

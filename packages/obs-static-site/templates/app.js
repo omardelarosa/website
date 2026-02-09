@@ -74,14 +74,14 @@
 
         if (!tree) return;
 
-        const html = buildTreeHTML(tree);
+        const html = buildTreeHTML(tree, 0, "");
         container.innerHTML = html;
 
         // Build search index
         buildSearchIndex(tree);
     }
 
-    function buildTreeHTML(tree, level = 0) {
+    function buildTreeHTML(tree, level = 0, dirName = "") {
         let html = '<ul class="tree-list">';
 
         // Render files
@@ -99,7 +99,9 @@
         }
 
         // Render directories
-        for (const [dirName, subTree] of Object.entries(tree.directories)) {
+        for (const [subDirName, subTree] of Object.entries(
+            tree.directories
+        )) {
             const hasFiles =
                 subTree.files.length > 0 ||
                 Object.keys(subTree.directories).length > 0;
@@ -109,9 +111,9 @@
         <li class="tree-item tree-folder">
           <details>
             <summary class="tree-folder-summary">
-              📁 ${dirName}
+              📁 ${subDirName}
             </summary>
-            ${buildTreeHTML(subTree, level + 1)}
+            ${buildTreeHTML(subTree, level + 1, subDirName)}
           </details>
         </li>
       `;
