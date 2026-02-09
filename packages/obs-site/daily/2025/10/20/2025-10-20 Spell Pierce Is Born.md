@@ -1,13 +1,10 @@
 ---
 created: 1761004938
 lastTouched: 1761004938
+tags: #pixelart #music #news
 ---
 
-tags:: [[+Daily Notes]] #pixelart #music #news 
 
-Created: **Monday, October 20, 2025**
-
-<< [[2025-10-15|Yesterday]] >>
 
 ---
 

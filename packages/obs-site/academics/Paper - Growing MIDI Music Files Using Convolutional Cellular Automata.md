@@ -2,7 +2,7 @@
 created: 1760544894
 ---
 
-tags:: [[+Post]] #academics #machine-learning #alife #midi #music #livecode #cellular-atuomata #proceduralgeneration 
+tags:: #post #academics #machine-learning #alife #midi #music #livecode #cellular-atuomata #proceduralgeneration
 
 Created: **Wednesday, October 15, 2025**
 

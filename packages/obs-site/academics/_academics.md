@@ -2,7 +2,7 @@
 created: 1760544501
 ---
 
-tags:: [[+Post]]
+tags:: #post
 
 Created: **Wednesday, October 15, 2025**
 
@@ -22,7 +22,7 @@ In general my academic work centers around [ALife (artificial life)](https://ali
 
 ## Process
 
-I had the opportunity to take [Kathleen McDermott's](https://www.kthartic.com/) Prototyping and Ideation class while I was doing my master's at NYU and part of her class involved keeping a kind of creative journal where we documented our "process" through a project called "Constant I/O" with daily or weekly posts and sketch journal entries.  
+I had the opportunity to take [Kathleen McDermott's](https://www.kthartic.com/) Prototyping and Ideation class while I was doing my master's at NYU and part of her class involved keeping a kind of creative journal where we documented our "process" through a project called "Constant I/O" with daily or weekly posts and sketch journal entries.
 
 You can see all of the original posts at [https://classic.omardelarosa.com/tags/process/](https://classic.omardelarosa.com/tags/process/)and a few selected ones have been moved over to the [[/process]] section:
 

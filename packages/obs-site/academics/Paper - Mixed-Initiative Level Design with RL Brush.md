@@ -2,7 +2,7 @@
 created: 1760544562
 ---
 
-tags:: [[+Post]] #machine-learning #academics #reinforcement-learning #ml #rl
+tags:: #post #machine-learning #academics #reinforcement-learning #ml #rl
 #alife
 Created: **Wednesday, October 15, 2025**
 
@@ -10,7 +10,7 @@ Created: **Wednesday, October 15, 2025**
 
 ### Paper - Mixed-Initiative Level Design with RL Brush
 
-This is a paper I wrote in my last year of my M.S. program at NYU.  
+This is a paper I wrote in my last year of my M.S. program at NYU.
 
 You can read it on [arXiv](https://arxiv.org/pdf/2008.02778) or watch this video of a poster talk I did at Evostar:
 
