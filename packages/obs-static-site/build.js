@@ -139,6 +139,8 @@ let recentPosts = [];
 function resolvePostDate(fileInfo, frontmatter) {
   const candidates = [
     frontmatter.created,
+    frontmatter.createdAt,
+    frontmatter.published,
     frontmatter.publishedAt,
     frontmatter.date,
     frontmatter.timestamp
@@ -777,6 +779,7 @@ async function build() {
   // Generate pages
   console.log('📝 Generating pages...');
   let helloFile = null;
+  let latelyFile = null;
 
   function processTree(tree, currentPath = '') {
     // Process files in current directory
@@ -791,6 +794,11 @@ async function build() {
       // Track hello.md file for index page
       if (file.slug === 'hello' || file.name.includes('hello')) {
         helloFile = file;
+      }
+
+      // Track lately file for explicit regeneration with recent posts
+      if (file.name.toLowerCase().includes('lately')) {
+        latelyFile = file;
       }
     }
 
@@ -812,6 +820,29 @@ async function build() {
     console.log('  ✓ Generated index.html (default)');
   }
   fs.outputFileSync(path.join(DIST_DIR, 'index.html'), indexHtml);
+
+  // Always regenerate the lately page with fresh recent posts
+  console.log('📅 Generating lately page...');
+  if (latelyFile) {
+    const latelyHtml = generatePage(latelyFile, graphData);
+    fs.outputFileSync(path.join(DIST_DIR, `${latelyFile.slug}.html`), latelyHtml);
+    console.log(`  ✓ Regenerated ${latelyFile.slug}.html with recent posts`);
+  } else {
+    const recentPostsContent = generateRecentPostsHtml(null);
+    const mainContent = `
+      <article class="markdown-body">
+        <header class="post-header no-meta">
+          <h1 class="post-title">Lately</h1>
+        </header>
+        <p>Here's what I've been up to lately.</p>
+        ${recentPostsContent}
+      </article>`;
+    const latelyHtml = renderPage('Lately', mainContent, 'lately', graphData, {
+      description: 'Recent posts and updates'
+    });
+    fs.outputFileSync(path.join(DIST_DIR, 'lately.html'), latelyHtml);
+    console.log('  ✓ Generated lately.html (default)');
+  }
 
   // Generate tag pages
   console.log('🏷️  Generating tag pages...');

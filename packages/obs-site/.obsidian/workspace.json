@@ -164,14 +164,12 @@
             "id": "62970e9f2e96042f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "daily/2026/02/09/A New Vibe-coded Site Builder.md",
-                "mode": "source",
-                "source": false
+                "file": "daily/2026/02/09/_media/Screenshot 2026-02-09 at 8.54.44 AM.png"
               },
-              "icon": "lucide-file",
-              "title": "A New Vibe-coded Site Builder"
+              "icon": "lucide-image",
+              "title": "Screenshot 2026-02-09 at 8.54.44 AM"
             }
           }
         ],
@@ -329,19 +327,20 @@
   },
   "active": "62970e9f2e96042f",
   "lastOpenFiles": [
+    "daily/2026/02/09/A New Vibe-coded Site Builder.md",
+    "daily/2025/10/20/2025-10-20 Spell Pierce Is Born.md",
+    "daily/2025/10/15/2025-10-15.md",
     "daily/2026/02/09/_media/Screenshot 2026-02-09 at 8.54.44 AM.png",
     "daily/2026/02/09/_media",
-    "daily/2025/10/15/2025-10-15.md",
-    "daily/2026/02/09/A New Vibe-coded Site Builder.md",
+    "daily/2026/02/09",
+    "daily/2026/02",
+    "daily/2026",
     "programming/web/A New Way of Blogging.md",
     "daily/_daily.md",
     "templates/_daily_template.md",
     "daily/2018/06/13/Moving Back To Github Pages (or Static Hosting Saga 3).md",
     "💡about.md",
     "gamedev/Devlog 1 | Moonspore Hollow.md",
-    "daily/2026/02/09",
-    "daily/2026/02",
-    "daily/2026",
     "gamedev/Exploring Blend Trees and Animations 1.md",
     "👋 hello.md",
     "👷‍♂️ projects.md",
@@ -353,7 +352,6 @@
     "gamedev/Procedurally Generated Levels in the Style of Spelunky (Copy).md",
     "daily/2025/10/20/_media/Pasted image 20251020202823.png",
     "daily/2025/10/20/_media",
-    "daily/2025/10/20/2025-10-20 Spell Pierce Is Born.md",
     "daily/2025/10/20",
     "daily/2022/10/23/pixelated-alien-landscape.png",
     "daily/2022/10/23/pagination-demo.gif",
@@ -362,7 +360,6 @@
     "daily/2022/10/23/invokeai_alient_landscape_03.png",
     "daily/2022/10/23/invokeai_alient_landscape_02.png",
     "daily/2022/10/23/invokeai_alient_landscape_01.png",
-    "daily/2022/10/23/dall-e-pixelart-keyboard3.png",
     "daily/2022/10/23/AI Thumbnails with Stable Diffusion.md",
     "daily/2022/10/23",
     "daily/2022/10/17/thumbnails",
