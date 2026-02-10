@@ -151,10 +151,10 @@ let recentPosts = [];
 // Resolve the best available date for a post, falling back to file mtime
 function resolvePostDate(fileInfo, frontmatter) {
     const candidates = [
-        frontmatter.published,
-        frontmatter.publishedAt,
         frontmatter.created,
         frontmatter.createdAt,
+        frontmatter.published,
+        frontmatter.publishedAt,
         frontmatter.date,
         frontmatter.timestamp,
     ];
