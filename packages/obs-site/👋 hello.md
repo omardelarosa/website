@@ -1,9 +1,10 @@
 ## i'm **omar delarosa**
 
 I am a software engineer working on recommender systems with an interest in [[_music]], [[_visuals]], [[_gamedev]] and playing [[_magic the gathering]].
+
 ### what is this
 
-This site is a place to put a bunch of my thoughts and writing.  It's kind of a scratch pad and also a kind of journal.  You can read more about me and what I do on the [[about]] page or just by browsing the nav menu to the left.  
+This site is statically generated from one of my [Obsidian](https://obsidian.md/) vaults made up of posts from the last 10 years or so. You can read more about me and what I do on the [[about]] page or just by browsing the nav menu to the left.
 
 The [[_posts]] section is where the more linear, posts are located, while the other sections are more topical.
 ### recent stuff
