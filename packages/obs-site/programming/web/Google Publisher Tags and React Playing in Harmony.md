@@ -17,6 +17,7 @@ description: an article about using react and google publisher tag together in h
 aliases:
   - gpt-and-react
   - posts/2017/02/22/Google Publisher Tags and React Playing in Harmony.md
+lastTouched: 1760532105
 ---
 
 # Doing Google Publisher Tags the React Way

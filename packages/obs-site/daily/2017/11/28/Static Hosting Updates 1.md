@@ -9,6 +9,7 @@ tags: ["webdev", "tutorial", "development", "technology", "news"]
 description: an article about life, technology and/or music by omar delarosa
 aliases:
 - cloudflare-vs-zeit
+lastTouched: 1761009499
 ---
 
 So during this past Thanksgiving holiday, about the only time of year I sit down and work on personal projects these days, I went to go write a blog post and noticed that this site was down and probably had been for a while. Seems like when I switched over to using [Zeit Now](zeit.co/now) over GH Pages for easier DNS management, etc, my last deployment failed. However, I didn't immediately notice and so I guess the site had been down since at least 2 months ago.

@@ -17,6 +17,7 @@ tags:
         "sprites",
         "castleblood",
     ]
+lastTouched: 1761046664
 ---
 (see dapted from [[Constant IO Blend Trees and Animations]])
 

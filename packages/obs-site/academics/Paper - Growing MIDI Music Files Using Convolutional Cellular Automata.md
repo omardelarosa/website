@@ -1,5 +1,6 @@
 ---
 created: 1760544894
+lastTouched: 1770644569
 ---
 
 tags:: #post #academics #machine-learning #alife #midi #music #livecode #cellular-atuomata #proceduralgeneration

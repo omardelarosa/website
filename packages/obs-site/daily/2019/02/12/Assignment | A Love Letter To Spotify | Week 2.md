@@ -7,6 +7,7 @@ slug: love-letter-assignment
 tags: ["process", "assignment", "w02"]
 aliases:
 - love-letter-assignment
+lastTouched: 1761009499
 ---
 
 ## A Love Letter To Spotify

@@ -13,6 +13,7 @@ description: an article about getting static hosting to work via Amazon S3 and k
 aliases:
   - static-hosting-saga-2
   - posts/2017/11/29/Simple HTTPS Setup S3 + CloudFlare.md
+lastTouched: 1760532105
 ---
 
 After a bit more investigation yesterday, I realized that github pages forces my website headers to always be 30x. This is not ideal. Furthermore, it makes it tough to use `https` protocol for my custom domain, which [google now favors in search results.](https://thenextweb.com/google/2015/12/17/unsecured-websites-are-about-to-get-hammered-in-googles-search-ranking/)

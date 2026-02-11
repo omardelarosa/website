@@ -14,6 +14,7 @@ description: an article about making a static-file blog using webpack and html-w
 aliases:
   - making-a-markdown-blog-using-webpack
   - posts/2017/01/03/Making a Markdown Blog Using Webpack.md
+lastTouched: 1761009499
 ---
 
 ## A Brief Background

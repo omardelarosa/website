@@ -7,6 +7,7 @@ slug: readings-augmented-reality-art-and-applications
 tags: ["process", "reading-response", "w09", "citylens"]
 aliases:
 - readings-augmented-reality-art-and-applications
+lastTouched: 1761009499
 ---
 
 In the process of researching my City As Cite project, I've continued to cross reference academic ideas from _Computers Helping People With Special Needs_ with less academic, pop-cultural thinking on how to combine public spaces with technology. For my "pop cultural" angle this week, I found some interesting ideas in an old article from Wired [_Augmented Reality is Transforming Museums_](https://www.wired.com/story/augmented-reality-art-museums/).

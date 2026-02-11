@@ -10,6 +10,7 @@ tags:
   - w03
   - pgc
   - level-design
+lastTouched: 1761046664
 ---
 
 I just finished reading Derek Yu's book on Spelunky and I'm fascinated by his PGC (procedurally generated content) approach to level building. While it wouldn't work wholesale for the game I'm working on, it does have some neat ideas.

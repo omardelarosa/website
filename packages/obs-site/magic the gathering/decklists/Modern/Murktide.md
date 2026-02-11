@@ -1,5 +1,6 @@
 ---
 created: 1760490579
+lastTouched: 1770841260
 ---
 ```mtg-deck
 1 Abrade

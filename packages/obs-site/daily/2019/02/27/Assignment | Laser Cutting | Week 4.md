@@ -7,6 +7,7 @@ slug: assignment-lasery-cutting
 tags: ["hidden", "process", "w04"]
 aliases:
 - assignment-lasery-cutting
+lastTouched: 1761009499
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sAyTYVtiF2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

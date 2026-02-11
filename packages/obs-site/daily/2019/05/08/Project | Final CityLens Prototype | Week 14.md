@@ -7,6 +7,7 @@ slug: project-or-final-prototype
 tags: ["process", "w14", "augmented-reality", "ar", "citylens"]
 aliases:
 - project-or-final-prototype
+lastTouched: 1761009499
 ---
 
 The name I have finally settled on for my project is **CityLens**. The final result is a combination of a few pieces.

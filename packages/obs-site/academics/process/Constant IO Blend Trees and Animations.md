@@ -17,6 +17,7 @@ tags:
         "sprites",
         "castleblood",
     ]
+lastTouched: 1761046664
 ---
 
 After watching [this amazing video tutorial on YouTube on making 2D games](https://www.youtube.com/watch?v=rycsXRO6rpI&list=PLM83Z6G5iM3mnAd3MVJeZh7b7ilHd73V5&index=1), this week's breakthrough is discovering the magic of blend trees. Before watching this video, I hadn't really used blend trees. However, I was somehow trying to give my character a bit more complexity than Couch Ferret's archer character in the video using raw, animation state machines to limited success.

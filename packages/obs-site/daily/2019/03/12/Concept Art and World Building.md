@@ -5,6 +5,7 @@ createdAt: 1552437892701
 publishedAt: 1552437892701
 slug: constant-i-o-concept-art-and-world-building
 tags: ["process", "w06", "gamedev", "pixelart", "update", "castleblood"]
+lastTouched: 1761046664
 ---
 
 Last week, I spent a lot of time [writing code for making procedurally generated levels.](/posts/constant-i-o-procedurally-generated-levels). That was fun. But it left me neglecting the overall world-building and design elements for this untitled game in progress. So this week I tried to spend more time becoming a better designer and world-builder.

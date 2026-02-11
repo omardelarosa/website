@@ -15,6 +15,7 @@ description: an article about building a tiny, responsive grid system using styl
 aliases:
   - micro-responsive-grid-system-in-stylus
   - posts/2018/06/16/How To Build A Tiny Grid System with Stylus.md
+lastTouched: 1760532105
 ---
 
 ## Background

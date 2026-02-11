@@ -12,6 +12,7 @@ tags:
 aliases:
   - process-organizing-sprite-sheets
   - posts/2019/02/06/Organazing Sprite Sheets.md
+lastTouched: 1761046664
 ---
 
 As part of my Ideation and Prototyping class at NYU I will be creating a game prototype and [writing about the process each week](/process).

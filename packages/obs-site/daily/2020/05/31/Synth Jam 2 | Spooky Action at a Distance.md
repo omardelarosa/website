@@ -7,6 +7,7 @@ slug: synth-jam-or-spooky-action-at-a-distance
 tags: ["music", "video", "synth", "jam", "livelooping", "dawless"]
 aliases:
 - synth-jam-or-spooky-action-at-a-distance
+lastTouched: 1761009499
 ---
 
 Now that I'm finally done with grad school (post about that coming soon.) I've had more time to work on music. Here is a new video of [a synth jam called _spooky action a distance_](https://www.youtube.com/watch?v=xciZ0blHFZ0).

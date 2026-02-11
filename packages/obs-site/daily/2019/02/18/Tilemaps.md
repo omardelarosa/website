@@ -15,6 +15,7 @@ tags:
         "update",
         "castleblood",
     ]
+lastTouched: 1761046664
 ---
 
 Thus far, all of the pixelart you've seen on this site and in the game screenshots thus far has been made using PyxelEdit. This is an awesome tool, but when it comes to integrating directly with Unity it does have a few limitations. Though not overtly bad, there isn't a one-shot way for me to add a tilemap directly into unity.

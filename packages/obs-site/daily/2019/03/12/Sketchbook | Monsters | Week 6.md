@@ -7,6 +7,7 @@ slug: sketchbook-monsters
 tags: ["process", "w06", "sketchbook"]
 aliases:
 - sketchbook-monsters
+lastTouched: 1761009499
 ---
 
 This week, I sketched out some monster concepts based on mythological animations but given a kind of robot/alien style.
