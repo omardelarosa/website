@@ -681,21 +681,20 @@ function generatePage(fileInfo, graphData) {
         html += generateRecentPostsHtml(fileInfo.slug);
     }
 
-    const dateObj = fileInfo.postDate || null;
-
+    const postDate = resolvePostDate(fileInfo, frontmatter);
     // Format date if available
     let dateHtml = "";
-    if (dateObj && !isNaN(dateObj.getTime())) {
-        const formattedDate = dateObj.toLocaleDateString("en-US", {
+    if (postDate) {
+        const formattedDate = postDate.toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
         });
-        dateHtml = `<div class="post-meta"><time class="post-date" datetime="${dateObj.toISOString()}">${formattedDate}</time></div>`;
+        dateHtml = `<div class="post-meta"><time class="post-date" datetime="${postDate.toISOString()}">${formattedDate}</time></div>`;
     }
 
     // Only show post header if we have frontmatter data (date) or a custom title
-    const hasFrontmatter = dateObj || frontmatter.title;
+    const hasFrontmatter = postDate || frontmatter.title;
     const headerClass = hasFrontmatter ? "post-header" : "post-header no-meta";
 
     const bottomMeta = generateBottomMeta(frontmatter);
