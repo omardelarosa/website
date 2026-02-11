@@ -1,3 +1,6 @@
+---
+created: 1760490579
+---
 ```mtg-deck
 Deck
 2 Arid Mesa

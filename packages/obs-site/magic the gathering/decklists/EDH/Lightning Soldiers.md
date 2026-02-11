@@ -1,3 +1,6 @@
+---
+created: 1760490579
+---
 ## Decklist
 
 <iframe src="https://moxfield.com/embed/GiaPCdqmZU-evbXumG7mqg"

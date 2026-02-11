@@ -1,3 +1,6 @@
+---
+created: 1770687458
+---
 ## i'm **omar delarosa**
 
 I am a software engineer working on recommender systems with an interest in [[_music]], [[_visuals]], [[_gamedev]] and playing [[_magic the gathering]].

@@ -1,3 +1,6 @@
+---
+created: 1760490579
+---
 ```mtg-deck
 1 Abrade
 2 Blood Moon

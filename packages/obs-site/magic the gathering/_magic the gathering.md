@@ -1,3 +1,6 @@
+---
+created: 1761046664
+---
 I am an avid player of Magic: The Gathering, the OG trading card game.  I even made my own plugin for Obsidian it (see [[programming/Making An Obsidian Plugin for MtG]]).
 
 This is where I keep some thoughts and decklists about Magic the gathering.

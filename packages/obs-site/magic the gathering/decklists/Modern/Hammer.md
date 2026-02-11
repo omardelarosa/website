@@ -1,3 +1,6 @@
+---
+created: 1760490579
+---
 #mtg #deck #mtg-format-modern #mtg-color-u #mtg-color-w
 
 # Spreadsheet

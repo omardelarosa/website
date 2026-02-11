@@ -1,3 +1,6 @@
+---
+created: 1760490580
+---
 ## who am i?
 
 I am not always sure how to describe myself, since I dabble in many domains.  I hate the "master of none" cliche, since I like to think I'm pretty good at a few of them like [[_music]] and maybe [[_magic the gathering]].

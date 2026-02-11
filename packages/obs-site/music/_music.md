@@ -1,3 +1,6 @@
+---
+created: 1760490579
+---
 This area has two sections `originals` and `writing`.
 
 ## sections
