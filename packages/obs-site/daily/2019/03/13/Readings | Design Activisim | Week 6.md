@@ -7,6 +7,7 @@ slug: readings-design-activisim
 tags: ["hidden", "process", "reading", "w06"]
 aliases:
 - readings-design-activisim
+lastTouched: 1761009499
 ---
 
 This week's reading from _Design Activism: Beautiful Strangeness for a Sustainable World_ was full of not just ideas, but some really neat examples of designs/installations/artifacts that I had never seen before but really drove the idea home. The way the chapter illustrated and defined each method of design activism worked quite well.

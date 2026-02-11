@@ -5,6 +5,7 @@ createdAt: 1550019734083
 publishedAt: 1550019734083
 slug: assignment-inputs-map
 tags: ["process", "w02"]
+lastTouched: 1761046664
 ---
 
 <img width="800" height="1067" src="./inputs_map.jpg"/>

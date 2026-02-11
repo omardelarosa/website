@@ -16,6 +16,7 @@ description: an article about using markov chains and sonicpi to make music by o
 aliases:
   - markov-chain-music
   - posts/2018/06/05/Making Markov Chain Hip Hop with SonicPi.md
+lastTouched: 1760532105
 ---
 
 For a long time, I've tried to merge two significant pursuits in my life: music and code. Although the two are not mutually exclusive, I've pursued them each relatively independently of one another. Or at least, [my primary music project, Little Insects](https://littleinsects.bandcamp.com/) has never been overtly "high tech".

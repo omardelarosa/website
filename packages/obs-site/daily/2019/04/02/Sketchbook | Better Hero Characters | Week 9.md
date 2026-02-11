@@ -7,6 +7,7 @@ slug: sketchbook-better-hero-characters
 tags: ["process", "w09", "sketchbook"]
 aliases:
 - sketchbook-better-hero-characters
+lastTouched: 1761009499
 ---
 
 _For this week's sketches, I changed up my hardware a bit and used a new Moleskine Pen+ I recently got._

@@ -81,11 +81,12 @@
         buildSearchIndex(tree);
     }
 
-    function buildTreeHTML(tree, level = 0, dirName = "") {
+    function buildTreeHTML(tree, level = 0, dirName = "", reverseSort = false) {
         let html = '<ul class="tree-list">';
 
-        // Render files
-        for (const file of tree.files) {
+        // Render files (reversed when inside the daily subtree)
+        const files = reverseSort ? [...tree.files].reverse() : tree.files;
+        for (const file of files) {
             const isActive = window.__CURRENT_PAGE__ === file.slug;
             const activeClass = isActive ? " active" : "";
             const displayName = file.name.replace(".md", "");
@@ -98,22 +99,25 @@
       `;
         }
 
-        // Render directories
-        for (const [subDirName, subTree] of Object.entries(
-            tree.directories
-        )) {
+        // Render directories (reversed when inside the daily subtree)
+        let dirEntries = Object.entries(tree.directories);
+        if (reverseSort) {
+            dirEntries = dirEntries.slice().sort((a, b) => b[0].localeCompare(a[0]));
+        }
+        for (const [subDirName, subTree] of dirEntries) {
             const hasFiles =
                 subTree.files.length > 0 ||
                 Object.keys(subTree.directories).length > 0;
             if (!hasFiles) continue;
 
+            const childReverse = reverseSort || subDirName === "daily";
             html += `
         <li class="tree-item tree-folder">
           <details>
             <summary class="tree-folder-summary">
               📁 ${subDirName}
             </summary>
-            ${buildTreeHTML(subTree, level + 1, subDirName)}
+            ${buildTreeHTML(subTree, level + 1, subDirName, childReverse)}
           </details>
         </li>
       `;

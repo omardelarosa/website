@@ -9,6 +9,7 @@ tags: ["webdev", "css", "js", "md", "news"]
 description: an article about life, technology and/or music by omar delarosa
 aliases:
 - moving-back-to-github-pages
+lastTouched: 1761009499
 ---
 
 A while back, [I made a big deal about moving this site to Cloudflare and using HTTPS](https://www.omardelarosa.com/posts/static-hosting-saga-2.html). Well now that [Github Pages supports HTTPS for custom domains](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/) it's time I moved back (Ultimately, Ilove the convenience of GH Pages.)

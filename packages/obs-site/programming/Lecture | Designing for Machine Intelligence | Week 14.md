@@ -19,6 +19,7 @@ tags:
     ]
 aliases:
 - lecture-or-designing-for-machine-intelligence
+lastTouched: 1761009499
 ---
 
 The week before last on 4/29/2019, I attended a really awesome talk at the [NYU MakerSpace](https://engineering.nyu.edu/research-innovation/makerspace) called [_Designing for Machine Intelligence with Adobe's Design Team_](https://www.eventbrite.com/e/designing-for-machine-intelligence-with-adobes-design-team-tickets-59924565990). The talk was lead by two members of Adobe's Design Research team: [Lisa Jamhoury](http://lisajamhoury.com/) and [Patrick Hebron](https://www.patrickhebron.com/) The talk was actually a sort of hybrid of a talk and workshop. The first half being a straight-up talk and the second being more of a workshop.

@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-02-11
+
+### obs-site: Add missing frontmatter to markdown files
+
+- Added default `created` frontmatter (file birth timestamp) to 39 markdown files that had no frontmatter at all
+- Added `lastTouched` field (file modification timestamp) to 107 markdown files that were missing it
+- Affected files include section indexes, decklists, top-level pages, daily entries, and programming/gamedev posts
+
+### obs-static-site: Fix incorrect post dates in build output
+
+- Fixed `generatePage()` in `build.js` to use the pre-computed `fileInfo.postDate` (from `resolvePostDate()`) instead of reading raw frontmatter values directly
+- Root cause: raw `frontmatter.created` values (Unix seconds) were passed to `new Date()` which interprets numbers as milliseconds, producing dates in January 1970
+
+### File Explorer: Reverse chronological ordering for daily section
+
+- Updated `buildTreeHTML` in `app.js` to accept a `reverseSort` flag that activates for the `daily` directory and propagates to all its children
+- Files and subdirectories within `daily/` now render in reverse alphabetical order (e.g. `2026` before `2025`, `06` before `05`)
+
 ## 2026-02-09
 
 ### File Explorer: Preserve Folder Structure

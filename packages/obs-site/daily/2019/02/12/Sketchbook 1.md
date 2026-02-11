@@ -5,6 +5,7 @@ createdAt: 1550020021855
 publishedAt: 1550020021855
 slug: sketchbook-zombies-and-subways
 tags: ["process", "w02", "sketchbook"]
+lastTouched: 1761046664
 ---
 
 My focus this week was to conceive of some zombie enemies for my in-progress game as well as think of organizational systems for levels and maps, starting with a subway tunnel concept.

@@ -1,3 +1,7 @@
+---
+created: 1760490579
+lastTouched: 1770841260
+---
 Based on Harry MTG's list:
 https://www.mtggoldfish.com/deck/5414343#paper
 ```mtg-deck
@@ -33,4 +37,3 @@ Sideboard
 3 Force of Vigor
 2 Flusterstorm
 ```
-

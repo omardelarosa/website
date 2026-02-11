@@ -1,3 +1,7 @@
+---
+created: 1760490579
+lastTouched: 1770841260
+---
 ## Budget Version
 ```mtg-deck
 4 Aether Vial

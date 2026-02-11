@@ -1,3 +1,7 @@
+---
+created: 1760490579
+lastTouched: 1770841260
+---
 ## Decklist
 <iframe 
 src="https://moxfield.com/embed/qXVQtS6GZUiLlgyQALLWhA"

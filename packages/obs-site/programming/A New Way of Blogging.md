@@ -13,6 +13,7 @@ description: an introduction to the new bloging system.
 aliases:
   - new-blog
   - posts/2017/01/02/A New Way of Blogging.md
+lastTouched: 1761009499
 ---
 
 It's been a while since I wrote a blog post. Why? Well on the one hand, I've had a shortage of free time. On the other, I've spent way too much time configuring and dealing with [random](http://omardelarosa.tumblr.com) [blogging](http://blog.omardelarosa.com) platforms without really getting the things I want out of them:

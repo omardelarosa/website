@@ -7,6 +7,7 @@ slug: readings-design-thinking
 tags: ["process", "w02", "reading-response"]
 aliases:
 - readings-design-thinking
+lastTouched: 1761046664
 ---
 
 As someone who spent the last few years as a software engineer at various product companies, there was a ton of relevance in Chapter 6 of [The Design Everyday Things](https://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/1452654123) by Donald Norman, titled "Design Thinking". Below are the highlights.

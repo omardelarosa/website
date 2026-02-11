@@ -7,6 +7,7 @@ slug: synth-jam-3-or-ion-daydream
 tags: ["music", "video", "synth", "jam", "livelooping"]
 aliases:
 - synth-jam-3-or-ion-daydream
+lastTouched: 1761009499
 ---
 
 I added a [new synth jam video called _ion daydream_](https://www.youtube.com/watch?v=rMTRHv3oM9k&feature=youtu.be).

@@ -1,3 +1,7 @@
+---
+created: 1760490579
+lastTouched: 1770841260
+---
 ## Jeskai Version
 - Updates:
 	- 2023-07-09 - Updated to BONK101's version ([link](https://www.youtube.com/watch?v=q0DQCzYv4z4))

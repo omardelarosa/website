@@ -7,6 +7,7 @@ slug: readings-ted-talks
 tags: ["process", "reading-response", "w03"]
 aliases:
 - readings-ted-talks
+lastTouched: 1761009499
 ---
 
 [This critique of TED talks from, ironically, a TEDx talk itself was really on point.](https://www.theguardian.com/commentisfree/2013/dec/30/we-need-to-talk-about-ted) Bratton's definition of the format itself using its own acronym (though not really) perfectly summarizes his attitude:

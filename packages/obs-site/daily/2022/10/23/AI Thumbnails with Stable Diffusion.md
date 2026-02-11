@@ -10,6 +10,7 @@ description: an article about making AI Thumbnails with Stable Diffusion
 thumbnail: ./pixelated-alien-landscape.png
 aliases:
 - ai-thumbnails-with-stable-diffusion
+lastTouched: 1761046664
 ---
 
 So earlier today, I had a thought:

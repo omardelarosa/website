@@ -7,6 +7,7 @@ slug: sketchbook-more-monsters
 tags: ["process", "w11", "sketchbook"]
 aliases:
 - sketchbook-more-monsters
+lastTouched: 1761009499
 ---
 
 Ideas for more in-game monsters.
