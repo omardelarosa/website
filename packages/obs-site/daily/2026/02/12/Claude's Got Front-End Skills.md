@@ -41,4 +41,4 @@ And this is Dark Mode:
 
 ![[Screenshot 2026-02-12 at 10.11.12 AM.png]]
 
-Not too shabby.  You can see the entire PR here:
+Not too shabby.  You can see the entire [PR here](https://github.com/omardelarosa/website/pull/73).
