@@ -75,3 +75,6 @@ data/
 # Obsidian files
 packages/obs-site/.obsidian/workspace.json
 packages/obs-site/.obsidian/themes
+
+# Claude Code
+.claude/
