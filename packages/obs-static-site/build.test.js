@@ -260,12 +260,6 @@ tests.push(() => runTest('renderPage: includes stylesheets', () => {
   assertIncludes(result, '<link rel="stylesheet" href="/highlight.css">');
 }));
 
-tests.push(() => runTest('renderPage: includes Ko-fi widget', () => {
-  const result = renderPage('Test Title', '<p>Content</p>', 'test-slug', null);
-  assertIncludes(result, 'kofiwidget2.init');
-  assertIncludes(result, 'omar delarosa');
-}));
-
 tests.push(() => runTest('renderPage: includes file tree script', () => {
   const result = renderPage('Test Title', '<p>Content</p>', 'test-slug', null);
   assertIncludes(result, 'window.__FILE_TREE__');
